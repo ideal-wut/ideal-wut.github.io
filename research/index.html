@@ -1,0 +1,21 @@
+---
+layout: page
+title: 研究方向
+permalink: /research/
+---
+
+<div class="research-overview">
+    <p class="research-intro">我们实验室专注于以下几个主要研究方向，致力于推动相关领域的前沿发展。</p>
+
+    <div class="research-grid">
+        {% for article in site.research_articles %}
+        <div class="research-card">
+            <h3 class="research-title">
+                <a href="{{ article.url | relative_url }}">{{ article.title }}</a>
+            </h3>
+            <p class="research-description">{{ article.description }}</p>
+            <a href="{{ article.url | relative_url }}" class="research-link">了解更多 &rarr;</a>
+        </div>
+        {% endfor %}
+    </div>
+</div>

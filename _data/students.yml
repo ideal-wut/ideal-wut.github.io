@@ -1,0 +1,29 @@
+- name: 李明
+  year: 2023
+  research: 时序预测模型研究
+  avatar: /assets/images/team/student1.jpg
+
+- name: 王芳
+  year: 2023
+  research: 时空图神经网络
+  avatar: /assets/images/team/student2.jpg
+
+- name: 陈强
+  year: 2024
+  research: 向量检索系统优化
+  avatar: /assets/images/team/student3.jpg
+
+- name: 刘洋
+  year: 2024
+  research: 轨迹数据挖掘
+  avatar: /assets/images/team/student4.jpg
+
+- name: 张伟
+  year: 2025
+  research: 深度学习在时序分析中的应用
+  avatar: /assets/images/team/student5.jpg
+
+- name: 赵敏
+  year: 2025
+  research: 高维向量索引技术
+  avatar: /assets/images/team/student6.jpg

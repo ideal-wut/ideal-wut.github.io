@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="home-page">
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+        <div class="carousel">
+            <div class="carousel-inner">
+                {% for i in (1..4) %}
+                <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                    <img src="{{ '/assets/images/carousel/slide' | append: i | append: '.jpg' | relative_url }}"
+                         alt="Slide {{ i }}">
+                </div>
+                {% endfor %}
+            </div>
+            <button class="carousel-control prev" onclick="moveCarousel(-1)">&#10094;</button>
+            <button class="carousel-control next" onclick="moveCarousel(1)">&#10095;</button>
+            <div class="carousel-indicators">
+                {% for i in (1..4) %}
+                <span class="indicator {% if forloop.first %}active{% endif %}" onclick="currentSlide({{ forloop.index }})"></span>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- Lab Introduction -->
+    <section class="lab-intro">
+        <div class="container">
+            <div class="intro-card">
+                <h2>实验室简介</h2>
+                <div class="intro-content">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

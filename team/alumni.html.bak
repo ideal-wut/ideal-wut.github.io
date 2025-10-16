@@ -1,0 +1,28 @@
+---
+layout: page
+title: 已毕业学生
+permalink: /team/alumni/
+---
+
+<div class="team-alumni">
+    {% if site.data.alumni and site.data.alumni.size > 0 %}
+    <div class="alumni-list">
+        {% for alum in site.data.alumni %}
+        <div class="alumni-card">
+            <div class="alumni-avatar">
+                <img src="{{ alum.avatar | default: '/assets/images/default-avatar.jpg' | relative_url }}"
+                     alt="{{ alum.name }}">
+            </div>
+            <div class="alumni-info">
+                <h3>{{ alum.name }}</h3>
+                <p class="alumni-graduation">毕业年份：{{ alum.graduationYear }}</p>
+                <p class="alumni-paper"><strong>论文题目：</strong>{{ alum.paper }}</p>
+                <p class="alumni-employment"><strong>去向：</strong>{{ alum.employment }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p>暂无校友信息</p>
+    {% endif %}
+</div>

@@ -1,0 +1,25 @@
+# 图片目录
+
+## 需要添加的图片：
+
+### 轮播图（carousel/）
+- slide1.jpg (推荐尺寸: 1920x500px)
+- slide2.jpg (推荐尺寸: 1920x500px)
+- slide3.jpg (推荐尺寸: 1920x500px)
+- slide4.jpg (推荐尺寸: 1920x500px)
+
+### Logo
+- logo.png (推荐尺寸: 200x50px)
+
+### 二维码
+- qrcode.png (推荐尺寸: 300x300px)
+
+### 默认头像
+- default-avatar.jpg (推荐尺寸: 300x300px)
+
+### 团队成员照片（team/）
+- advisor.jpg (导师照片, 推荐尺寸: 300x300px)
+- student1.jpg - student6.jpg (在读学生照片)
+- alumni1.jpg - alumni5.jpg (已毕业学生照片)
+
+所有图片建议使用正方形或适当比例的图片，以获得最佳显示效果。

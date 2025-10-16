@@ -1,0 +1,42 @@
+---
+layout: page
+title: 最新动态
+permalink: /blog/
+---
+
+<div class="blog-list">
+    {% for post in site.posts %}
+    <article class="blog-card">
+        <header class="blog-card-header">
+            <h2 class="blog-card-title">
+                {% if post.external_url %}
+                <a href="{{ post.external_url }}" target="_blank" rel="noopener">{{ post.title }} <span class="external-icon">↗</span></a>
+                {% else %}
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                {% endif %}
+            </h2>
+            <div class="blog-card-meta">
+                <time datetime="{{ post.date | date_to_xmlschema }}">
+                    {{ post.date | date: "%Y年%m月%d日" }}
+                </time>
+            </div>
+        </header>
+
+        <div class="blog-card-excerpt">
+            {{ post.excerpt | strip_html | truncatewords: 50 }}
+        </div>
+
+        <footer class="blog-card-footer">
+            {% if post.external_url %}
+            <a href="{{ post.external_url }}" target="_blank" rel="noopener" class="read-more">阅读原文 ↗</a>
+            {% else %}
+            <a href="{{ post.url | relative_url }}" class="read-more">阅读全文 &rarr;</a>
+            {% endif %}
+        </footer>
+    </article>
+    {% endfor %}
+
+    {% if site.posts.size == 0 %}
+    <p class="no-posts">暂无动态发布</p>
+    {% endif %}
+</div>

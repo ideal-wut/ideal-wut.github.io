@@ -1,0 +1,32 @@
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section contact-info">
+                <h3>联系我们</h3>
+                <p class="address">{{ site.address }}</p>
+                <p class="postal-code">邮编: {{ site.postal_code }}</p>
+                <p class="email">邮箱: <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></p>
+            </div>
+
+            <div class="footer-section qr-code">
+                <h3>实验室二维码</h3>
+                <div class="qr-code-image">
+                    <img src="{{ '/assets/images/qrcode.png' | relative_url }}" alt="实验室二维码">
+                </div>
+            </div>
+
+            <div class="footer-section external-links">
+                <h3>相关链接</h3>
+                <ul>
+                    <li><a href="#" target="_blank">相关机构1</a></li>
+                    <li><a href="#" target="_blank">相关机构2</a></li>
+                    <li><a href="#" target="_blank">相关机构3</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+        </div>
+    </div>
+</footer>

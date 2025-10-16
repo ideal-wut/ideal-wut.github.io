@@ -1,0 +1,133 @@
+---
+layout: page
+title: 团队成员
+permalink: /team/
+---
+
+<div class="team-page">
+    <!-- Tab Navigation -->
+    <div class="team-tabs">
+        <button class="tab-button active" onclick="switchTab('advisor')">指导教师</button>
+        <button class="tab-button" onclick="switchTab('students')">在读学生</button>
+        <button class="tab-button" onclick="switchTab('alumni')">已毕业学生</button>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="team-content">
+        <!-- Advisor Tab -->
+        <div id="advisor-tab" class="tab-pane active">
+            {% if site.data.advisor %}
+            <div class="advisor-card">
+                <div class="advisor-photo">
+                    <img src="{{ site.data.advisor.avatar | default: '/assets/images/default-avatar.jpg' | relative_url }}"
+                         alt="{{ site.data.advisor.name }}">
+                </div>
+                <div class="advisor-info">
+                    <h2>{{ site.data.advisor.name }}</h2>
+                    <p class="advisor-title">{{ site.data.advisor.title }}</p>
+
+                    <div class="advisor-contact">
+                        <p><strong>邮箱：</strong><a href="mailto:{{ site.data.advisor.email }}">{{ site.data.advisor.email }}</a></p>
+                        {% if site.data.advisor.office %}
+                        <p><strong>办公室：</strong>{{ site.data.advisor.office }}</p>
+                        {% endif %}
+                        {% if site.data.advisor.phone %}
+                        <p><strong>电话：</strong>{{ site.data.advisor.phone }}</p>
+                        {% endif %}
+                    </div>
+
+                    <div class="advisor-bio">
+                        <h3>个人简介</h3>
+                        <p>{{ site.data.advisor.bio }}</p>
+                    </div>
+
+                    {% if site.data.advisor.research_interests %}
+                    <div class="advisor-research">
+                        <h3>研究兴趣</h3>
+                        <ul>
+                            {% for interest in site.data.advisor.research_interests %}
+                            <li>{{ interest }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% else %}
+            <p>导师信息加载中...</p>
+            {% endif %}
+        </div>
+
+        <!-- Students Tab -->
+        <div id="students-tab" class="tab-pane">
+            {% if site.data.students and site.data.students.size > 0 %}
+            <div class="students-grid">
+                {% for student in site.data.students %}
+                <div class="student-card">
+                    <div class="student-avatar">
+                        <img src="{{ student.avatar | default: '/assets/images/default-avatar.jpg' | relative_url }}"
+                             alt="{{ student.name }}">
+                    </div>
+                    <div class="student-info">
+                        <h3>{{ student.name }}</h3>
+                        <p class="student-year">{{ student.year }}级</p>
+                        <p class="student-research">{{ student.research }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <p>暂无学生信息</p>
+            {% endif %}
+        </div>
+
+        <!-- Alumni Tab -->
+        <div id="alumni-tab" class="tab-pane">
+            {% if site.data.alumni and site.data.alumni.size > 0 %}
+            <div class="alumni-list">
+                {% for alum in site.data.alumni %}
+                <div class="alumni-card">
+                    <div class="alumni-avatar">
+                        <img src="{{ alum.avatar | default: '/assets/images/default-avatar.jpg' | relative_url }}"
+                             alt="{{ alum.name }}">
+                    </div>
+                    <div class="alumni-info">
+                        <h3>{{ alum.name }}</h3>
+                        <p class="alumni-graduation">毕业年份：{{ alum.graduationYear }}</p>
+                        <p class="alumni-paper"><strong>论文题目：</strong>{{ alum.paper }}</p>
+                        <p class="alumni-employment"><strong>去向：</strong>{{ alum.employment }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <p>暂无校友信息</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<script>
+function switchTab(tabName) {
+    // Hide all tab panes
+    const tabPanes = document.querySelectorAll('.tab-pane');
+    tabPanes.forEach(pane => {
+        pane.classList.remove('active');
+    });
+
+    // Remove active class from all buttons
+    const tabButtons = document.querySelectorAll('.tab-button');
+    tabButtons.forEach(button => {
+        button.classList.remove('active');
+    });
+
+    // Show selected tab pane
+    const selectedPane = document.getElementById(tabName + '-tab');
+    if (selectedPane) {
+        selectedPane.classList.add('active');
+    }
+
+    // Add active class to clicked button
+    event.target.classList.add('active');
+}
+</script>

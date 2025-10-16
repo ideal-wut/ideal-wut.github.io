@@ -1,0 +1,104 @@
+- title: "Efficient Time Series Forecasting with Deep Neural Networks"
+  authors: Zhang Wei, Li Ming, Wang Fang
+  venue: NeurIPS 2024
+  year: 2024
+  type: CCF-A
+  doi: https://doi.org/10.example/neurips2024
+
+- title: "Spatio-Temporal Graph Learning for Traffic Flow Prediction"
+  authors: Wang Fang, Zhang Wei, Chen Qiang
+  venue: KDD 2024
+  year: 2024
+  type: CCF-A
+  doi: https://doi.org/10.example/kdd2024
+
+- title: "Fast Approximate Nearest Neighbor Search in High-Dimensional Spaces"
+  authors: Chen Qiang, Liu Yang, Zhang Wei
+  venue: SIGMOD 2024
+  year: 2024
+  type: CCF-A
+  doi: https://doi.org/10.example/sigmod2024
+
+- title: "Anomaly Detection in Time Series Data Using LSTM Networks"
+  authors: Zhou Jie, Zhang Wei
+  venue: ICDE 2024
+  year: 2024
+  type: CCF-A
+  doi: https://doi.org/10.example/icde2024
+
+- title: "Trajectory Pattern Mining from Large-Scale GPS Data"
+  authors: Wu Juan, Sun Li, Zhang Wei
+  venue: IJCAI 2023
+  year: 2023
+  type: CCF-A
+  doi: https://doi.org/10.example/ijcai2023
+
+- title: "Graph-based Vector Indexing for Similarity Search"
+  authors: Zheng Tao, Ma Chao, Zhang Wei
+  venue: VLDB 2023
+  year: 2023
+  type: CCF-A
+  doi: https://doi.org/10.example/vldb2023
+
+- title: "Deep Learning Approaches for Time Series Classification"
+  authors: Li Ming, Zhang Wei
+  venue: AAAI 2023
+  year: 2023
+  type: CCF-A
+  doi: https://doi.org/10.example/aaai2023
+
+- title: "Distributed Vector Database Systems: A Survey"
+  authors: Ma Chao, Zhang Wei
+  venue: TODS
+  year: 2023
+  type: CCF-A
+  doi: https://doi.org/10.example/tods2023
+
+- title: "Multi-scale Temporal Convolutional Networks for Time Series Forecasting"
+  authors: Zhang Wei, Li Ming
+  venue: CIKM 2022
+  year: 2022
+  type: CCF-B
+  doi: https://doi.org/10.example/cikm2022
+
+- title: "Attention-based Spatio-Temporal Models for Urban Traffic Prediction"
+  authors: Wang Fang, Zhang Wei
+  venue: WSDM 2022
+  year: 2022
+  type: CCF-B
+  doi: https://doi.org/10.example/wsdm2022
+
+- title: "Efficient Quantization Methods for Vector Search"
+  authors: Chen Qiang, Zhang Wei
+  venue: EDBT 2022
+  year: 2022
+  type: CCF-B
+  doi: https://doi.org/10.example/edbt2022
+
+- title: "Real-time Anomaly Detection in Streaming Time Series"
+  authors: Zhou Jie, Zhang Wei
+  venue: DASFAA 2022
+  year: 2022
+  type: CCF-B
+  doi: https://doi.org/10.example/dasfaa2022
+
+- title: "Mining Frequent Patterns from Trajectory Data"
+  authors: Sun Li, Wu Juan, Zhang Wei
+  venue: MDM 2021
+  year: 2021
+  type: CCF-C
+  doi: https://doi.org/10.example/mdm2021
+
+- title: "GPU-accelerated Vector Similarity Search"
+  authors: Zheng Tao, Zhang Wei
+  venue: ISPA 2021
+  year: 2021
+  type: CCF-C
+  doi: https://doi.org/10.example/ispa2021
+
+- title: "Transfer Learning for Time Series Analysis"
+  authors: Li Ming, Zhang Wei
+  venue: PAKDD 2021
+  year: 2021
+  type: CCF-C
+  doi: https://doi.org/10.example/pakdd2021
