@@ -34,10 +34,11 @@ body {
 .header-container {
     max-width: var(--container-width);
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 0.75rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 3rem;
 }
 
 .logo {
@@ -53,8 +54,8 @@ body {
 }
 
 .logo img {
-    height: 40px;
-    margin-right: 10px;
+    height: 80px;
+    margin-right: 0;
 }
 
 .site-title {

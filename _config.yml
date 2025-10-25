@@ -15,13 +15,13 @@ contact_email: "lab@example.com"
 navigation:
   - title: 首页
     url: /
-  - title: 动态
+  - title: 团队动态
     url: /blog/
   - title: 研究方向
     url: /research/
   - title: 团队成员
     url: /team/
-  - title: 研究成果
+  - title: 学术成果
     url: /achievements/
   - title: 加入我们
     url: /joinus/
