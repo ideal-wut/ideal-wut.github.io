@@ -56,11 +56,32 @@ function highlightActiveNav() {
     });
 }
 
+// Add image captions based on alt text
+function addImageCaptions() {
+    const images = document.querySelectorAll('img[alt]');
+    
+    images.forEach((img, index) => {
+        if (img.alt && img.alt.trim() !== '') {
+            // Check if caption already exists
+            const nextElement = img.nextElementSibling;
+            if (!nextElement || !nextElement.classList.contains('image-caption')) {
+                const caption = document.createElement('div');
+                caption.className = 'image-caption';
+                caption.textContent = img.alt;
+                
+                // Insert after the image
+                img.parentNode.insertBefore(caption, img.nextSibling);
+            }
+        }
+    });
+}
+
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', function() {
     showSlide(currentSlideIndex);
     autoAdvanceCarousel();
     highlightActiveNav();
+    addImageCaptions();
 });
 
 // Smooth scroll for anchor links
