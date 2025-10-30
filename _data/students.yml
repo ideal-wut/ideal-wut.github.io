@@ -1,29 +1,109 @@
-- name: 李明
+# 博士研究生（按年份排序，同年按首字母排序）
+- name: 洪世龙
+  year: 2021
+  degree: 博士
+  avatar: /assets/images/team/洪世龙.jpg
+
+- name: 王龙
+  year: 2021
+  degree: 博士
+  avatar: /assets/images/team/王龙.jpg
+
+- name: 常禧龙
+  year: 2022
+  degree: 博士
+  avatar: /assets/images/team/常禧龙.jpg
+
+- name: 韩源涛
   year: 2023
-  research: 时序预测模型研究
-  avatar: /assets/images/team/student1.jpg
+  degree: 博士
+  avatar: /assets/images/team/韩源涛.jpg
 
-- name: 王芳
+# 硕士研究生（按年份分组）
+# 2023级硕士
+- name: 段志鹏
   year: 2023
-  research: 时空图神经网络
-  avatar: /assets/images/team/student2.jpg
+  degree: 硕士
+  avatar: /assets/images/team/段志鹏.jpg
 
-- name: 陈强
+- name: 蒋罗凯
+  year: 2023
+  degree: 硕士
+  avatar: /assets/images/team/蒋罗凯.jpg
+
+- name: 曾宏达
+  year: 2023
+  degree: 硕士
+  avatar: /assets/images/team/曾宏达.jpg
+
+- name: 张至善
+  year: 2023
+  degree: 硕士
+  avatar: /assets/images/team/张至善.jpg
+
+# 2024级硕士
+- name: 陈飞宏
   year: 2024
-  research: 向量检索系统优化
-  avatar: /assets/images/team/student3.jpg
+  degree: 硕士
+  avatar: /assets/images/team/陈飞宏.jpg
 
-- name: 刘洋
+- name: 陈智贤
   year: 2024
-  research: 轨迹数据挖掘
-  avatar: /assets/images/team/student4.jpg
+  degree: 硕士
+  avatar: /assets/images/team/陈智贤.jpg
 
-- name: 张伟
-  year: 2025
-  research: 深度学习在时序分析中的应用
-  avatar: /assets/images/team/student5.jpg
+- name: 韩晨昱
+  year: 2024
+  degree: 硕士
+  avatar: /assets/images/team/韩晨昱.jpg
 
-- name: 赵敏
+- name: 胡钰林
+  year: 2024
+  degree: 硕士
+  avatar: /assets/images/team/胡钰林.jpg
+
+- name: 黄艳玲
+  year: 2024
+  degree: 硕士
+  avatar: /assets/images/team/黄艳玲.jpg
+
+- name: 毛远旭
+  year: 2024
+  degree: 硕士
+  avatar: /assets/images/team/毛远旭.jpg
+
+- name: 王嘉坤
+  year: 2024
+  degree: 硕士
+  avatar: /assets/images/team/王嘉坤.jpg
+
+- name: 许韬
+  year: 2024
+  degree: 硕士
+  avatar: /assets/images/team/许韬.jpg
+
+- name: 邹凡宇
+  year: 2024
+  degree: 硕士
+  avatar: /assets/images/team/邹凡宇.jpg
+
+# 2025级硕士
+- name: 黄建文
   year: 2025
-  research: 高维向量索引技术
-  avatar: /assets/images/team/student6.jpg
+  degree: 硕士
+  avatar: /assets/images/team/黄建文.jpg
+
+- name: 王凯文
+  year: 2025
+  degree: 硕士
+  avatar: /assets/images/team/王凯文.jpg
+
+- name: 向琴
+  year: 2025
+  degree: 硕士
+  avatar: /assets/images/team/向琴.jpg
+
+- name: 赵明朴华
+  year: 2025
+  degree: 硕士
+  avatar: /assets/images/team/赵明朴华.jpg

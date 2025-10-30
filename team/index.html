@@ -7,7 +7,8 @@ permalink: /team/
 <div class="team-page">
     <!-- Tab Navigation -->
     <div class="team-tabs">
-        <button class="tab-button active" onclick="switchTab('advisor')">指导教师</button>
+        <button class="tab-button active" onclick="switchTab('advisor')">团队负责人</button>
+        <button class="tab-button" onclick="switchTab('teachers')">团队教师</button>
         <button class="tab-button" onclick="switchTab('students')">在读学生</button>
         <button class="tab-button" onclick="switchTab('alumni')">已毕业学生</button>
     </div>
@@ -54,28 +55,93 @@ permalink: /team/
                 </div>
             </div>
             {% else %}
-            <p>导师信息加载中...</p>
+            <p>团队负责人信息加载中...</p>
+            {% endif %}
+        </div>
+
+        <!-- Teachers Tab -->
+        <div id="teachers-tab" class="tab-pane">
+            {% if site.data.teachers and site.data.teachers.size > 0 %}
+            <div class="teachers-grid">
+                {% for teacher in site.data.teachers %}
+                <div class="teacher-card">
+                    <div class="teacher-avatar">
+                        <img src="{{ teacher.avatar | default: '/assets/images/default-avatar.jpg' | relative_url }}"
+                             alt="{{ teacher.name }}">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>{{ teacher.name }}</h3>
+                        <p class="teacher-title">{{ teacher.title }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <p>暂无教师信息</p>
             {% endif %}
         </div>
 
         <!-- Students Tab -->
         <div id="students-tab" class="tab-pane">
             {% if site.data.students and site.data.students.size > 0 %}
-            <div class="students-grid">
-                {% for student in site.data.students %}
-                <div class="student-card">
-                    <div class="student-avatar">
-                        <img src="{{ student.avatar | default: '/assets/images/default-avatar.jpg' | relative_url }}"
-                             alt="{{ student.name }}">
+            
+            <!-- 博士研究生部分 -->
+            {% assign phd_students = site.data.students | where: "degree", "博士" | sort: "year" %}
+            {% if phd_students.size > 0 %}
+            <div class="student-section">
+                <h3 class="student-section-title">博士研究生</h3>
+                <div class="students-grid">
+                    {% for student in phd_students %}
+                    <div class="student-card phd-student">
+                        <div class="student-avatar">
+                            <img src="{{ student.avatar | default: '/assets/images/default-avatar.jpg' | relative_url }}"
+                                 alt="{{ student.name }}">
+                        </div>
+                        <div class="student-info">
+                            <h4>{{ student.name }}</h4>
+                            <p class="student-year">{{ student.year }}级</p>
+                            <p class="student-degree">博士研究生</p>
+                        </div>
                     </div>
-                    <div class="student-info">
-                        <h3>{{ student.name }}</h3>
-                        <p class="student-year">{{ student.year }}级</p>
-                        <p class="student-research">{{ student.research }}</p>
-                    </div>
+                    {% endfor %}
                 </div>
+            </div>
+            {% endif %}
+
+            <!-- 硕士研究生部分 -->
+            {% assign master_students = site.data.students | where: "degree", "硕士" %}
+            {% if master_students.size > 0 %}
+            <div class="student-section">
+                <h3 class="student-section-title">硕士研究生</h3>
+                
+                <!-- 按年份分组显示硕士学生 -->
+                {% assign years = master_students | map: "year" | uniq | sort %}
+                {% for year in years %}
+                    {% assign year_students = master_students | where: "year", year | sort: "name" %}
+                    {% if year_students.size > 0 %}
+                    <div class="year-group">
+                        <h4 class="year-title">{{ year }}级</h4>
+                        <div class="students-grid">
+                            {% for student in year_students %}
+                            <div class="student-card master-student">
+                                <div class="student-avatar">
+                                    <img src="{{ student.avatar | default: '/assets/images/default-avatar.jpg' | relative_url }}"
+                                         alt="{{ student.name }}">
+                                </div>
+                                <div class="student-info">
+                                    <h4>{{ student.name }}</h4>
+                                    <p class="student-year">{{ student.year }}级</p>
+                                    <p class="student-degree">硕士研究生</p>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
                 {% endfor %}
             </div>
+            {% endif %}
+            
             {% else %}
             <p>暂无学生信息</p>
             {% endif %}

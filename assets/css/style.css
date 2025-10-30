@@ -99,16 +99,19 @@ body {
 
 /* Carousel Styles */
 .carousel-section {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 3rem;
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem;
 }
 
 .carousel {
     position: relative;
-    width: 100%;
     height: 500px;
     overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .carousel-inner {
@@ -118,22 +121,24 @@ body {
 }
 
 .carousel-item {
-    display: none;
-    width: 100%;
-    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .carousel-item.active {
-    display: block;
+    opacity: 1;
 }
 
 .carousel-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
 }
 
 .carousel-control {
@@ -145,25 +150,29 @@ body {
     border: none;
     padding: 1rem;
     cursor: pointer;
-    font-size: 1.5rem;
-    z-index: 10;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+.carousel-control:hover {
+    background: rgba(0,0,0,0.7);
 }
 
 .carousel-control.prev {
-    left: 20px;
+    left: 1rem;
 }
 
 .carousel-control.next {
-    right: 20px;
+    right: 1rem;
 }
 
 .carousel-indicators {
     position: absolute;
-    bottom: 20px;
+    bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 10px;
+    gap: 0.5rem;
 }
 
 .indicator {
@@ -172,6 +181,7 @@ body {
     border-radius: 50%;
     background: rgba(255,255,255,0.5);
     cursor: pointer;
+    transition: background 0.3s;
 }
 
 .indicator.active {
@@ -180,8 +190,7 @@ body {
 
 /* Lab Introduction */
 .lab-intro {
-    padding: 4rem 0;
-    background: var(--bg-light);
+    margin-bottom: 3rem;
 }
 
 .intro-card {
@@ -192,77 +201,98 @@ body {
 }
 
 .intro-card h2 {
-    margin-bottom: 1rem;
     color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
-/* Card Styles */
-.blog-card, .paper-card, .research-card {
-    background: white;
+/* Research Styles */
+.research-overview {
+    margin-top: 2rem;
+}
+
+.research-intro {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
     padding: 1.5rem;
-    margin-bottom: 1.5rem;
+    background: var(--bg-light);
+    border-radius: 8px;
+}
+
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.research-card {
+    background: white;
+    padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    border-left: 4px solid var(--secondary-color);
+    position: relative;
+    overflow: hidden;
 }
 
-.blog-card:hover, .paper-card:hover, .research-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+.research-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
 }
 
-/* Blog Styles */
-.blog-card-title a {
-    color: var(--primary-color);
-    text-decoration: none;
+.research-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 
-.blog-card-title a:hover {
-    color: var(--secondary-color);
-}
-
-.blog-card-meta {
-    color: var(--text-light);
-    font-size: 0.9rem;
-    margin: 0.5rem 0;
-}
-
-.blog-card-excerpt {
-    margin: 1rem 0;
-    color: var(--text-light);
-}
-
-.read-more {
-    color: var(--secondary-color);
-    text-decoration: none;
-}
-
-.external-icon {
-    font-size: 0.85em;
-    opacity: 0.7;
-}
-
-/* Research Grid */
-.research-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+.research-title {
+    margin-bottom: 1rem;
 }
 
 .research-title a {
     color: var(--primary-color);
     text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.research-title a:hover {
+    color: var(--secondary-color);
 }
 
 .research-description {
     color: var(--text-light);
-    margin: 1rem 0;
+    margin: 1rem 0 1.5rem 0;
+    line-height: 1.6;
+    font-size: 1rem;
 }
 
 .research-link {
     color: var(--secondary-color);
     text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s;
+}
+
+.research-link:hover {
+    color: var(--primary-color);
 }
 
 /* Team Styles */
@@ -334,10 +364,11 @@ body {
 }
 
 .advisor-photo img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 180px;
+    height: 240px;
+    border-radius: 8px;
     object-fit: cover;
+    object-position: center top;
 }
 
 .advisor-info h2 {
@@ -360,11 +391,96 @@ body {
     text-decoration: none;
 }
 
+/* Teachers Grid */
+.teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.teacher-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.teacher-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.teacher-avatar img {
+    width: 120px;
+    height: 160px;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center top;
+    margin-bottom: 1rem;
+}
+
+.teacher-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.teacher-title {
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+
+
 /* Students Grid */
 .students-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 2rem;
+}
+
+/* Student Section Styles */
+.student-section {
+    margin-bottom: 3rem;
+}
+
+.student-section-title {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+    position: relative;
+}
+
+.student-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+/* Year Group Styles for Master Students */
+.year-group {
+    margin-bottom: 2.5rem;
+}
+
+.year-title {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, var(--bg-light), #f8f9fa);
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .student-card, .alumni-card {
@@ -373,14 +489,88 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.student-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* PhD Student Card Styling */
+.phd-student {
+    border-top: 3px solid var(--primary-color);
+    position: relative;
+}
+
+.phd-student::before {
+    content: 'PhD';
+    position: absolute;
+    top: -1px;
+    right: 1rem;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 0 0 4px 4px;
+}
+
+/* Master Student Card Styling */
+.master-student {
+    border-top: 3px solid var(--secondary-color);
+    position: relative;
+}
+
+.master-student::before {
+    content: 'MS';
+    position: absolute;
+    top: -1px;
+    right: 1rem;
+    background: var(--secondary-color);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 0 0 4px 4px;
 }
 
 .student-avatar img, .alumni-avatar img {
     width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    height: 160px;
+    border-radius: 8px;
     object-fit: cover;
+    object-position: center top;
     margin-bottom: 1rem;
+}
+
+.student-info h4 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.student-year {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.student-degree {
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    background: rgba(52, 152, 219, 0.1);
+    border-radius: 12px;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.phd-student .student-degree {
+    color: var(--primary-color);
+    background: rgba(231, 76, 60, 0.1);
 }
 
 .student-year, .alumni-graduation {
@@ -400,14 +590,167 @@ body {
     text-align: left;
 }
 
-/* Achievements Filters */
+/* Blog Styles */
+.blog-list {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.blog-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.blog-card-header {
+    margin-bottom: 1rem;
+}
+
+.blog-card-title {
+    margin-bottom: 0.5rem;
+}
+
+.blog-card-title a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.blog-card-title a:hover {
+    color: var(--secondary-color);
+}
+
+.external-icon {
+    font-size: 0.8em;
+    margin-left: 0.25rem;
+}
+
+.blog-card-meta {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.blog-card-excerpt {
+    color: var(--text-light);
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+.blog-card-footer {
+    margin-top: 1.5rem;
+}
+
+.read-more {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: var(--primary-color);
+}
+
+.no-posts {
+    text-align: center;
+    color: var(--text-light);
+    font-style: italic;
+    padding: 3rem;
+}
+
+/* Post Styles */
+.post-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.post {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.post-header {
+    margin-bottom: 2rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+.post-title {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.post-meta {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.post-author {
+    margin-left: 1rem;
+}
+
+.post-content {
+    line-height: 1.8;
+}
+
+.post-content h1, .post-content h2, .post-content h3 {
+    color: var(--primary-color);
+    margin: 2rem 0 1rem 0;
+}
+
+.post-content p {
+    margin-bottom: 1rem;
+}
+
+.post-content a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.post-content a:hover {
+    text-decoration: underline;
+}
+
+.post-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.back-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Achievements Page */
+.achievements-page {
+    margin-top: 2rem;
+}
+
 .filters-section {
     display: flex;
     gap: 2rem;
     margin-bottom: 2rem;
-    padding: 1rem;
+    padding: 1.5rem;
     background: var(--bg-light);
     border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .filter-group {
@@ -416,27 +759,128 @@ body {
     gap: 0.5rem;
 }
 
-.filter-group select {
-    padding: 0.5rem;
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
+.filter-group label {
+    font-weight: 500;
+    color: var(--text-color);
 }
 
-/* Paper Card */
+.filter-group select {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: white;
+    color: var(--text-color);
+    font-size: 0.95rem;
+    transition: border-color 0.3s;
+}
+
+.filter-group select:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+}
+
+/* Papers List */
+.papers-list {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.paper-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.paper-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
 .paper-title {
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.4;
 }
 
 .paper-authors {
     color: var(--text-light);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .paper-meta {
     color: var(--text-light);
     font-size: 0.95rem;
-    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.paper-links {
+    margin-top: 1rem;
+}
+
+.btn-paper-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.btn-paper-link:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.no-papers {
+    text-align: center;
+    color: var(--text-light);
+    font-style: italic;
+    padding: 3rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.pagination button {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    background: white;
+    color: var(--text-color);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.pagination button:hover {
+    background: var(--secondary-color);
+    color: white;
+    border-color: var(--secondary-color);
+}
+
+.pagination button.active {
+    background: var(--secondary-color);
+    color: white;
+    border-color: var(--secondary-color);
 }
 
 .badge {
@@ -457,52 +901,30 @@ body {
 }
 
 .badge-ccfc {
+    background: #27ae60;
+    color: white;
+}
+
+.badge-sci {
+    background: #8e44ad;
+    color: white;
+}
+
+.badge-ei {
     background: #3498db;
     color: white;
 }
 
-.btn-paper-link {
-    display: inline-block;
-    padding: 0.375rem 0.75rem;
-    background: var(--secondary-color);
-    color: #fff;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    transition: background 0.2s ease-in-out;
-}
-
-.btn-paper-link:hover {
-    background: #2a7cc1;
-}
-
-/* Pagination */
-.pagination {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-    margin-top: 2rem;
-}
-
-.pagination button {
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--border-color);
-    background: white;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.pagination button.active {
-    background: var(--secondary-color);
+.badge-other {
+    background: #95a5a6;
     color: white;
-    border-color: var(--secondary-color);
 }
 
 /* Footer */
 .site-footer {
     background: var(--primary-color);
     color: white;
-    padding: 3rem 0 1rem;
+    padding: 3rem 0 1rem 0;
     margin-top: 4rem;
 }
 
@@ -515,88 +937,62 @@ body {
 
 .footer-section h3 {
     margin-bottom: 1rem;
+    color: white;
 }
 
-.footer-section ul {
-    list-style: none;
+.footer-section p, .footer-section li {
+    margin-bottom: 0.5rem;
 }
 
 .footer-section a {
-    color: #ecf0f1;
+    color: #bdc3c7;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 .footer-section a:hover {
     color: white;
 }
 
-.qr-code-image {
-    text-align: center;
+.footer-section ul {
+    list-style: none;
 }
 
 .qr-code-image img {
-    width: 150px;
-    height: 150px;
-    background: white;
-    padding: 10px;
+    width: 120px;
+    height: 120px;
     border-radius: 8px;
 }
 
 .footer-bottom {
     text-align: center;
-    padding-top: 1rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 2rem;
+    border-top: 1px solid #34495e;
 }
 
-/* Post/Page Content */
-.page-header, .post-header {
-    margin-bottom: 2rem;
-}
-
-.page-header h1, .post-header h1 {
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-}
-
-.post-meta {
-    color: var(--text-light);
+.copyright {
+    color: #bdc3c7;
     font-size: 0.9rem;
-}
-
-.post-content, .page-body, .article-content {
-    line-height: 1.8;
-}
-
-.post-content h2, .page-body h2, .article-content h2 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: var(--primary-color);
-}
-
-.post-content h3, .page-body h3, .article-content h3 {
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-    color: var(--primary-color);
-}
-
-.back-link {
-    display: inline-block;
-    margin-top: 2rem;
-    color: var(--secondary-color);
-    text-decoration: none;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-container {
-        flex-direction: column;
-        align-items: flex-start;
+        padding: 0.75rem 1rem;
+        gap: 1rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .carousel-section {
+        padding: 0 1rem;
     }
 
     .nav-toggle {
-        display: block;
-        background: none;
-        border: none;
+        display: flex;
+        flex-direction: column;
         cursor: pointer;
         padding: 0.5rem;
     }
@@ -615,19 +1011,67 @@ body {
     }
 
     .carousel {
-        height: 300px;
+        height: 350px;
     }
 
     .advisor-card {
         flex-direction: column;
     }
 
+    .advisor-photo img {
+        width: 150px;
+        height: 200px;
+        align-self: center;
+    }
+
     .filters-section {
         flex-direction: column;
     }
 
-    .research-grid, .students-grid {
+    .research-grid {
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    
+    .students-grid, .teachers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Mobile styles for new student layout */
+    .student-section {
+        margin-bottom: 2rem;
+    }
+
+    .student-section-title {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .year-group {
+        margin-bottom: 2rem;
+    }
+
+    .year-title {
+        font-size: 1.1rem;
+        padding: 0.5rem 0.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .student-card {
+        padding: 1rem;
+    }
+
+    .student-avatar img {
+        width: 100px;
+        height: 130px;
+    }
+
+    .student-info h4 {
+        font-size: 1rem;
+    }
+
+    .student-year, .student-degree {
+        font-size: 0.8rem;
     }
 
     .team-tabs {
@@ -637,5 +1081,27 @@ body {
     .tab-button {
         flex: 1;
         min-width: 100px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .qr-code-image img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Desktop styles - ensure proper grid layout on larger screens */
+@media (min-width: 769px) {
+    .research-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    .teachers-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     }
 }

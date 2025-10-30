@@ -1,0 +1,35 @@
+# 郑渤龙固定第一
+- name: 郑渤龙
+  title: 教授
+  avatar: /assets/images/team/郑渤龙-教授.jpg
+
+# 其他教授
+- name: 袁龙
+  title: 教授
+  avatar: /assets/images/team/袁龙-教授.jpg
+
+# 副教授（按姓名排序）
+- name: 陈紫
+  title: 副教授
+  avatar: /assets/images/team/陈紫-副教授.jpg
+
+- name: 杜亚娟
+  title: 副教授
+  avatar: /assets/images/team/杜亚娟-副教授.jpg
+
+- name: 张寒冰
+  title: 副教授
+  avatar: /assets/images/team/张寒冰-副教授.jpg
+
+# 讲师（按姓名排序）
+- name: 但唐鹏
+  title: 讲师
+  avatar: /assets/images/team/但唐鹏-讲师.jpg
+
+- name: 董明
+  title: 讲师
+  avatar: /assets/images/team/董明-讲师.jpg
+
+- name: 李岩
+  title: 讲师
+  avatar: /assets/images/team/李岩-讲师.jpg
