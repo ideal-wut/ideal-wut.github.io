@@ -15,6 +15,7 @@ permalink: /achievements/
                 <option value="2023">2023</option>
                 <option value="2022">2022</option>
                 <option value="2021">2021</option>
+                <option value="2020">2020</option>
             </select>
         </div>
 
@@ -37,14 +38,22 @@ permalink: /achievements/
             <h3 class="paper-title">{{ paper.title }}</h3>
             <p class="paper-authors">{{ paper.authors }}</p>
             <div class="paper-meta">
-                <span class="paper-venue">{{ paper.venue }}</span>
-                <span class="paper-year">{{ paper.year }}</span>
+                {% if paper.volume_issue_pages %}
+                    <span>{{ paper.venue }} {{ paper.volume_issue_pages }} ({{ paper.year }})</span>
+                {% elsif paper.venue contains paper.year %}
+                    <span>{{ paper.venue }}</span>
+                {% else %}
+                    <span>{{ paper.venue }} ({{ paper.year }})</span>
+                {% endif %}
             </div>
-            {% if paper.doi %}
             <div class="paper-links">
-                <a href="{{ paper.doi }}" target="_blank" class="btn-paper-link">查看论文</a>
+                {% assign link = paper.doi | default: paper.url %}
+                {% if link %}
+                    <a href="{{ link }}" target="_blank" rel="noopener" class="btn-paper-link">查看论文</a>
+                {% else %}
+                    <a href="https://scholar.google.com/scholar?q={{ paper.title | uri_escape }}+{{ paper.authors | uri_escape }}" target="_blank" rel="noopener" class="btn-paper-link">Google Scholar</a>
+                {% endif %}
             </div>
-            {% endif %}
         </div>
         {% endfor %}
         {% else %}
@@ -64,46 +73,47 @@ let filteredPapers = [];
 
 function filterPapers() {
     const yearFilter = document.getElementById('year-filter').value;
-    const allPapers = document.querySelectorAll('.paper-card');
+    const allPapers = Array.from(document.querySelectorAll('.paper-card'));
 
-    filteredPapers = [];
-    allPapers.forEach(paper => {
+    filteredPapers = allPapers.filter(paper => {
         const year = paper.getAttribute('data-year');
-        const yearMatch = yearFilter === 'all' || year === yearFilter;
-
-        if (yearMatch) {
-            filteredPapers.push(paper);
-            paper.style.display = 'block';
-        } else {
-            paper.style.display = 'none';
-        }
+        return yearFilter === 'all' || year === yearFilter;
     });
+
+    // Hide all initially; displayPage will show the current page slice
+    allPapers.forEach(paper => { paper.style.display = 'none'; });
 
     currentPage = 1;
     displayPage();
 }
 
 function changePageSize() {
-    pageSize = parseInt(document.getElementById('page-size').value);
+    pageSize = parseInt(document.getElementById('page-size').value, 10);
     currentPage = 1;
     displayPage();
 }
 
 function displayPage() {
-    const allPapers = document.querySelectorAll('.paper-card');
-    const visiblePapers = Array.from(allPapers).filter(paper => paper.style.display !== 'none');
+    const totalItems = filteredPapers.length;
+    const totalPages = Math.ceil(totalItems / pageSize);
 
-    const totalPages = Math.ceil(visiblePapers.length / pageSize);
+    // Clamp current page to valid bounds
+    if (totalPages === 0) {
+        currentPage = 1;
+    } else if (currentPage > totalPages) {
+        currentPage = totalPages;
+    } else if (currentPage < 1) {
+        currentPage = 1;
+    }
+
     const start = (currentPage - 1) * pageSize;
-    const end = start + pageSize;
+    const end = Math.min(start + pageSize, totalItems);
 
-    visiblePapers.forEach((paper, index) => {
-        if (index >= start && index < end) {
-            paper.style.display = 'block';
-        } else {
-            paper.style.display = 'none';
-        }
-    });
+    // Hide all, then show only current page items
+    document.querySelectorAll('.paper-card').forEach(paper => { paper.style.display = 'none'; });
+    for (let i = start; i < end; i++) {
+        filteredPapers[i].style.display = 'block';
+    }
 
     renderPagination(totalPages);
 }
@@ -128,6 +138,8 @@ function renderPagination(totalPages) {
         if (currentPage < totalPages) {
             html += `<button onclick="changePage(${currentPage + 1})">下一页</button>`;
         }
+    } else {
+        html = '';
     }
 
     paginationDiv.innerHTML = html;
