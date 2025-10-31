@@ -2,108 +2,105 @@
 - name: 常禧龙
   year: 2025
   degree: 博士
-  avatar: /assets/images/team/常禧龙.jpg
+  avatar: /assets/images/team/chang-xilong.jpg
 
 - name: 韩源涛
   year: 2025
   degree: 博士
-  avatar: /assets/images/team/韩源涛.jpg
+  avatar: /assets/images/team/han-yuantao.jpg
 
 - name: 洪世龙
   year: 2025
   degree: 博士
-  avatar: /assets/images/team/洪世龙.jpg
+  avatar: /assets/images/team/hong-shilong.jpg
 
 - name: 王龙
   year: 2025
   degree: 博士
-  avatar: /assets/images/team/王龙.jpg
+  avatar: /assets/images/team/wang-long.jpg
 
-# 硕士研究生（按年份分组）
-# 2023级硕士（按拼音顺序排序）
-- name: 段志鹏
-  year: 2025
-  degree: 硕士
-  avatar: /assets/images/team/段志鹏.jpg
-
-- name: 蒋罗凯
-  year: 2025
-  degree: 硕士
-  avatar: /assets/images/team/蒋罗凯.jpg
-
-- name: 曾宏达
-  year: 2025
-  degree: 硕士
-  avatar: /assets/images/team/曾宏达.jpg
-
-- name: 张至善
-  year: 2025
-  degree: 硕士
-  avatar: /assets/images/team/张至善.jpg
-
-# 2024级硕士（按拼音顺序排序）
+# 硕士研究生（按拼音顺序排序）2025 级
 - name: 陈飞宏
   year: 2025
   degree: 硕士
-  avatar: /assets/images/team/陈飞宏.jpg
+  avatar: /assets/images/team/chen-feihong.jpg
 
 - name: 陈智贤
   year: 2025
   degree: 硕士
-  avatar: /assets/images/team/陈智贤.jpg
+  avatar: /assets/images/team/chen-zhixian.jpg
+
+- name: 段志鹏
+  year: 2025
+  degree: 硕士
+  avatar: /assets/images/team/duan-zhipeng.jpg
 
 - name: 韩晨昱
   year: 2025
   degree: 硕士
-  avatar: /assets/images/team/韩晨昱.jpg
+  avatar: /assets/images/team/han-chenyu.jpg
 
 - name: 胡钰林
   year: 2025
   degree: 硕士
-  avatar: /assets/images/team/胡钰林.jpg
+  avatar: /assets/images/team/hu-yulin.jpg
+
+- name: 黄建文
+  year: 2025
+  degree: 硕士
+  avatar: /assets/images/team/huang-jianwen.jpg
 
 - name: 黄艳玲
   year: 2025
   degree: 硕士
-  avatar: /assets/images/team/黄艳玲.jpg
+  avatar: /assets/images/team/huang-yanling.jpg
+
+- name: 蒋罗凯
+  year: 2025
+  degree: 硕士
+  avatar: /assets/images/team/jiang-luokai.jpg
 
 - name: 毛远旭
   year: 2025
   degree: 硕士
-  avatar: /assets/images/team/毛远旭.jpg
+  avatar: /assets/images/team/mao-yuanxu.jpg
 
 - name: 王嘉坤
   year: 2025
   degree: 硕士
-  avatar: /assets/images/team/王嘉坤.jpg
-
-- name: 许韬
-  year: 2025
-  degree: 硕士
-  avatar: /assets/images/team/许韬.jpg
-
-- name: 邹凡宇
-  year: 2025
-  degree: 硕士
-  avatar: /assets/images/team/邹凡宇.jpg
-
-# 2025级硕士（按拼音顺序排序）
-- name: 黄建文
-  year: 2025
-  degree: 硕士
-  avatar: /assets/images/team/黄建文.jpg
+  avatar: /assets/images/team/wang-jiakun.jpg
 
 - name: 王凯文
   year: 2025
   degree: 硕士
-  avatar: /assets/images/team/王凯文.jpg
+  avatar: /assets/images/team/wang-kaiwen.jpg
 
 - name: 向琴
   year: 2025
   degree: 硕士
-  avatar: /assets/images/team/向琴.jpg
+  avatar: /assets/images/team/xiang-qin.jpg
+
+- name: 许韬
+  year: 2025
+  degree: 硕士
+  avatar: /assets/images/team/xu-tao.jpg
+
+- name: 曾宏达
+  year: 2025
+  degree: 硕士
+  avatar: /assets/images/team/zeng-hongda.jpg
+
+- name: 张至善
+  year: 2025
+  degree: 硕士
+  avatar: /assets/images/team/zhang-zhishan.jpg
 
 - name: 赵明朴华
   year: 2025
   degree: 硕士
-  avatar: /assets/images/team/赵明朴华.jpg
+  avatar: /assets/images/team/zhao-mingpuhua.jpg
+
+- name: 邹凡宇
+  year: 2025
+  degree: 硕士
+  avatar: /assets/images/team/zou-fanyu.jpg

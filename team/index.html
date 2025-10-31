@@ -117,7 +117,7 @@ permalink: /team/
                 <!-- 按年份分组显示硕士学生 -->
                 {% assign years = master_students | map: "year" | uniq | sort %}
                 {% for year in years %}
-                    {% assign year_students = master_students | where: "year", year | sort: "name" %}
+                    {% assign year_students = master_students | where: "year", year %}
                     {% if year_students.size > 0 %}
                     <div class="year-group">
                         <h4 class="year-title">{{ year }}级</h4>

@@ -9,3 +9,6 @@ vendor
 *~
 .bundle
 .qoder
+.trae/documents/外链文章本地化方案.md
+.trae/documents/外链文章本地化技术架构.md
+.trae/documents/外链文章本地化实施指南.md
