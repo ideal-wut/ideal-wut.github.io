@@ -12,802 +12,802 @@
   year: 2025
   doi: 'https://doi.org/10.1109/TPDS.2025.3582996'
 
-- title: 'LORE: Learning-Based Resource Recommendation for Big Data Queries'
-  authors: 'Yan Li, Liwei Wang, Bolong Zheng, Zhiyong Peng'
-  venue: 'ICDE'
-  volume_issue_pages: '1732--1744'
-  year: 2025
-  doi: 'https://doi.org/10.1109/ICDE65448.2025.00133'
-
-- title: 'FAHL: An Efficient Labeling Index for Flow-Aware Shortest Path Querying in Road Networks'
-  authors: 'Tangpeng Dan, Xiao Pan, Bolong Zheng, Xiaofeng Meng'
-  venue: 'ICDE'
-  volume_issue_pages: '836--849'
-  year: 2025
-  doi: 'https://doi.org/10.1109/ICDE65448.2025.00068'
-
-- title: 'Wolverine: Highly Efficient Monotonic Search Path Repair for Graph-based ANN Index Updates'
-  authors: 'Dawei Liu, Bolong Zheng, Ziyang Yue, Fuhao Ruan, Xiaofang Zhou, Christian S. Jensen'
-  venue: 'VLDB'
-  volume_issue_pages: '18(7): 2268--2280'
-  year: 2025
-  url: 'https://www.vldb.org/pvldb/vol18/p2268-zheng.pdf'
-
-- title: 'Universal Set Similarity Search via Multi-Task Representation Learning'
-  authors: 'Zhong Yang, Bolong Zheng, Guohui Li, Xi Zhao, Xiaofang Zhou'
-  venue: 'ICDE'
-  volume_issue_pages: '1483--1495'
-  year: 2025
-  doi: 'https://doi.org/10.1109/ICDE65448.2025.00115'
-
-- title: 'Streaming Time Series Subsequence Anomaly Detection: A Glance and Focus Approach'
-  authors: 'Wenjing Wang, Ziyang Yue, Bolong Zheng'
-  venue: 'VLDB'
-  volume_issue_pages: '18(6): 1892--1904'
-  year: 2025
-  url: 'https://www.vldb.org/pvldb/vol18/p1892-zheng.pdf'
-
-- title: 'Select Edges Wisely: Monotonic Path Aware Graph Layout Optimization for Disk-based ANN Search'
-  authors: 'Ziyang Yue, Bolong Zheng, Ling Xu, Kanru Xu, Shuhao Zhang, Yajuan Du, Yunjun Gao, Xiaofang Zhou, Christian S. Jensen'
-  venue: 'VLDB'
-  volume_issue_pages: '18(11): 4337--4349'
-  year: 2025
-  url: 'https://www.vldb.org/pvldb/vol18/p4337-zheng.pdf'
-
-- title: 'OMeGa: Boosting Large-scale Graph Embeddings with Heterogeneous Memory Processing'
-  authors: 'Peng Fang, Siqiang Luo, Fang Wang, Bolong Zheng, Hong Jiang, Dan Feng, Hechang Pan, Xingyu Wan'
-  venue: 'ICDE'
-  volume_issue_pages: '3369--3383'
-  year: 2025
-  doi: 'https://doi.org/10.1109/ICDE65448.2025.00252'
-
-- title: 'Compatible Unsupervised Anomaly Detection with Multi-Perspective Spatio-Temporal Learning'
-  authors: 'Tingyang Chen, Bolong Zheng, Shuncheng Liu, Zhujiong Fan, Zhi Xu, Lingsen Yan, Kai Zeng, Tao Ye, Xiaofang Zhou'
-  venue: 'ICDE'
-  volume_issue_pages: '4066--4078'
-  year: 2025
-  doi: 'https://doi.org/10.1109/ICDE65448.2025.00303'
-
-- title: 'Anomaly Diagnosis with Siamese Discrepancy Networks in Distributed Cloud Databases'
-  authors: 'Lingsen Yan, Bolong Zheng, Junjie Qing, Wenlong You, Tingyang Chen, Zhi Xu, Shuncheng Liu, Kai Zeng, Tao Ye, Xiaofang Zhou'
-  venue: 'ICDE'
-  volume_issue_pages: '4053--4065'
-  year: 2025
-  doi: 'https://doi.org/10.1109/ICDE65448.2025.00302'
-
-- title: 'Spatial Data and Intelligence - 5th China Conference, SpatialDI 2024, Nanjing, China, April 25-27, 2024, Proceedings'
-  authors: ''
-  venue: 'Springer'
-  year: 2024
-  doi: 'https://doi.org/10.1007/978-981-97-2966-1'
-
-- title: "Research on Foundation Model for Spatial Data Intelligence: China's 2024 White Paper on Strategic Development of Spatial Data Intelligence"
-  authors: 'Shaohua Wang, Xing Xie, Yong Li, Danhuai Guo, Zhi Cai, Yu Liu, Yang Yue, Xiao Pan, Feng Lu, Huayi Wu, Zhipeng Gui, Zhiming Ding, Bolong Zheng, Fuzheng Zhang, Tao Qin, Jingyuan Wang, Chuang Tao, Zhengchao Chen, Hao Lu, Jiayi Li, Hongyang Chen, Peng Yue, Wenhao Yu, Yao Yao, Leilei Sun, Yong Zhang, Longbiao Chen, Xiaoping Du, Xiang Li, Xueying Zhang, Kun Qin, Zhaoya Gong, Weihua Dong, Xiaofeng Meng'
-  venue: 'CoRR'
-  year: 2024
-  doi: 'https://doi.org/10.48550/ARXIV.2405.19730'
-
-- title: 'PilotScope: Steering Databases with Machine Learning Drivers'
-  authors: 'Rong Zhu, Lianggui Weng, Wenqing Wei, Di Wu, Jiazhen Peng, Yifan Wang, Bolin Ding, Defu Lian, Bolong Zheng, Jingren Zhou'
-  venue: 'VLDB'
-  volume_issue_pages: '17(5): 980--993'
-  year: 2024
-  doi: 'https://doi.org/10.14778/3641204.3641209'
-
-- title: 'Overview and Prospect of Spiking Neural Networks Training Algorithm'
-  authors: 'Zhongchuan Shi, Junkang Liu, Bolong Zheng'
-  venue: 'International Conference on Computers, Information Processing and Advanced Education, CIPAE 2024, Ottawa, ON, Canada, August 26-28, 2024'
-  volume_issue_pages: '327--331'
-  year: 2024
-  doi: 'https://doi.org/10.1109/CIPAE64326.2024.00065'
-
-- title: 'LDPGuard: Defenses Against Data Poisoning Attacks to Local Differential Privacy Protocols'
-  authors: 'Kai Huang, Gaoya Ouyang, Qingqing Ye, Haibo Hu, Bolong Zheng, Xi Zhao, Ruiyuan Zhang, Xiaofang Zhou'
-  venue: 'IEEE Trans. Knowl. Data Eng.'
-  volume_issue_pages: '36(7): 3195--3209'
-  year: 2024
-  doi: 'https://doi.org/10.1109/TKDE.2024.3358909'
-
-- title: 'Eraser: Eliminating Performance Regression on Learned Query Optimizer'
-  authors: 'Lianggui Weng, Rong Zhu, Di Wu, Bolin Ding, Bolong Zheng, Jingren Zhou'
-  venue: 'VLDB'
-  volume_issue_pages: '17(5): 926--938'
-  year: 2024
-  doi: 'https://doi.org/10.14778/3641204.3641205'
-
-- title: 'Efficient Approximate Maximum Inner Product Search Over Sparse Vectors'
-  authors: 'Xi Zhao, Zhonghan Chen, Kai Huang, Ruiyuan Zhang, Bolong Zheng, Xiaofang Zhou'
-  venue: 'ICDE'
-  volume_issue_pages: '3961--3974'
-  year: 2024
-  doi: 'https://doi.org/10.1109/ICDE60146.2024.00303'
-
-- title: 'Data-oriented Dynamic Fine-tuning Parameter Selection Strategy for FISH Mask based Efficient Fine-tuning'
-  authors: 'Ming Dong, Kang Xue, Bolong Zheng, Tingting He'
-  venue: 'CoRR'
-  year: 2024
-  doi: 'https://doi.org/10.48550/ARXIV.2403.08484'
-
-- title: 'ByGCN: Spatial Temporal Byroad-Aware Graph Convolution Network for Traffic Flow Prediction in Road Networks'
-  authors: 'Tangpeng Dan, Xiao Pan, Bolong Zheng, Xiaofeng Meng'
-  venue: 'CIKM'
-  volume_issue_pages: '415--424'
-  year: 2024
-  doi: 'https://doi.org/10.1145/3627673.3679690'
-
-- title: 'Adversarial Graph Neural Network for Multivariate Time Series Anomaly Detection'
-  authors: 'Bolong Zheng, Lingfeng Ming, Kai Zeng, Mengtao Zhou, Xinyong Zhang, Tao Ye, Bin Yang, Xiaofang Zhou, Christian S. Jensen'
-  venue: 'IEEE Trans. Knowl. Data Eng.'
-  volume_issue_pages: '36(12): 7612--7626'
-  year: 2024
-  doi: 'https://doi.org/10.1109/TKDE.2024.3419891'
-
-- title: 'A learned cost model for big data query processing'
-  authors: 'Yan Li, Liwei Wang, Sheng Wang, Yuan Sun, Bolong Zheng, Zhiyong Peng'
-  venue: 'Inf. Sci.'
-  volume_issue_pages: '670: 120650'
-  year: 2024
-  doi: 'https://doi.org/10.1016/J.INS.2024.120650'
-
-- title: 'TED: Towards Discovering Top-k Edge-Diversified Patterns in a Graph Database'
-  authors: 'Kai Huang, Haibo Hu, Qingqing Ye, Kai Tian, Bolong Zheng, Xiaofang Zhou'
-  venue: 'Proc. ACM Manag. Data'
-  volume_issue_pages: '1(1): 51:1--51:26'
-  year: 2023
-  doi: 'https://doi.org/10.1145/3588736'
-
-- title: 'SOUP: Spatial-Temporal Demand Forecasting and Competitive Supply in Transportation'
-  authors: 'Bolong Zheng, Qi Hu, Lingfeng Ming, Jilin Hu, Lu Chen, Kai Zheng, Christian S. Jensen'
-  venue: 'IEEE Trans. Knowl. Data Eng.'
-  volume_issue_pages: '35(2): 2034--2047'
-  year: 2023
-  doi: 'https://doi.org/10.1109/TKDE.2021.3110778'
-
-- title: 'FARGO: Fast Maximum Inner Product Search via Global Multi-Probing'
-  authors: 'Xi Zhao, Bolong Zheng, Xiaomeng Yi, Xiaofan Luan, Charles Xie, Xiaofang Zhou, Christian S. Jensen'
-  venue: 'VLDB'
-  volume_issue_pages: '16(5): 1100--1112'
-  year: 2023
-  doi: 'https://doi.org/10.14778/3579075.3579084'
-
-- title: 'Towards Efficient Index Construction and Approximate Nearest Neighbor Search in High-Dimensional Spaces'
-  authors: 'Xi Zhao, Yao Tian, Kai Huang, Bolong Zheng, Xiaofang Zhou'
-  venue: 'VLDB'
-  volume_issue_pages: '16(8): 1979--1991'
-  year: 2023
-  doi: 'https://doi.org/10.14778/3594512.3594527'
-
-- title: 'Spatial Data and Intelligence - 4th International Conference, SpatialDI 2023, Nanchang, China, April 13-15, 2023, Proceedings'
-  authors: ''
-  venue: 'Springer'
-  year: 2023
-  doi: 'https://doi.org/10.1007/978-3-031-32910-4'
-
-- title: 'Reinforcement Learning based Tree Decomposition for Distance Querying in Road Networks'
-  authors: 'Bolong Zheng, Yong Ma, Jingyi Wan, Yongyong Gao, Kai Huang, Xiaofang Zhou, Christian S. Jensen'
-  venue: 'ICDE'
-  volume_issue_pages: '1678--1690'
-  year: 2023
-  doi: 'https://doi.org/10.1109/ICDE55515.2023.00132'
-
-- title: 'RHB-Net: A Relation-aware Historical Bridging Network for Text2SQL Auto-Completion'
-  authors: 'Bolong Zheng, Lei Bi, Ruijie Xi, Lu Chen, Yunjun Gao, Xiaofang Zhou, Christian S. Jensen'
-  venue: 'SIGIR'
-  volume_issue_pages: '1458--1467'
-  year: 2023
-  doi: 'https://doi.org/10.1145/3539618.3591759'
-
-- title: 'Linearized transformed L1 finite element methods for semi-linear time-fractional parabolic problems'
-  authors: 'Yuxin Han, Xin Huang, Wei Gu, Bolong Zheng'
-  venue: 'Appl. Math. Comput.'
-  volume_issue_pages: '458: 128242'
-  year: 2023
-  doi: 'https://doi.org/10.1016/J.AMC.2023.128242'
-
-- title: 'Learned Probing Cardinality Estimation for High-Dimensional Approximate NN Search'
-  authors: 'Bolong Zheng, Ziyang Yue, Qi Hu, Xiaomeng Yi, Xiaofan Luan, Charles Xie, Xiaofang Zhou, Christian S. Jensen'
-  venue: 'ICDE'
-  volume_issue_pages: '3209--3221'
-  year: 2023
-  doi: 'https://doi.org/10.1109/ICDE55515.2023.00246'
-
-- title: 'Joint Document-Level Event Extraction via Token-Token Bidirectional Event Completed Graph'
-  authors: 'Qizhi Wan, Changxuan Wan, Keli Xiao, Dexi Liu, Chenliang Li, Bolong Zheng, Xiping Liu, Rong Hu'
-  venue: 'Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), ACL 2023, Toronto, Canada, July 9-14, 2023'
-  volume_issue_pages: '10481--10492'
-  year: 2023
-  doi: 'https://doi.org/10.18653/V1/2023.ACL-LONG.584'
-
-- title: 'Double Hierarchical Labeling Shortest Distance Querying in Time-dependent Road Networks'
-  authors: 'Tangpeng Dan, Xiao Pan, Bolong Zheng, Xiaofeng Meng'
-  venue: 'ICDE'
-  volume_issue_pages: '2077--2089'
-  year: 2023
-  doi: 'https://doi.org/10.1109/ICDE55515.2023.00161'
-
-- title: 'DecLog: Decentralized Logging in Non-Volatile Memory for Time Series Database Systems'
-  authors: 'Bolong Zheng, Yongyong Gao, Jingyi Wan, Lingsen Yan, Long Hu, Bo Liu, Yunjun Gao, Xiaofang Zhou, Christian S. Jensen'
-  venue: 'VLDB'
-  volume_issue_pages: '17(1): 1--14'
-  year: 2023
-  doi: 'https://doi.org/10.14778/3617838.3617839'
-
-- title: 'Approximate Nearest Neighbor Search in High Dimensional Vector Databases: Current Research and Future Directions'
-  authors: 'Yao Tian, Ziyang Yue, Ruiyuan Zhang, Xi Zhao, Bolong Zheng, Xiaofang Zhou'
-  venue: 'IEEE Data Eng. Bull.'
-  volume_issue_pages: '47(3): 39--54'
-  year: 2023
-  url: 'http://sites.computer.org/debull/A23sept/p39.pdf'
-
-- title: 'A Learned Cuckoo Filter for Approximate Membership Queries over Variable-sized Sliding Windows on Data Streams'
-  authors: 'Yao Tian, Tingyun Yan, Ruiyuan Zhang, Kai Huang, Bolong Zheng, Xiaofang Zhou'
-  venue: 'Proc. ACM Manag. Data'
-  volume_issue_pages: '1(4): 264:1--264:26'
-  year: 2023
-  doi: 'https://doi.org/10.1145/3626758'
-
-- title: 'TED: Towards Discovering Top-k Edge-Diversified Patterns in a Graph Database'
-  authors: 'Kai Huang, Haibo Hu, Qingqing Ye, Kai Tian, Bolong Zheng, Xiaofang Zhou'
-  venue: 'CoRR'
-  year: 2022
-  doi: 'https://doi.org/10.48550/ARXIV.2212.07612'
-
-- title: 'PM-LSH: a fast and accurate in-memory framework for high-dimensional approximate NN and closest pair search'
-  authors: 'Bolong Zheng, Xi Zhao, Lianggui Weng, Quoc Viet Hung Nguyen, Hang Liu, Christian S. Jensen'
-  venue: 'VLDB J.'
-  volume_issue_pages: '31(6): 1339--1363'
-  year: 2022
-  doi: 'https://doi.org/10.1007/S00778-021-00680-7'
-
-- title: 'minIL: A Simple and Small Index for String Similarity Search with Edit Distance'
-  authors: 'Zhong Yang, Bolong Zheng, Xianzhi Wang, Guohui Li, Xiaofang Zhou'
-  venue: 'ICDE'
-  volume_issue_pages: '565--577'
-  year: 2022
-  doi: 'https://doi.org/10.1109/ICDE53745.2022.00047'
-
-- title: 'Workload-Aware Shortest Path Distance Querying in Road Networks'
-  authors: 'Bolong Zheng, Jingyi Wan, Yongyong Gao, Yong Ma, Kai Huang, Xiaofang Zhou, Christian S. Jensen'
-  venue: 'ICDE'
-  volume_issue_pages: '2372--2384'
-  year: 2022
-  doi: 'https://doi.org/10.1109/ICDE53745.2022.00223'
-
-- title: 'Wavefront-Based Multiple Rumor Sources Identification by Multi-Task Learning'
-  authors: 'Ming Dong, Bolong Zheng, Guohui Li, Chenliang Li, Kai Zheng, Xiaofang Zhou'
-  venue: 'IEEE Trans. Emerg. Top. Comput. Intell.'
-  volume_issue_pages: '6(5): 1068--1078'
-  year: 2022
-  doi: 'https://doi.org/10.1109/TETCI.2022.3142627'
-
-- title: 'Supply-Demand-aware Deep Reinforcement Learning for Dynamic Fleet Management'
-  authors: ''
-  venue: 'ACM Trans. Intell. Syst. Technol.'
-  volume_issue_pages: '13(3): 37:1--37:19'
-  year: 2022
-  doi: 'https://doi.org/10.1145/3467979'
-
-- title: 'Origin-Destination Traffic Prediction based on Hybrid Spatio-Temporal Network'
-  authors: 'Tingyang Chen, Lugang Nie, Jiwei Pan, Lai Tu, Bolong Zheng, Xiang Bai'
-  venue: 'ICDM'
-  volume_issue_pages: '879--884'
-  year: 2022
-  doi: 'https://doi.org/10.1109/ICDM54844.2022.00101'
-
-- title: 'Entity Alignment for Knowledge Graphs With Multi-Order Convolutional Networks'
-  authors: 'Thanh Tam Nguyen, Thanh Trung Huynh, Hongzhi Yin, Tong Van Vinh, Darnbi Sakong, Bolong Zheng, Quoc Viet Hung Nguyen'
-  venue: 'IEEE Trans. Knowl. Data Eng.'
-  volume_issue_pages: '34(9): 4201--4214'
-  year: 2022
-  doi: 'https://doi.org/10.1109/TKDE.2020.3038654'
-
-- title: 'Efficient time-interval augmented spatial keyword queries on road networks'
-  authors: 'Changyin Luo, Pengfei Wang, Yanhong Li, Bolong Zheng, Guohui Li'
-  venue: 'Inf. Sci.'
-  volume_issue_pages: '593: 505--526'
-  year: 2022
-  doi: 'https://doi.org/10.1016/J.INS.2022.01.066'
-
-- title: 'Efficient Distributed Clustering Algorithms on Star-Schema Heterogeneous Graphs'
-  authors: 'Lu Chen, Yunjun Gao, Xingrui Huang, Christian S. Jensen, Bolong Zheng'
-  venue: 'IEEE Trans. Knowl. Data Eng.'
-  volume_issue_pages: '34(10): 4781--4796'
-  year: 2022
-  doi: 'https://doi.org/10.1109/TKDE.2020.3047631'
-
-- title: 'Deep reinforcement learning based ensemble model for rumor tracking'
-  authors: 'Guohui Li, Ming Dong, Lingfeng Ming, Changyin Luo, Han Yu, Xiaofei Hu, Bolong Zheng'
-  venue: 'Inf. Syst.'
-  volume_issue_pages: '103: 101772'
-  year: 2022
-  doi: 'https://doi.org/10.1016/J.IS.2021.101772'
-
-- title: 'TRUST: Triangle Counting Reloaded on GPUs'
-  authors: 'Santosh Pandey, Zhibin Wang, Sheng Zhong, Chen Tian, Bolong Zheng, Xiaoye S. Li, Lingda Li, Adolfy Hoisie, Caiwen Ding, Dong Li, Hang Liu'
-  venue: 'CoRR'
-  year: 2021
-  url: 'https://arxiv.org/abs/2103.08053'
-
-- title: 'SOUP: A Fleet Management System for Passenger Demand Prediction and Competitive Taxi Supply'
-  authors: 'Qi Hu, Lingfeng Ming, Ruijie Xi, Lu Chen, Christian S. Jensen, Bolong Zheng'
-  venue: 'ICDE'
-  volume_issue_pages: '2657--2660'
-  year: 2021
-  doi: 'https://doi.org/10.1109/ICDE51399.2021.00297'
-
-- title: 'REPOSE: Distributed Top-k Trajectory Similarity Search with Local Reference Point Tries'
-  authors: 'Bolong Zheng, Lianggui Weng, Xi Zhao, Kai Zeng, Xiaofang Zhou, Christian S. Jensen'
-  venue: 'ICDE'
-  volume_issue_pages: '708--719'
-  year: 2021
-  doi: 'https://doi.org/10.1109/ICDE51399.2021.00067'
-
-- title: 'REPOSE: Distributed Top-k Trajectory Similarity Search with Local Reference Point Tries'
-  authors: 'Bolong Zheng, Lianggui Weng, Xi Zhao, Kai Zeng, Xiaofang Zhou, Christian S. Jensen'
-  venue: 'CoRR'
-  year: 2021
-  url: 'https://arxiv.org/abs/2101.08929'
-
-- title: 'PM-LSH: a fast and accurate in-memory framework for high-dimensional approximate NN and closest pair search'
-  authors: 'Bolong Zheng, Xi Zhao, Lianggui Weng, Nguyen Quoc Viet Hung, Hang Liu, Christian S. Jensen'
-  venue: 'CoRR'
-  year: 2021
-  url: 'https://arxiv.org/abs/2107.05537'
-
-- title: 'HASTE: A Distributed System for Hybrid and Adaptive Processing on Streaming Spatial-Textual Data'
-  authors: 'Zhong Yang, Bolong Zheng, Chengdong Tong, Lianggui Weng, Chenliang Li, Guohui Li'
-  venue: 'CIKM'
-  volume_issue_pages: '2363--2372'
-  year: 2021
-  doi: 'https://doi.org/10.1145/3459637.3482435'
-
-- title: 'Trust: Triangle Counting Reloaded on GPUs'
-  authors: 'Santosh Pandey, Zhibin Wang, Sheng Zhong, Chen Tian, Bolong Zheng, Xiaoye S. Li, Lingda Li, Adolfy Hoisie, Caiwen Ding, Dong Li, Hang Liu'
-  venue: 'IEEE Trans. Parallel Distributed Syst.'
-  volume_issue_pages: '32(11): 2646--2660'
-  year: 2021
-  doi: 'https://doi.org/10.1109/TPDS.2021.3064892'
-
-- title: 'SpeakNav: A Voice-based Navigation System via Route Description Language Understanding'
-  authors: 'Lei Bi, Juan Cao, Guohui Li, Nguyen Quoc Viet Hung, Christian S. Jensen, Bolong Zheng'
-  venue: 'ICDE'
-  volume_issue_pages: '2669--2672'
-  year: 2021
-  doi: 'https://doi.org/10.1109/ICDE51399.2021.00300'
-
-- title: 'SpeakNav: Voice-based Route Description Language Understanding for Template Driven Path Search'
-  authors: 'Bolong Zheng, Lei Bi, Juan Cao, Hua Chai, Jun Fang, Lu Chen, Yunjun Gao, Xiaofang Zhou, Christian S. Jensen'
-  venue: 'VLDB'
-  volume_issue_pages: '14(12): 3056--3068'
-  year: 2021
-  doi: 'https://doi.org/10.14778/3476311.3476383'
-
-- title: 'Entity Alignment for Knowledge Graphs with Multi-order Convolutional Networks (Extended Abstract)'
-  authors: 'Thanh Tam Nguyen, Thanh Trung Huynh, Hongzhi Yin, Tong Van Vinh, Darnbi Sakong, Bolong Zheng, Nguyen Quoc Viet Hung'
-  venue: 'ICDE'
-  volume_issue_pages: '2323--2324'
-  year: 2021
-  doi: 'https://doi.org/10.1109/ICDE51399.2021.00247'
-
-- title: 'A Privacy-Preserving Distributed Contextual Federated Online Learning Framework with Big Data Support in Social Recommender Systems'
-  authors: 'Pan Zhou, Kehao Wang, Linke Guo, Shimin Gong, Bolong Zheng'
-  venue: 'IEEE Trans. Knowl. Data Eng.'
-  volume_issue_pages: '33(3): 824--838'
-  year: 2021
-  doi: 'https://doi.org/10.1109/TKDE.2019.2936565'
-
-- title: 'PM-LSH: A Fast and Accurate LSH Framework for High-Dimensional Approximate NN Search'
-  authors: 'Bolong Zheng, Xi Zhao, Lianggui Weng, Nguyen Quoc Viet Hung, Hang Liu, Christian S. Jensen'
-  venue: 'VLDB'
-  volume_issue_pages: '13(5): 643--655'
-  year: 2020
-  doi: 'https://doi.org/10.14778/3377369.3377374'
-
-- title: 'Time-aspect-sentiment Recommendation Models Based on Novel Similarity Measure Methods'
-  authors: 'GuoHui Li, Qi Chen, Bolong Zheng, Nguyen Quoc Viet Hung, Pan Zhou, Guanfeng Liu'
-  venue: 'ACM Trans. Web'
-  volume_issue_pages: '14(2): 5:1--5:26'
-  year: 2020
-  doi: 'https://doi.org/10.1145/3375548'
-
-- title: 'Temporal paths discovery with multiple constraints in attributed dynamic graphs'
-  authors: 'Anqi Zhao, Guanfeng Liu, Bolong Zheng, Yan Zhao, Kai Zheng'
-  venue: 'World Wide Web'
-  volume_issue_pages: '23(1): 313--336'
-  year: 2020
-  doi: 'https://doi.org/10.1007/S11280-019-00670-4'
-
-- title: 'Strong Social Graph Based Trust-Oriented Graph Pattern Matching With Multiple Constraints'
-  authors: 'Guanfeng Liu, Yurong Wang, Bolong Zheng, Zhixu Li, Kai Zheng'
-  venue: 'IEEE Trans. Emerg. Top. Comput. Intell.'
-  volume_issue_pages: '4(5): 675--685'
-  year: 2020
-  doi: 'https://doi.org/10.1109/TETCI.2019.2920404'
-
-- title: 'Spatial-Temporal Demand Forecasting and Competitive Supply via Graph Convolutional Networks'
-  authors: 'Bolong Zheng, Qi Hu, Lingfeng Ming, Jilin Hu, Lu Chen, Kai Zheng, Christian S. Jensen'
-  venue: 'CoRR'
-  year: 2020
-  url: 'https://arxiv.org/abs/2009.12157'
-
-- title: 'Searching Activity Trajectories by Exemplar'
-  authors: 'Zhong Yang, Bolong Zheng, Guohui Li, Nguyen Quoc Viet Hung, Guanfeng Liu, Kai Zheng'
-  venue: 'Trans. Data Sci.'
-  volume_issue_pages: '1(3): 19:1--19:18'
-  year: 2020
-  doi: 'https://doi.org/10.1145/3379561'
-
-- title: 'Reference-Based Framework for Spatio-Temporal Trajectory Compression and Query Processing'
-  authors: 'Kai Zheng, Yan Zhao, Defu Lian, Bolong Zheng, Guanfeng Liu, Xiaofang Zhou'
-  venue: 'IEEE Trans. Knowl. Data Eng.'
-  volume_issue_pages: '32(11): 2227--2240'
-  year: 2020
-  doi: 'https://doi.org/10.1109/TKDE.2019.2914449'
-
-- title: 'Online Trichromatic Pickup and Delivery Scheduling in Spatial Crowdsourcing'
-  authors: 'Bolong Zheng, Chenze Huang, Christian S. Jensen, Lu Chen, Nguyen Quoc Viet Hung, Guanfeng Liu, GuoHui Li, Kai Zheng'
-  venue: 'ICDE'
-  volume_issue_pages: '973--984'
-  year: 2020
-  doi: 'https://doi.org/10.1109/ICDE48307.2020.00089'
-
-- title: 'Misinformation-oriented expert finding in social networks'
-  authors: 'GuoHui Li, Ming Dong, Fuming Yang, Jun Zeng, Jiansen Yuan, Congyuan Jin, Nguyen Quoc Viet Hung, Phan Thanh Cong, Bolong Zheng'
-  venue: 'World Wide Web'
-  volume_issue_pages: '23(2): 693--714'
-  year: 2020
-  doi: 'https://doi.org/10.1007/S11280-019-00717-6'
-
-- title: 'Intention-Based Destination Recommendation in Navigation Systems'
-  authors: 'Shuncheng Liu, Guanglin Cong, Bolong Zheng, Yan Zhao, Kai Zheng, Han Su'
-  venue: 'DASFAA'
-  volume_issue_pages: '12114: 698--710'
-  year: 2020
-  doi: 'https://doi.org/10.1007/978-3-030-59419-0\\_43'
-
-- title: 'Group-Based Recurrent Neural Networks for POI Recommendation'
-  authors: 'Guohui Li, Qi Chen, Bolong Zheng, Hongzhi Yin, Quoc Viet Hung Nguyen, Xiaofang Zhou'
-  venue: 'Trans. Data Sci.'
-  volume_issue_pages: '1(1): 3:1--3:18'
-  year: 2020
-  doi: 'https://doi.org/10.1145/3343037'
-
-- title: 'FactCatch: Incremental Pay-as-You-Go Fact Checking with Minimal User Effort'
-  authors: 'Thanh Tam Nguyen, Matthias Weidlich, Hongzhi Yin, Bolong Zheng, Quang Huy Nguyen, Quoc Viet Hung Nguyen'
-  venue: 'SIGIR'
-  volume_issue_pages: '2165--2168'
-  year: 2020
-  doi: 'https://doi.org/10.1145/3397271.3401408'
-
-- title: 'Efficient and robust data augmentation for trajectory analytics: a similarity-based approach'
-  authors: 'Dan He, Sibo Wang, Boyu Ruan, Bolong Zheng, Xiaofang Zhou'
-  venue: 'World Wide Web'
-  volume_issue_pages: '23(1): 361--387'
-  year: 2020
-  doi: 'https://doi.org/10.1007/S11280-019-00695-9'
-
-- title: 'Answering Why-Not Group Spatial Keyword Queries'
-  authors: 'Bolong Zheng, Kai Zheng, Christian S. Jensen, Nguyen Quoc Viet Hung, Han Su, Guohui Li, Xiaofang Zhou'
-  venue: 'IEEE Trans. Knowl. Data Eng.'
-  volume_issue_pages: '32(1): 26--39'
-  year: 2020
-  doi: 'https://doi.org/10.1109/TKDE.2018.2879819'
-
-- title: 'An Effective Fleet Management Strategy for Collaborative Spatio-Temporal Searching: GIS Cup'
-  authors: 'Lingfeng Ming, Qi Hu, Ming Dong, Bolong Zheng'
-  venue: 'SIGSPATIAL'
-  volume_issue_pages: '651--654'
-  year: 2020
-  doi: 'https://doi.org/10.1145/3397536.3427187'
-
-- title: 'Adaptive Top-k Overlap Set Similarity Joins'
-  authors: 'Zhong Yang, Bolong Zheng, GuoHui Li, Xi Zhao, Xiaofang Zhou, Christian S. Jensen'
-  venue: 'ICDE'
-  volume_issue_pages: '1081--1092'
-  year: 2020
-  doi: 'https://doi.org/10.1109/ICDE48307.2020.00098'
-
-- title: 'A survey of trajectory distance measures and performance evaluation'
-  authors: 'Han Su, Shuncheng Liu, Bolong Zheng, Xiaofang Zhou, Kai Zheng'
-  venue: 'VLDB J.'
-  volume_issue_pages: '29(1): 3--32'
-  year: 2020
-  doi: 'https://doi.org/10.1007/S00778-019-00574-9'
-
-- title: 'DMFP: A Dynamic Multi-faceted Fine-Grained Preference Model for Recommendation'
-  authors: 'Huizhao Wang, Guanfeng Liu, Yan Zhao, Bolong Zheng, Pengpeng Zhao, Kai Zheng'
-  venue: 'ICDM'
-  volume_issue_pages: '608--617'
-  year: 2019
-  doi: 'https://doi.org/10.1109/ICDM.2019.00071'
-
-- title: 'User Guidance for Efficient Fact Checking'
-  authors: 'Thanh Tam Nguyen, Hongzhi Yin, Matthias Weidlich, Bolong Zheng, Quoc Viet Hung Nguyen, Bela Stantic'
-  venue: 'VLDB'
-  volume_issue_pages: '12(8): 850--863'
-  year: 2019
-  doi: 'https://doi.org/10.14778/3324301.3324303'
-
-- title: 'Spatial Temporal Trajectory Similarity Join'
-  authors: 'Tangpeng Dan, Changyin Luo, Yanhong Li, Bolong Zheng, Guohui Li'
-  venue: 'Web and Big Data - Third International Joint Conference, APWeb-WAIM 2019, Chengdu, China, August 1-3, 2019, Proceedings, Part II'
-  volume_issue_pages: '11642: 251--259'
-  year: 2019
-  doi: 'https://doi.org/10.1007/978-3-030-26075-0\\_19'
-
-- title: 'Social context-aware trust paths finding for trustworthy service provider selection in social media'
-  authors: 'Junwen Lu, Guanfeng Liu, Bolong Zheng, Yan Zhao, Kai Zheng'
-  venue: 'Multim. Tools Appl.'
-  volume_issue_pages: '78(17): 24473--24500'
-  year: 2019
-  doi: 'https://doi.org/10.1007/S11042-019-7158-7'
-
-- title: 'Searching activity trajectory with keywords'
-  authors: 'Bolong Zheng, Kai Zheng, Peter Scheuermann, Xiaofang Zhou, Quoc Viet Hung Nguyen, Chenliang Li'
-  venue: 'World Wide Web'
-  volume_issue_pages: '22(3): 967--1000'
-  year: 2019
-  doi: 'https://doi.org/10.1007/S11280-018-0535-8'
-
-- title: 'Personalized Route Description Based On Historical Trajectories'
-  authors: 'Han Su, Guanglin Cong, Wei Chen, Bolong Zheng, Kai Zheng'
-  venue: 'CIKM'
-  volume_issue_pages: '79--88'
-  year: 2019
-  doi: 'https://doi.org/10.1145/3357384.3357877'
-
-- title: 'PerRD: A System for Personalized Route Description'
-  authors: 'Han Su, Guanglin Cong, Wei Chen, Qinyuan Su, Bolong Zheng, Kai Zheng'
-  venue: 'ICDE'
-  volume_issue_pages: '1658--1661'
-  year: 2019
-  doi: 'https://doi.org/10.1109/ICDE.2019.00166'
-
-- title: 'Multiple Rumor Source Detection with Graph Convolutional Networks'
-  authors: 'Ming Dong, Bolong Zheng, Nguyen Quoc Viet Hung, Han Su, GuoHui Li'
-  venue: 'CIKM'
-  volume_issue_pages: '569--578'
-  year: 2019
-  doi: 'https://doi.org/10.1145/3357384.3357994'
-
-- title: 'From Anomaly Detection to Rumour Detection using Data Streams of Social Platforms'
-  authors: 'Thanh Tam Nguyen, Matthias Weidlich, Bolong Zheng, Hongzhi Yin, Quoc Viet Hung Nguyen, Bela Stantic'
-  venue: 'VLDB'
-  volume_issue_pages: '12(9): 1016--1029'
-  year: 2019
-  doi: 'https://doi.org/10.14778/3329772.3329778'
-
-- title: 'Efficient and Incremental Clustering Algorithms on Star-Schema Heterogeneous Graphs'
-  authors: 'Lu Chen, Yunjun Gao, Yuanliang Zhang, Christian S. Jensen, Bolong Zheng'
-  venue: 'ICDE'
-  volume_issue_pages: '256--267'
-  year: 2019
-  doi: 'https://doi.org/10.1109/ICDE.2019.00031'
-
-- title: 'Efficient User Guidance for Validating Participatory Sensing Data'
-  authors: 'Thanh Cong Phan, Thanh Tam Nguyen, Hongzhi Yin, Bolong Zheng, Bela Stantic, Nguyen Quoc Viet Hung'
-  venue: 'ACM Trans. Intell. Syst. Technol.'
-  volume_issue_pages: '10(4): 37:1--37:30'
-  year: 2019
-  doi: 'https://doi.org/10.1145/3326164'
-
-- title: 'Answering Why-Not Group Spatial Keyword Queries (Extended Abstract)'
-  authors: 'Bolong Zheng, Kai Zheng, Christian S. Jensen, Nguyen Quoc Viet Hung, Han Su, GuoHui Li, Xiaofang Zhou'
-  venue: 'ICDE'
-  volume_issue_pages: '2155--2156'
-  year: 2019
-  doi: 'https://doi.org/10.1109/ICDE.2019.00272'
-
-- title: 'An Effective Partitioning Approach for Competitive Spatial-Temporal Searching (GIS Cup)'
-  authors: 'Qi Hu, Lingfeng Ming, Chengdong Tong, Bolong Zheng'
-  venue: 'SIGSPATIAL'
-  volume_issue_pages: '620--623'
-  year: 2019
-  doi: 'https://doi.org/10.1145/3347146.3363349'
-
-- title: 'A framework for parallel map-matching at scale using Spark'
-  authors: 'Douglas Alves Peixoto, Nguyen Quoc Viet Hung, Bolong Zheng, Xiaofang Zhou'
-  venue: 'Distributed Parallel Databases'
-  volume_issue_pages: '37(4): 697--720'
-  year: 2019
-  doi: 'https://doi.org/10.1007/S10619-018-7254-0'
-
-- title: 'A Context-Aware User-Item Representation Learning for Item Recommendation'
-  authors: 'Libing Wu, Cong Quan, Chenliang Li, Qian Wang, Bolong Zheng, Xiangyang Luo'
-  venue: 'ACM Trans. Inf. Syst.'
-  volume_issue_pages: '37(2): 22:1--22:29'
-  year: 2019
-  doi: 'https://doi.org/10.1145/3298988'
-
-- title: 'REST: A Reference-based Framework for Spatio-temporal Trajectory Compression'
-  authors: 'Yan Zhao, Shuo Shang, Yu Wang, Bolong Zheng, Quoc Viet Hung Nguyen, Kai Zheng'
-  venue: 'KDD'
-  volume_issue_pages: '2797--2806'
-  year: 2018
-  doi: 'https://doi.org/10.1145/3219819.3220030'
-
-- title: 'What-If Analysis with Conflicting Goals: Recommending Data Ranges for Exploration'
-  authors: 'Quoc Viet Hung Nguyen, Kai Zheng, Matthias Weidlich, Bolong Zheng, Hongzhi Yin, Thanh Tam Nguyen, Bela Stantic'
-  venue: 'ICDE'
-  volume_issue_pages: '89--100'
-  year: 2018
-  doi: 'https://doi.org/10.1109/ICDE.2018.00018'
-
-- title: 'Trajectory Set Similarity Measure: An EMD-Based Approach'
-  authors: 'Dan He, Boyu Ruan, Bolong Zheng, Xiaofang Zhou'
-  venue: 'Databases Theory and Applications - 29th Australasian Database Conference, ADC 2018, Gold Coast, QLD, Australia, May 24-27, 2018, Proceedings'
-  volume_issue_pages: '10837: 28--40'
-  year: 2018
-  doi: 'https://doi.org/10.1007/978-3-319-92013-9\\_3'
-
-- title: 'SharkDB: an in-memory column-oriented storage for trajectory analysis'
-  authors: 'Bolong Zheng, Haozhou Wang, Kai Zheng, Han Su, Kuien Liu, Shuo Shang'
-  venue: 'World Wide Web'
-  volume_issue_pages: '21(2): 455--485'
-  year: 2018
-  doi: 'https://doi.org/10.1007/S11280-017-0466-9'
-
-- title: 'Reverse Top-k Query on Uncertain Preference'
-  authors: 'GuoHui Li, Qi Chen, Bolong Zheng, Xiaosong Zhao'
-  venue: 'Web and Big Data - Second International Joint Conference, APWeb-WAIM 2018, Macau, China, July 23-25, 2018, Proceedings, Part II'
-  volume_issue_pages: '10988: 350--358'
-  year: 2018
-  doi: 'https://doi.org/10.1007/978-3-319-96893-3\\_26'
-
-- title: "Predicting Passenger's Public Transportation Travel Route Using Smart Card Data"
-  authors: 'Chen Yang, Wei Chen, Bolong Zheng, Tieke He, Kai Zheng, Han Su'
-  venue: 'Web and Big Data - Second International Joint Conference, APWeb-WAIM 2018, Macau, China, July 23-25, 2018, Proceedings, Part II'
-  volume_issue_pages: '10988: 199--213'
-  year: 2018
-  doi: 'https://doi.org/10.1007/978-3-319-96893-3\\_15'
-
-- title: 'Origin-Destination Trajectory Diversity Analysis: Efficient Top-k Diversified Search'
-  authors: 'Dan He, Boyu Ruan, Bolong Zheng, Xiaofang Zhou'
-  venue: 'MDM'
-  volume_issue_pages: '135--144'
-  year: 2018
-  doi: 'https://doi.org/10.1109/MDM.2018.00030'
-
-- title: 'Modeling Travel Behavior Similarity with Trajectory Embedding'
-  authors: 'Wenyan Yang, Yan Zhao, Bolong Zheng, Guanfeng Liu, Kai Zheng'
-  venue: 'DASFAA'
-  volume_issue_pages: '10827: 630--646'
-  year: 2018
-  doi: 'https://doi.org/10.1007/978-3-319-91452-7\\_41'
-
-- title: 'Location Prediction in Social Networks'
-  authors: 'Rong Liu, Guanglin Cong, Bolong Zheng, Kai Zheng, Han Su'
-  venue: 'Web and Big Data - Second International Joint Conference, APWeb-WAIM 2018, Macau, China, July 23-25, 2018, Proceedings, Part II'
-  volume_issue_pages: '10988: 151--165'
-  year: 2018
-  doi: 'https://doi.org/10.1007/978-3-319-96893-3\\_12'
-
-- title: 'Efficient Clue-Based Route Search on Road Networks (Extended Abstract)'
-  authors: 'Bolong Zheng, Han Su, Wen Hua, Kai Zheng, Xiaofang Zhou, GuoHui Li'
-  venue: 'ICDE'
-  volume_issue_pages: '1783--1784'
-  year: 2018
-  doi: 'https://doi.org/10.1109/ICDE.2018.00249'
-
-- title: 'Concept for Evaluation of Techniques for Trajectory Distance Measures'
-  authors: 'Douglas Alves Peixoto, Han Su, Nguyen Quoc Viet Hung, Bela Stantic, Bolong Zheng, Xiaofang Zhou'
-  venue: 'MDM'
-  volume_issue_pages: '276--277'
-  year: 2018
-  doi: 'https://doi.org/10.1109/MDM.2018.00048'
-
-- title: 'A Time-Aware Path-Based Publish/Subscribe Framework'
-  authors: 'Mengdi Jia, Yan Zhao, Bolong Zheng, Guanfeng Liu, Kai Zheng'
-  venue: 'DASFAA'
-  volume_issue_pages: '10827: 511--528'
-  year: 2018
-  doi: 'https://doi.org/10.1007/978-3-319-91452-7\\_33'
-
-- title: 'ProbeSim: Scalable Single-Source and Top-k SimRank Computations on Dynamic Graphs'
-  authors: 'Yu Liu, Bolong Zheng, Xiaodong He, Zhewei Wei, Xiaokui Xiao, Kai Zheng, Jiaheng Lu'
-  venue: 'VLDB'
-  volume_issue_pages: '11(1): 14--26'
-  year: 2017
-  doi: 'https://doi.org/10.14778/3151113.3151115'
-
-- title: 'ProbeSim: Scalable Single-Source and Top-k SimRank Computations on Dynamic Graphs'
-  authors: 'Yu Liu, Bolong Zheng, Xiaodong He, Zhewei Wei, Xiaokui Xiao, Kai Zheng, Jiaheng Lu'
-  venue: 'CoRR'
-  year: 2017
-  url: 'http://arxiv.org/abs/1709.06955'
-
-- title: 'Popularity-aware spatial keyword search on activity trajectories'
-  authors: 'Kai Zheng, Bolong Zheng, Jiajie Xu, Guanfeng Liu, An Liu, Zhixu Li'
-  venue: 'World Wide Web'
-  volume_issue_pages: '20(4): 749--773'
-  year: 2017
-  doi: 'https://doi.org/10.1007/S11280-016-0414-0'
-
-- title: 'PaRE: A System for Personalized Route Guidance'
-  authors: 'Yaguang Li, Han Su, Ugur Demiryurek, Bolong Zheng, Tieke He, Cyrus Shahabi'
-  venue: 'WWW'
-  volume_issue_pages: '637--646'
-  year: 2017
-  doi: 'https://doi.org/10.1145/3038912.3052717'
-
-- title: 'GPS-Simulated Trajectory Detection'
-  authors: 'Han Su, Wei Chen, Rong Liu, Min Nie, Bolong Zheng, Zehao Huang, Defu Lian'
-  venue: 'DASFAA'
-  volume_issue_pages: '10178: 581--593'
-  year: 2017
-  doi: 'https://doi.org/10.1007/978-3-319-55699-4\\_36'
-
-- title: 'Efficient spatial keyword query processing on geo-textual data'
-  authors: 'Bolong Zheng'
-  venue: ''
-  year: 2017
-  doi: 'https://doi.org/10.14264/UQL.2017.450'
-
-- title: 'Efficient Clue-Based Route Search on Road Networks'
-  authors: 'Bolong Zheng, Han Su, Wen Hua, Kai Zheng, Xiaofang Zhou, GuoHui Li'
-  venue: 'IEEE Trans. Knowl. Data Eng.'
-  volume_issue_pages: '29(9): 1846--1859'
-  year: 2017
-  doi: 'https://doi.org/10.1109/TKDE.2017.2703848'
-
-- title: 'A Context-Aware User-Item Representation Learning for Item Recommendation'
-  authors: 'Libing Wu, Cong Quan, Chenliang Li, Qian Wang, Bolong Zheng'
-  venue: 'CoRR'
-  year: 2017
-  url: 'http://arxiv.org/abs/1712.02342'
-
-- title: 'PerNav: A Route Summarization Framework for Personalized Navigation'
-  authors: 'Yaguang Li, Han Su, Ugur Demiryurek, Bolong Zheng, Kai Zeng, Cyrus Shahabi'
-  venue: 'SIGMOD'
-  volume_issue_pages: '2125--2128'
-  year: 2016
-  doi: 'https://doi.org/10.1145/2882903.2899384'
-
-- title: 'Landmark-Based Route Recommendation with Crowd Intelligence'
-  authors: 'Bolong Zheng, Han Su, Kai Zheng, Xiaofang Zhou'
-  venue: 'Data Sci. Eng.'
-  volume_issue_pages: '1(2): 86--100'
-  year: 2016
-  doi: 'https://doi.org/10.1007/S41019-016-0013-1'
-
-- title: 'Keyword-aware continuous kNN query on road networks'
-  authors: 'Bolong Zheng, Kai Zheng, Xiaokui Xiao, Han Su, Hongzhi Yin, Xiaofang Zhou, GuoHui Li'
-  venue: 'ICDE'
-  volume_issue_pages: '871--882'
-  year: 2016
-  doi: 'https://doi.org/10.1109/ICDE.2016.7498297'
-
-- title: 'Interactive Top-k Spatial Keyword queries'
-  authors: 'Kai Zheng, Han Su, Bolong Zheng, Shuo Shang, Jiajie Xu, Jiajun Liu, Xiaofang Zhou'
-  venue: 'ICDE'
-  volume_issue_pages: '423--434'
-  year: 2015
-  doi: 'https://doi.org/10.1109/ICDE.2015.7113303'
-
-- title: 'Approximate keyword search in semantic trajectory database'
-  authors: 'Bolong Zheng, Nicholas Jing Yuan, Kai Zheng, Xing Xie, Shazia Sadiq, Xiaofang Zhou'
-  venue: 'ICDE'
-  volume_issue_pages: '975--986'
-  year: 2015
-  doi: 'https://doi.org/10.1109/ICDE.2015.7113349'
-
-- title: 'SharkDB: An In-Memory Column-Oriented Trajectory Storage'
-  authors: 'Haozhou Wang, Kai Zheng, Jiajie Xu, Bolong Zheng, Xiaofang Zhou, Shazia Sadiq'
-  venue: 'CIKM'
-  volume_issue_pages: '1409--1418'
-  year: 2014
-  doi: 'https://doi.org/10.1145/2661829.2661878'
-
-- title: 'Efficient Retrieval of Top-K Most Similar Users from Travel Smart Card Data'
-  authors: 'Bolong Zheng, Kai Zheng, Mohamed A. Sharaf, Xiaofang Zhou, Shazia Sadiq'
-  venue: 'MDM'
-  volume_issue_pages: '259--268'
-  year: 2014
-  doi: 'https://doi.org/10.1109/MDM.2014.38'
-
-- title: 'Cost-Efficient Spatial Network Partitioning for Distance-Based Query Processing'
-  authors: 'Jiping Wang, Kai Zheng, Hoyoung Jeung, Haozhou Wang, Bolong Zheng, Xiaofang Zhou'
-  venue: 'MDM'
-  volume_issue_pages: '13--22'
-  year: 2014
-  doi: 'https://doi.org/10.1109/MDM.2014.8'
+# - title: 'LORE: Learning-Based Resource Recommendation for Big Data Queries'
+#   authors: 'Yan Li, Liwei Wang, Bolong Zheng, Zhiyong Peng'
+#   venue: 'ICDE'
+#   volume_issue_pages: '1732--1744'
+#   year: 2025
+#   doi: 'https://doi.org/10.1109/ICDE65448.2025.00133'
+
+# - title: 'FAHL: An Efficient Labeling Index for Flow-Aware Shortest Path Querying in Road Networks'
+#   authors: 'Tangpeng Dan, Xiao Pan, Bolong Zheng, Xiaofeng Meng'
+#   venue: 'ICDE'
+#   volume_issue_pages: '836--849'
+#   year: 2025
+#   doi: 'https://doi.org/10.1109/ICDE65448.2025.00068'
+
+# - title: 'Wolverine: Highly Efficient Monotonic Search Path Repair for Graph-based ANN Index Updates'
+#   authors: 'Dawei Liu, Bolong Zheng, Ziyang Yue, Fuhao Ruan, Xiaofang Zhou, Christian S. Jensen'
+#   venue: 'VLDB'
+#   volume_issue_pages: '18(7): 2268--2280'
+#   year: 2025
+#   url: 'https://www.vldb.org/pvldb/vol18/p2268-zheng.pdf'
+
+# - title: 'Universal Set Similarity Search via Multi-Task Representation Learning'
+#   authors: 'Zhong Yang, Bolong Zheng, Guohui Li, Xi Zhao, Xiaofang Zhou'
+#   venue: 'ICDE'
+#   volume_issue_pages: '1483--1495'
+#   year: 2025
+#   doi: 'https://doi.org/10.1109/ICDE65448.2025.00115'
+
+# - title: 'Streaming Time Series Subsequence Anomaly Detection: A Glance and Focus Approach'
+#   authors: 'Wenjing Wang, Ziyang Yue, Bolong Zheng'
+#   venue: 'VLDB'
+#   volume_issue_pages: '18(6): 1892--1904'
+#   year: 2025
+#   url: 'https://www.vldb.org/pvldb/vol18/p1892-zheng.pdf'
+
+# - title: 'Select Edges Wisely: Monotonic Path Aware Graph Layout Optimization for Disk-based ANN Search'
+#   authors: 'Ziyang Yue, Bolong Zheng, Ling Xu, Kanru Xu, Shuhao Zhang, Yajuan Du, Yunjun Gao, Xiaofang Zhou, Christian S. Jensen'
+#   venue: 'VLDB'
+#   volume_issue_pages: '18(11): 4337--4349'
+#   year: 2025
+#   url: 'https://www.vldb.org/pvldb/vol18/p4337-zheng.pdf'
+
+# - title: 'OMeGa: Boosting Large-scale Graph Embeddings with Heterogeneous Memory Processing'
+#   authors: 'Peng Fang, Siqiang Luo, Fang Wang, Bolong Zheng, Hong Jiang, Dan Feng, Hechang Pan, Xingyu Wan'
+#   venue: 'ICDE'
+#   volume_issue_pages: '3369--3383'
+#   year: 2025
+#   doi: 'https://doi.org/10.1109/ICDE65448.2025.00252'
+
+# - title: 'Compatible Unsupervised Anomaly Detection with Multi-Perspective Spatio-Temporal Learning'
+#   authors: 'Tingyang Chen, Bolong Zheng, Shuncheng Liu, Zhujiong Fan, Zhi Xu, Lingsen Yan, Kai Zeng, Tao Ye, Xiaofang Zhou'
+#   venue: 'ICDE'
+#   volume_issue_pages: '4066--4078'
+#   year: 2025
+#   doi: 'https://doi.org/10.1109/ICDE65448.2025.00303'
+
+# - title: 'Anomaly Diagnosis with Siamese Discrepancy Networks in Distributed Cloud Databases'
+#   authors: 'Lingsen Yan, Bolong Zheng, Junjie Qing, Wenlong You, Tingyang Chen, Zhi Xu, Shuncheng Liu, Kai Zeng, Tao Ye, Xiaofang Zhou'
+#   venue: 'ICDE'
+#   volume_issue_pages: '4053--4065'
+#   year: 2025
+#   doi: 'https://doi.org/10.1109/ICDE65448.2025.00302'
+
+# - title: 'Spatial Data and Intelligence - 5th China Conference, SpatialDI 2024, Nanjing, China, April 25-27, 2024, Proceedings'
+#   authors: ''
+#   venue: 'Springer'
+#   year: 2024
+#   doi: 'https://doi.org/10.1007/978-981-97-2966-1'
+
+# - title: "Research on Foundation Model for Spatial Data Intelligence: China's 2024 White Paper on Strategic Development of Spatial Data Intelligence"
+#   authors: 'Shaohua Wang, Xing Xie, Yong Li, Danhuai Guo, Zhi Cai, Yu Liu, Yang Yue, Xiao Pan, Feng Lu, Huayi Wu, Zhipeng Gui, Zhiming Ding, Bolong Zheng, Fuzheng Zhang, Tao Qin, Jingyuan Wang, Chuang Tao, Zhengchao Chen, Hao Lu, Jiayi Li, Hongyang Chen, Peng Yue, Wenhao Yu, Yao Yao, Leilei Sun, Yong Zhang, Longbiao Chen, Xiaoping Du, Xiang Li, Xueying Zhang, Kun Qin, Zhaoya Gong, Weihua Dong, Xiaofeng Meng'
+#   venue: 'CoRR'
+#   year: 2024
+#   doi: 'https://doi.org/10.48550/ARXIV.2405.19730'
+
+# - title: 'PilotScope: Steering Databases with Machine Learning Drivers'
+#   authors: 'Rong Zhu, Lianggui Weng, Wenqing Wei, Di Wu, Jiazhen Peng, Yifan Wang, Bolin Ding, Defu Lian, Bolong Zheng, Jingren Zhou'
+#   venue: 'VLDB'
+#   volume_issue_pages: '17(5): 980--993'
+#   year: 2024
+#   doi: 'https://doi.org/10.14778/3641204.3641209'
+
+# - title: 'Overview and Prospect of Spiking Neural Networks Training Algorithm'
+#   authors: 'Zhongchuan Shi, Junkang Liu, Bolong Zheng'
+#   venue: 'International Conference on Computers, Information Processing and Advanced Education, CIPAE 2024, Ottawa, ON, Canada, August 26-28, 2024'
+#   volume_issue_pages: '327--331'
+#   year: 2024
+#   doi: 'https://doi.org/10.1109/CIPAE64326.2024.00065'
+
+# - title: 'LDPGuard: Defenses Against Data Poisoning Attacks to Local Differential Privacy Protocols'
+#   authors: 'Kai Huang, Gaoya Ouyang, Qingqing Ye, Haibo Hu, Bolong Zheng, Xi Zhao, Ruiyuan Zhang, Xiaofang Zhou'
+#   venue: 'IEEE Trans. Knowl. Data Eng.'
+#   volume_issue_pages: '36(7): 3195--3209'
+#   year: 2024
+#   doi: 'https://doi.org/10.1109/TKDE.2024.3358909'
+
+# - title: 'Eraser: Eliminating Performance Regression on Learned Query Optimizer'
+#   authors: 'Lianggui Weng, Rong Zhu, Di Wu, Bolin Ding, Bolong Zheng, Jingren Zhou'
+#   venue: 'VLDB'
+#   volume_issue_pages: '17(5): 926--938'
+#   year: 2024
+#   doi: 'https://doi.org/10.14778/3641204.3641205'
+
+# - title: 'Efficient Approximate Maximum Inner Product Search Over Sparse Vectors'
+#   authors: 'Xi Zhao, Zhonghan Chen, Kai Huang, Ruiyuan Zhang, Bolong Zheng, Xiaofang Zhou'
+#   venue: 'ICDE'
+#   volume_issue_pages: '3961--3974'
+#   year: 2024
+#   doi: 'https://doi.org/10.1109/ICDE60146.2024.00303'
+
+# - title: 'Data-oriented Dynamic Fine-tuning Parameter Selection Strategy for FISH Mask based Efficient Fine-tuning'
+#   authors: 'Ming Dong, Kang Xue, Bolong Zheng, Tingting He'
+#   venue: 'CoRR'
+#   year: 2024
+#   doi: 'https://doi.org/10.48550/ARXIV.2403.08484'
+
+# - title: 'ByGCN: Spatial Temporal Byroad-Aware Graph Convolution Network for Traffic Flow Prediction in Road Networks'
+#   authors: 'Tangpeng Dan, Xiao Pan, Bolong Zheng, Xiaofeng Meng'
+#   venue: 'CIKM'
+#   volume_issue_pages: '415--424'
+#   year: 2024
+#   doi: 'https://doi.org/10.1145/3627673.3679690'
+
+# - title: 'Adversarial Graph Neural Network for Multivariate Time Series Anomaly Detection'
+#   authors: 'Bolong Zheng, Lingfeng Ming, Kai Zeng, Mengtao Zhou, Xinyong Zhang, Tao Ye, Bin Yang, Xiaofang Zhou, Christian S. Jensen'
+#   venue: 'IEEE Trans. Knowl. Data Eng.'
+#   volume_issue_pages: '36(12): 7612--7626'
+#   year: 2024
+#   doi: 'https://doi.org/10.1109/TKDE.2024.3419891'
+
+# - title: 'A learned cost model for big data query processing'
+#   authors: 'Yan Li, Liwei Wang, Sheng Wang, Yuan Sun, Bolong Zheng, Zhiyong Peng'
+#   venue: 'Inf. Sci.'
+#   volume_issue_pages: '670: 120650'
+#   year: 2024
+#   doi: 'https://doi.org/10.1016/J.INS.2024.120650'
+
+# - title: 'TED: Towards Discovering Top-k Edge-Diversified Patterns in a Graph Database'
+#   authors: 'Kai Huang, Haibo Hu, Qingqing Ye, Kai Tian, Bolong Zheng, Xiaofang Zhou'
+#   venue: 'Proc. ACM Manag. Data'
+#   volume_issue_pages: '1(1): 51:1--51:26'
+#   year: 2023
+#   doi: 'https://doi.org/10.1145/3588736'
+
+# - title: 'SOUP: Spatial-Temporal Demand Forecasting and Competitive Supply in Transportation'
+#   authors: 'Bolong Zheng, Qi Hu, Lingfeng Ming, Jilin Hu, Lu Chen, Kai Zheng, Christian S. Jensen'
+#   venue: 'IEEE Trans. Knowl. Data Eng.'
+#   volume_issue_pages: '35(2): 2034--2047'
+#   year: 2023
+#   doi: 'https://doi.org/10.1109/TKDE.2021.3110778'
+
+# - title: 'FARGO: Fast Maximum Inner Product Search via Global Multi-Probing'
+#   authors: 'Xi Zhao, Bolong Zheng, Xiaomeng Yi, Xiaofan Luan, Charles Xie, Xiaofang Zhou, Christian S. Jensen'
+#   venue: 'VLDB'
+#   volume_issue_pages: '16(5): 1100--1112'
+#   year: 2023
+#   doi: 'https://doi.org/10.14778/3579075.3579084'
+
+# - title: 'Towards Efficient Index Construction and Approximate Nearest Neighbor Search in High-Dimensional Spaces'
+#   authors: 'Xi Zhao, Yao Tian, Kai Huang, Bolong Zheng, Xiaofang Zhou'
+#   venue: 'VLDB'
+#   volume_issue_pages: '16(8): 1979--1991'
+#   year: 2023
+#   doi: 'https://doi.org/10.14778/3594512.3594527'
+
+# - title: 'Spatial Data and Intelligence - 4th International Conference, SpatialDI 2023, Nanchang, China, April 13-15, 2023, Proceedings'
+#   authors: ''
+#   venue: 'Springer'
+#   year: 2023
+#   doi: 'https://doi.org/10.1007/978-3-031-32910-4'
+
+# - title: 'Reinforcement Learning based Tree Decomposition for Distance Querying in Road Networks'
+#   authors: 'Bolong Zheng, Yong Ma, Jingyi Wan, Yongyong Gao, Kai Huang, Xiaofang Zhou, Christian S. Jensen'
+#   venue: 'ICDE'
+#   volume_issue_pages: '1678--1690'
+#   year: 2023
+#   doi: 'https://doi.org/10.1109/ICDE55515.2023.00132'
+
+# - title: 'RHB-Net: A Relation-aware Historical Bridging Network for Text2SQL Auto-Completion'
+#   authors: 'Bolong Zheng, Lei Bi, Ruijie Xi, Lu Chen, Yunjun Gao, Xiaofang Zhou, Christian S. Jensen'
+#   venue: 'SIGIR'
+#   volume_issue_pages: '1458--1467'
+#   year: 2023
+#   doi: 'https://doi.org/10.1145/3539618.3591759'
+
+# - title: 'Linearized transformed L1 finite element methods for semi-linear time-fractional parabolic problems'
+#   authors: 'Yuxin Han, Xin Huang, Wei Gu, Bolong Zheng'
+#   venue: 'Appl. Math. Comput.'
+#   volume_issue_pages: '458: 128242'
+#   year: 2023
+#   doi: 'https://doi.org/10.1016/J.AMC.2023.128242'
+
+# - title: 'Learned Probing Cardinality Estimation for High-Dimensional Approximate NN Search'
+#   authors: 'Bolong Zheng, Ziyang Yue, Qi Hu, Xiaomeng Yi, Xiaofan Luan, Charles Xie, Xiaofang Zhou, Christian S. Jensen'
+#   venue: 'ICDE'
+#   volume_issue_pages: '3209--3221'
+#   year: 2023
+#   doi: 'https://doi.org/10.1109/ICDE55515.2023.00246'
+
+# - title: 'Joint Document-Level Event Extraction via Token-Token Bidirectional Event Completed Graph'
+#   authors: 'Qizhi Wan, Changxuan Wan, Keli Xiao, Dexi Liu, Chenliang Li, Bolong Zheng, Xiping Liu, Rong Hu'
+#   venue: 'Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), ACL 2023, Toronto, Canada, July 9-14, 2023'
+#   volume_issue_pages: '10481--10492'
+#   year: 2023
+#   doi: 'https://doi.org/10.18653/V1/2023.ACL-LONG.584'
+
+# - title: 'Double Hierarchical Labeling Shortest Distance Querying in Time-dependent Road Networks'
+#   authors: 'Tangpeng Dan, Xiao Pan, Bolong Zheng, Xiaofeng Meng'
+#   venue: 'ICDE'
+#   volume_issue_pages: '2077--2089'
+#   year: 2023
+#   doi: 'https://doi.org/10.1109/ICDE55515.2023.00161'
+
+# - title: 'DecLog: Decentralized Logging in Non-Volatile Memory for Time Series Database Systems'
+#   authors: 'Bolong Zheng, Yongyong Gao, Jingyi Wan, Lingsen Yan, Long Hu, Bo Liu, Yunjun Gao, Xiaofang Zhou, Christian S. Jensen'
+#   venue: 'VLDB'
+#   volume_issue_pages: '17(1): 1--14'
+#   year: 2023
+#   doi: 'https://doi.org/10.14778/3617838.3617839'
+
+# - title: 'Approximate Nearest Neighbor Search in High Dimensional Vector Databases: Current Research and Future Directions'
+#   authors: 'Yao Tian, Ziyang Yue, Ruiyuan Zhang, Xi Zhao, Bolong Zheng, Xiaofang Zhou'
+#   venue: 'IEEE Data Eng. Bull.'
+#   volume_issue_pages: '47(3): 39--54'
+#   year: 2023
+#   url: 'http://sites.computer.org/debull/A23sept/p39.pdf'
+
+# - title: 'A Learned Cuckoo Filter for Approximate Membership Queries over Variable-sized Sliding Windows on Data Streams'
+#   authors: 'Yao Tian, Tingyun Yan, Ruiyuan Zhang, Kai Huang, Bolong Zheng, Xiaofang Zhou'
+#   venue: 'Proc. ACM Manag. Data'
+#   volume_issue_pages: '1(4): 264:1--264:26'
+#   year: 2023
+#   doi: 'https://doi.org/10.1145/3626758'
+
+# - title: 'TED: Towards Discovering Top-k Edge-Diversified Patterns in a Graph Database'
+#   authors: 'Kai Huang, Haibo Hu, Qingqing Ye, Kai Tian, Bolong Zheng, Xiaofang Zhou'
+#   venue: 'CoRR'
+#   year: 2022
+#   doi: 'https://doi.org/10.48550/ARXIV.2212.07612'
+
+# - title: 'PM-LSH: a fast and accurate in-memory framework for high-dimensional approximate NN and closest pair search'
+#   authors: 'Bolong Zheng, Xi Zhao, Lianggui Weng, Quoc Viet Hung Nguyen, Hang Liu, Christian S. Jensen'
+#   venue: 'VLDB J.'
+#   volume_issue_pages: '31(6): 1339--1363'
+#   year: 2022
+#   doi: 'https://doi.org/10.1007/S00778-021-00680-7'
+
+# - title: 'minIL: A Simple and Small Index for String Similarity Search with Edit Distance'
+#   authors: 'Zhong Yang, Bolong Zheng, Xianzhi Wang, Guohui Li, Xiaofang Zhou'
+#   venue: 'ICDE'
+#   volume_issue_pages: '565--577'
+#   year: 2022
+#   doi: 'https://doi.org/10.1109/ICDE53745.2022.00047'
+
+# - title: 'Workload-Aware Shortest Path Distance Querying in Road Networks'
+#   authors: 'Bolong Zheng, Jingyi Wan, Yongyong Gao, Yong Ma, Kai Huang, Xiaofang Zhou, Christian S. Jensen'
+#   venue: 'ICDE'
+#   volume_issue_pages: '2372--2384'
+#   year: 2022
+#   doi: 'https://doi.org/10.1109/ICDE53745.2022.00223'
+
+# - title: 'Wavefront-Based Multiple Rumor Sources Identification by Multi-Task Learning'
+#   authors: 'Ming Dong, Bolong Zheng, Guohui Li, Chenliang Li, Kai Zheng, Xiaofang Zhou'
+#   venue: 'IEEE Trans. Emerg. Top. Comput. Intell.'
+#   volume_issue_pages: '6(5): 1068--1078'
+#   year: 2022
+#   doi: 'https://doi.org/10.1109/TETCI.2022.3142627'
+
+# - title: 'Supply-Demand-aware Deep Reinforcement Learning for Dynamic Fleet Management'
+#   authors: ''
+#   venue: 'ACM Trans. Intell. Syst. Technol.'
+#   volume_issue_pages: '13(3): 37:1--37:19'
+#   year: 2022
+#   doi: 'https://doi.org/10.1145/3467979'
+
+# - title: 'Origin-Destination Traffic Prediction based on Hybrid Spatio-Temporal Network'
+#   authors: 'Tingyang Chen, Lugang Nie, Jiwei Pan, Lai Tu, Bolong Zheng, Xiang Bai'
+#   venue: 'ICDM'
+#   volume_issue_pages: '879--884'
+#   year: 2022
+#   doi: 'https://doi.org/10.1109/ICDM54844.2022.00101'
+
+# - title: 'Entity Alignment for Knowledge Graphs With Multi-Order Convolutional Networks'
+#   authors: 'Thanh Tam Nguyen, Thanh Trung Huynh, Hongzhi Yin, Tong Van Vinh, Darnbi Sakong, Bolong Zheng, Quoc Viet Hung Nguyen'
+#   venue: 'IEEE Trans. Knowl. Data Eng.'
+#   volume_issue_pages: '34(9): 4201--4214'
+#   year: 2022
+#   doi: 'https://doi.org/10.1109/TKDE.2020.3038654'
+
+# - title: 'Efficient time-interval augmented spatial keyword queries on road networks'
+#   authors: 'Changyin Luo, Pengfei Wang, Yanhong Li, Bolong Zheng, Guohui Li'
+#   venue: 'Inf. Sci.'
+#   volume_issue_pages: '593: 505--526'
+#   year: 2022
+#   doi: 'https://doi.org/10.1016/J.INS.2022.01.066'
+
+# - title: 'Efficient Distributed Clustering Algorithms on Star-Schema Heterogeneous Graphs'
+#   authors: 'Lu Chen, Yunjun Gao, Xingrui Huang, Christian S. Jensen, Bolong Zheng'
+#   venue: 'IEEE Trans. Knowl. Data Eng.'
+#   volume_issue_pages: '34(10): 4781--4796'
+#   year: 2022
+#   doi: 'https://doi.org/10.1109/TKDE.2020.3047631'
+
+# - title: 'Deep reinforcement learning based ensemble model for rumor tracking'
+#   authors: 'Guohui Li, Ming Dong, Lingfeng Ming, Changyin Luo, Han Yu, Xiaofei Hu, Bolong Zheng'
+#   venue: 'Inf. Syst.'
+#   volume_issue_pages: '103: 101772'
+#   year: 2022
+#   doi: 'https://doi.org/10.1016/J.IS.2021.101772'
+
+# - title: 'TRUST: Triangle Counting Reloaded on GPUs'
+#   authors: 'Santosh Pandey, Zhibin Wang, Sheng Zhong, Chen Tian, Bolong Zheng, Xiaoye S. Li, Lingda Li, Adolfy Hoisie, Caiwen Ding, Dong Li, Hang Liu'
+#   venue: 'CoRR'
+#   year: 2021
+#   url: 'https://arxiv.org/abs/2103.08053'
+
+# - title: 'SOUP: A Fleet Management System for Passenger Demand Prediction and Competitive Taxi Supply'
+#   authors: 'Qi Hu, Lingfeng Ming, Ruijie Xi, Lu Chen, Christian S. Jensen, Bolong Zheng'
+#   venue: 'ICDE'
+#   volume_issue_pages: '2657--2660'
+#   year: 2021
+#   doi: 'https://doi.org/10.1109/ICDE51399.2021.00297'
+
+# - title: 'REPOSE: Distributed Top-k Trajectory Similarity Search with Local Reference Point Tries'
+#   authors: 'Bolong Zheng, Lianggui Weng, Xi Zhao, Kai Zeng, Xiaofang Zhou, Christian S. Jensen'
+#   venue: 'ICDE'
+#   volume_issue_pages: '708--719'
+#   year: 2021
+#   doi: 'https://doi.org/10.1109/ICDE51399.2021.00067'
+
+# - title: 'REPOSE: Distributed Top-k Trajectory Similarity Search with Local Reference Point Tries'
+#   authors: 'Bolong Zheng, Lianggui Weng, Xi Zhao, Kai Zeng, Xiaofang Zhou, Christian S. Jensen'
+#   venue: 'CoRR'
+#   year: 2021
+#   url: 'https://arxiv.org/abs/2101.08929'
+
+# - title: 'PM-LSH: a fast and accurate in-memory framework for high-dimensional approximate NN and closest pair search'
+#   authors: 'Bolong Zheng, Xi Zhao, Lianggui Weng, Nguyen Quoc Viet Hung, Hang Liu, Christian S. Jensen'
+#   venue: 'CoRR'
+#   year: 2021
+#   url: 'https://arxiv.org/abs/2107.05537'
+
+# - title: 'HASTE: A Distributed System for Hybrid and Adaptive Processing on Streaming Spatial-Textual Data'
+#   authors: 'Zhong Yang, Bolong Zheng, Chengdong Tong, Lianggui Weng, Chenliang Li, Guohui Li'
+#   venue: 'CIKM'
+#   volume_issue_pages: '2363--2372'
+#   year: 2021
+#   doi: 'https://doi.org/10.1145/3459637.3482435'
+
+# - title: 'Trust: Triangle Counting Reloaded on GPUs'
+#   authors: 'Santosh Pandey, Zhibin Wang, Sheng Zhong, Chen Tian, Bolong Zheng, Xiaoye S. Li, Lingda Li, Adolfy Hoisie, Caiwen Ding, Dong Li, Hang Liu'
+#   venue: 'IEEE Trans. Parallel Distributed Syst.'
+#   volume_issue_pages: '32(11): 2646--2660'
+#   year: 2021
+#   doi: 'https://doi.org/10.1109/TPDS.2021.3064892'
+
+# - title: 'SpeakNav: A Voice-based Navigation System via Route Description Language Understanding'
+#   authors: 'Lei Bi, Juan Cao, Guohui Li, Nguyen Quoc Viet Hung, Christian S. Jensen, Bolong Zheng'
+#   venue: 'ICDE'
+#   volume_issue_pages: '2669--2672'
+#   year: 2021
+#   doi: 'https://doi.org/10.1109/ICDE51399.2021.00300'
+
+# - title: 'SpeakNav: Voice-based Route Description Language Understanding for Template Driven Path Search'
+#   authors: 'Bolong Zheng, Lei Bi, Juan Cao, Hua Chai, Jun Fang, Lu Chen, Yunjun Gao, Xiaofang Zhou, Christian S. Jensen'
+#   venue: 'VLDB'
+#   volume_issue_pages: '14(12): 3056--3068'
+#   year: 2021
+#   doi: 'https://doi.org/10.14778/3476311.3476383'
+
+# - title: 'Entity Alignment for Knowledge Graphs with Multi-order Convolutional Networks (Extended Abstract)'
+#   authors: 'Thanh Tam Nguyen, Thanh Trung Huynh, Hongzhi Yin, Tong Van Vinh, Darnbi Sakong, Bolong Zheng, Nguyen Quoc Viet Hung'
+#   venue: 'ICDE'
+#   volume_issue_pages: '2323--2324'
+#   year: 2021
+#   doi: 'https://doi.org/10.1109/ICDE51399.2021.00247'
+
+# - title: 'A Privacy-Preserving Distributed Contextual Federated Online Learning Framework with Big Data Support in Social Recommender Systems'
+#   authors: 'Pan Zhou, Kehao Wang, Linke Guo, Shimin Gong, Bolong Zheng'
+#   venue: 'IEEE Trans. Knowl. Data Eng.'
+#   volume_issue_pages: '33(3): 824--838'
+#   year: 2021
+#   doi: 'https://doi.org/10.1109/TKDE.2019.2936565'
+
+# - title: 'PM-LSH: A Fast and Accurate LSH Framework for High-Dimensional Approximate NN Search'
+#   authors: 'Bolong Zheng, Xi Zhao, Lianggui Weng, Nguyen Quoc Viet Hung, Hang Liu, Christian S. Jensen'
+#   venue: 'VLDB'
+#   volume_issue_pages: '13(5): 643--655'
+#   year: 2020
+#   doi: 'https://doi.org/10.14778/3377369.3377374'
+
+# - title: 'Time-aspect-sentiment Recommendation Models Based on Novel Similarity Measure Methods'
+#   authors: 'GuoHui Li, Qi Chen, Bolong Zheng, Nguyen Quoc Viet Hung, Pan Zhou, Guanfeng Liu'
+#   venue: 'ACM Trans. Web'
+#   volume_issue_pages: '14(2): 5:1--5:26'
+#   year: 2020
+#   doi: 'https://doi.org/10.1145/3375548'
+
+# - title: 'Temporal paths discovery with multiple constraints in attributed dynamic graphs'
+#   authors: 'Anqi Zhao, Guanfeng Liu, Bolong Zheng, Yan Zhao, Kai Zheng'
+#   venue: 'World Wide Web'
+#   volume_issue_pages: '23(1): 313--336'
+#   year: 2020
+#   doi: 'https://doi.org/10.1007/S11280-019-00670-4'
+
+# - title: 'Strong Social Graph Based Trust-Oriented Graph Pattern Matching With Multiple Constraints'
+#   authors: 'Guanfeng Liu, Yurong Wang, Bolong Zheng, Zhixu Li, Kai Zheng'
+#   venue: 'IEEE Trans. Emerg. Top. Comput. Intell.'
+#   volume_issue_pages: '4(5): 675--685'
+#   year: 2020
+#   doi: 'https://doi.org/10.1109/TETCI.2019.2920404'
+
+# - title: 'Spatial-Temporal Demand Forecasting and Competitive Supply via Graph Convolutional Networks'
+#   authors: 'Bolong Zheng, Qi Hu, Lingfeng Ming, Jilin Hu, Lu Chen, Kai Zheng, Christian S. Jensen'
+#   venue: 'CoRR'
+#   year: 2020
+#   url: 'https://arxiv.org/abs/2009.12157'
+
+# - title: 'Searching Activity Trajectories by Exemplar'
+#   authors: 'Zhong Yang, Bolong Zheng, Guohui Li, Nguyen Quoc Viet Hung, Guanfeng Liu, Kai Zheng'
+#   venue: 'Trans. Data Sci.'
+#   volume_issue_pages: '1(3): 19:1--19:18'
+#   year: 2020
+#   doi: 'https://doi.org/10.1145/3379561'
+
+# - title: 'Reference-Based Framework for Spatio-Temporal Trajectory Compression and Query Processing'
+#   authors: 'Kai Zheng, Yan Zhao, Defu Lian, Bolong Zheng, Guanfeng Liu, Xiaofang Zhou'
+#   venue: 'IEEE Trans. Knowl. Data Eng.'
+#   volume_issue_pages: '32(11): 2227--2240'
+#   year: 2020
+#   doi: 'https://doi.org/10.1109/TKDE.2019.2914449'
+
+# - title: 'Online Trichromatic Pickup and Delivery Scheduling in Spatial Crowdsourcing'
+#   authors: 'Bolong Zheng, Chenze Huang, Christian S. Jensen, Lu Chen, Nguyen Quoc Viet Hung, Guanfeng Liu, GuoHui Li, Kai Zheng'
+#   venue: 'ICDE'
+#   volume_issue_pages: '973--984'
+#   year: 2020
+#   doi: 'https://doi.org/10.1109/ICDE48307.2020.00089'
+
+# - title: 'Misinformation-oriented expert finding in social networks'
+#   authors: 'GuoHui Li, Ming Dong, Fuming Yang, Jun Zeng, Jiansen Yuan, Congyuan Jin, Nguyen Quoc Viet Hung, Phan Thanh Cong, Bolong Zheng'
+#   venue: 'World Wide Web'
+#   volume_issue_pages: '23(2): 693--714'
+#   year: 2020
+#   doi: 'https://doi.org/10.1007/S11280-019-00717-6'
+
+# - title: 'Intention-Based Destination Recommendation in Navigation Systems'
+#   authors: 'Shuncheng Liu, Guanglin Cong, Bolong Zheng, Yan Zhao, Kai Zheng, Han Su'
+#   venue: 'DASFAA'
+#   volume_issue_pages: '12114: 698--710'
+#   year: 2020
+#   doi: 'https://doi.org/10.1007/978-3-030-59419-0\\_43'
+
+# - title: 'Group-Based Recurrent Neural Networks for POI Recommendation'
+#   authors: 'Guohui Li, Qi Chen, Bolong Zheng, Hongzhi Yin, Quoc Viet Hung Nguyen, Xiaofang Zhou'
+#   venue: 'Trans. Data Sci.'
+#   volume_issue_pages: '1(1): 3:1--3:18'
+#   year: 2020
+#   doi: 'https://doi.org/10.1145/3343037'
+
+# - title: 'FactCatch: Incremental Pay-as-You-Go Fact Checking with Minimal User Effort'
+#   authors: 'Thanh Tam Nguyen, Matthias Weidlich, Hongzhi Yin, Bolong Zheng, Quang Huy Nguyen, Quoc Viet Hung Nguyen'
+#   venue: 'SIGIR'
+#   volume_issue_pages: '2165--2168'
+#   year: 2020
+#   doi: 'https://doi.org/10.1145/3397271.3401408'
+
+# - title: 'Efficient and robust data augmentation for trajectory analytics: a similarity-based approach'
+#   authors: 'Dan He, Sibo Wang, Boyu Ruan, Bolong Zheng, Xiaofang Zhou'
+#   venue: 'World Wide Web'
+#   volume_issue_pages: '23(1): 361--387'
+#   year: 2020
+#   doi: 'https://doi.org/10.1007/S11280-019-00695-9'
+
+# - title: 'Answering Why-Not Group Spatial Keyword Queries'
+#   authors: 'Bolong Zheng, Kai Zheng, Christian S. Jensen, Nguyen Quoc Viet Hung, Han Su, Guohui Li, Xiaofang Zhou'
+#   venue: 'IEEE Trans. Knowl. Data Eng.'
+#   volume_issue_pages: '32(1): 26--39'
+#   year: 2020
+#   doi: 'https://doi.org/10.1109/TKDE.2018.2879819'
+
+# - title: 'An Effective Fleet Management Strategy for Collaborative Spatio-Temporal Searching: GIS Cup'
+#   authors: 'Lingfeng Ming, Qi Hu, Ming Dong, Bolong Zheng'
+#   venue: 'SIGSPATIAL'
+#   volume_issue_pages: '651--654'
+#   year: 2020
+#   doi: 'https://doi.org/10.1145/3397536.3427187'
+
+# - title: 'Adaptive Top-k Overlap Set Similarity Joins'
+#   authors: 'Zhong Yang, Bolong Zheng, GuoHui Li, Xi Zhao, Xiaofang Zhou, Christian S. Jensen'
+#   venue: 'ICDE'
+#   volume_issue_pages: '1081--1092'
+#   year: 2020
+#   doi: 'https://doi.org/10.1109/ICDE48307.2020.00098'
+
+# - title: 'A survey of trajectory distance measures and performance evaluation'
+#   authors: 'Han Su, Shuncheng Liu, Bolong Zheng, Xiaofang Zhou, Kai Zheng'
+#   venue: 'VLDB J.'
+#   volume_issue_pages: '29(1): 3--32'
+#   year: 2020
+#   doi: 'https://doi.org/10.1007/S00778-019-00574-9'
+
+# - title: 'DMFP: A Dynamic Multi-faceted Fine-Grained Preference Model for Recommendation'
+#   authors: 'Huizhao Wang, Guanfeng Liu, Yan Zhao, Bolong Zheng, Pengpeng Zhao, Kai Zheng'
+#   venue: 'ICDM'
+#   volume_issue_pages: '608--617'
+#   year: 2019
+#   doi: 'https://doi.org/10.1109/ICDM.2019.00071'
+
+# - title: 'User Guidance for Efficient Fact Checking'
+#   authors: 'Thanh Tam Nguyen, Hongzhi Yin, Matthias Weidlich, Bolong Zheng, Quoc Viet Hung Nguyen, Bela Stantic'
+#   venue: 'VLDB'
+#   volume_issue_pages: '12(8): 850--863'
+#   year: 2019
+#   doi: 'https://doi.org/10.14778/3324301.3324303'
+
+# - title: 'Spatial Temporal Trajectory Similarity Join'
+#   authors: 'Tangpeng Dan, Changyin Luo, Yanhong Li, Bolong Zheng, Guohui Li'
+#   venue: 'Web and Big Data - Third International Joint Conference, APWeb-WAIM 2019, Chengdu, China, August 1-3, 2019, Proceedings, Part II'
+#   volume_issue_pages: '11642: 251--259'
+#   year: 2019
+#   doi: 'https://doi.org/10.1007/978-3-030-26075-0\\_19'
+
+# - title: 'Social context-aware trust paths finding for trustworthy service provider selection in social media'
+#   authors: 'Junwen Lu, Guanfeng Liu, Bolong Zheng, Yan Zhao, Kai Zheng'
+#   venue: 'Multim. Tools Appl.'
+#   volume_issue_pages: '78(17): 24473--24500'
+#   year: 2019
+#   doi: 'https://doi.org/10.1007/S11042-019-7158-7'
+
+# - title: 'Searching activity trajectory with keywords'
+#   authors: 'Bolong Zheng, Kai Zheng, Peter Scheuermann, Xiaofang Zhou, Quoc Viet Hung Nguyen, Chenliang Li'
+#   venue: 'World Wide Web'
+#   volume_issue_pages: '22(3): 967--1000'
+#   year: 2019
+#   doi: 'https://doi.org/10.1007/S11280-018-0535-8'
+
+# - title: 'Personalized Route Description Based On Historical Trajectories'
+#   authors: 'Han Su, Guanglin Cong, Wei Chen, Bolong Zheng, Kai Zheng'
+#   venue: 'CIKM'
+#   volume_issue_pages: '79--88'
+#   year: 2019
+#   doi: 'https://doi.org/10.1145/3357384.3357877'
+
+# - title: 'PerRD: A System for Personalized Route Description'
+#   authors: 'Han Su, Guanglin Cong, Wei Chen, Qinyuan Su, Bolong Zheng, Kai Zheng'
+#   venue: 'ICDE'
+#   volume_issue_pages: '1658--1661'
+#   year: 2019
+#   doi: 'https://doi.org/10.1109/ICDE.2019.00166'
+
+# - title: 'Multiple Rumor Source Detection with Graph Convolutional Networks'
+#   authors: 'Ming Dong, Bolong Zheng, Nguyen Quoc Viet Hung, Han Su, GuoHui Li'
+#   venue: 'CIKM'
+#   volume_issue_pages: '569--578'
+#   year: 2019
+#   doi: 'https://doi.org/10.1145/3357384.3357994'
+
+# - title: 'From Anomaly Detection to Rumour Detection using Data Streams of Social Platforms'
+#   authors: 'Thanh Tam Nguyen, Matthias Weidlich, Bolong Zheng, Hongzhi Yin, Quoc Viet Hung Nguyen, Bela Stantic'
+#   venue: 'VLDB'
+#   volume_issue_pages: '12(9): 1016--1029'
+#   year: 2019
+#   doi: 'https://doi.org/10.14778/3329772.3329778'
+
+# - title: 'Efficient and Incremental Clustering Algorithms on Star-Schema Heterogeneous Graphs'
+#   authors: 'Lu Chen, Yunjun Gao, Yuanliang Zhang, Christian S. Jensen, Bolong Zheng'
+#   venue: 'ICDE'
+#   volume_issue_pages: '256--267'
+#   year: 2019
+#   doi: 'https://doi.org/10.1109/ICDE.2019.00031'
+
+# - title: 'Efficient User Guidance for Validating Participatory Sensing Data'
+#   authors: 'Thanh Cong Phan, Thanh Tam Nguyen, Hongzhi Yin, Bolong Zheng, Bela Stantic, Nguyen Quoc Viet Hung'
+#   venue: 'ACM Trans. Intell. Syst. Technol.'
+#   volume_issue_pages: '10(4): 37:1--37:30'
+#   year: 2019
+#   doi: 'https://doi.org/10.1145/3326164'
+
+# - title: 'Answering Why-Not Group Spatial Keyword Queries (Extended Abstract)'
+#   authors: 'Bolong Zheng, Kai Zheng, Christian S. Jensen, Nguyen Quoc Viet Hung, Han Su, GuoHui Li, Xiaofang Zhou'
+#   venue: 'ICDE'
+#   volume_issue_pages: '2155--2156'
+#   year: 2019
+#   doi: 'https://doi.org/10.1109/ICDE.2019.00272'
+
+# - title: 'An Effective Partitioning Approach for Competitive Spatial-Temporal Searching (GIS Cup)'
+#   authors: 'Qi Hu, Lingfeng Ming, Chengdong Tong, Bolong Zheng'
+#   venue: 'SIGSPATIAL'
+#   volume_issue_pages: '620--623'
+#   year: 2019
+#   doi: 'https://doi.org/10.1145/3347146.3363349'
+
+# - title: 'A framework for parallel map-matching at scale using Spark'
+#   authors: 'Douglas Alves Peixoto, Nguyen Quoc Viet Hung, Bolong Zheng, Xiaofang Zhou'
+#   venue: 'Distributed Parallel Databases'
+#   volume_issue_pages: '37(4): 697--720'
+#   year: 2019
+#   doi: 'https://doi.org/10.1007/S10619-018-7254-0'
+
+# - title: 'A Context-Aware User-Item Representation Learning for Item Recommendation'
+#   authors: 'Libing Wu, Cong Quan, Chenliang Li, Qian Wang, Bolong Zheng, Xiangyang Luo'
+#   venue: 'ACM Trans. Inf. Syst.'
+#   volume_issue_pages: '37(2): 22:1--22:29'
+#   year: 2019
+#   doi: 'https://doi.org/10.1145/3298988'
+
+# - title: 'REST: A Reference-based Framework for Spatio-temporal Trajectory Compression'
+#   authors: 'Yan Zhao, Shuo Shang, Yu Wang, Bolong Zheng, Quoc Viet Hung Nguyen, Kai Zheng'
+#   venue: 'KDD'
+#   volume_issue_pages: '2797--2806'
+#   year: 2018
+#   doi: 'https://doi.org/10.1145/3219819.3220030'
+
+# - title: 'What-If Analysis with Conflicting Goals: Recommending Data Ranges for Exploration'
+#   authors: 'Quoc Viet Hung Nguyen, Kai Zheng, Matthias Weidlich, Bolong Zheng, Hongzhi Yin, Thanh Tam Nguyen, Bela Stantic'
+#   venue: 'ICDE'
+#   volume_issue_pages: '89--100'
+#   year: 2018
+#   doi: 'https://doi.org/10.1109/ICDE.2018.00018'
+
+# - title: 'Trajectory Set Similarity Measure: An EMD-Based Approach'
+#   authors: 'Dan He, Boyu Ruan, Bolong Zheng, Xiaofang Zhou'
+#   venue: 'Databases Theory and Applications - 29th Australasian Database Conference, ADC 2018, Gold Coast, QLD, Australia, May 24-27, 2018, Proceedings'
+#   volume_issue_pages: '10837: 28--40'
+#   year: 2018
+#   doi: 'https://doi.org/10.1007/978-3-319-92013-9\\_3'
+
+# - title: 'SharkDB: an in-memory column-oriented storage for trajectory analysis'
+#   authors: 'Bolong Zheng, Haozhou Wang, Kai Zheng, Han Su, Kuien Liu, Shuo Shang'
+#   venue: 'World Wide Web'
+#   volume_issue_pages: '21(2): 455--485'
+#   year: 2018
+#   doi: 'https://doi.org/10.1007/S11280-017-0466-9'
+
+# - title: 'Reverse Top-k Query on Uncertain Preference'
+#   authors: 'GuoHui Li, Qi Chen, Bolong Zheng, Xiaosong Zhao'
+#   venue: 'Web and Big Data - Second International Joint Conference, APWeb-WAIM 2018, Macau, China, July 23-25, 2018, Proceedings, Part II'
+#   volume_issue_pages: '10988: 350--358'
+#   year: 2018
+#   doi: 'https://doi.org/10.1007/978-3-319-96893-3\\_26'
+
+# - title: "Predicting Passenger's Public Transportation Travel Route Using Smart Card Data"
+#   authors: 'Chen Yang, Wei Chen, Bolong Zheng, Tieke He, Kai Zheng, Han Su'
+#   venue: 'Web and Big Data - Second International Joint Conference, APWeb-WAIM 2018, Macau, China, July 23-25, 2018, Proceedings, Part II'
+#   volume_issue_pages: '10988: 199--213'
+#   year: 2018
+#   doi: 'https://doi.org/10.1007/978-3-319-96893-3\\_15'
+
+# - title: 'Origin-Destination Trajectory Diversity Analysis: Efficient Top-k Diversified Search'
+#   authors: 'Dan He, Boyu Ruan, Bolong Zheng, Xiaofang Zhou'
+#   venue: 'MDM'
+#   volume_issue_pages: '135--144'
+#   year: 2018
+#   doi: 'https://doi.org/10.1109/MDM.2018.00030'
+
+# - title: 'Modeling Travel Behavior Similarity with Trajectory Embedding'
+#   authors: 'Wenyan Yang, Yan Zhao, Bolong Zheng, Guanfeng Liu, Kai Zheng'
+#   venue: 'DASFAA'
+#   volume_issue_pages: '10827: 630--646'
+#   year: 2018
+#   doi: 'https://doi.org/10.1007/978-3-319-91452-7\\_41'
+
+# - title: 'Location Prediction in Social Networks'
+#   authors: 'Rong Liu, Guanglin Cong, Bolong Zheng, Kai Zheng, Han Su'
+#   venue: 'Web and Big Data - Second International Joint Conference, APWeb-WAIM 2018, Macau, China, July 23-25, 2018, Proceedings, Part II'
+#   volume_issue_pages: '10988: 151--165'
+#   year: 2018
+#   doi: 'https://doi.org/10.1007/978-3-319-96893-3\\_12'
+
+# - title: 'Efficient Clue-Based Route Search on Road Networks (Extended Abstract)'
+#   authors: 'Bolong Zheng, Han Su, Wen Hua, Kai Zheng, Xiaofang Zhou, GuoHui Li'
+#   venue: 'ICDE'
+#   volume_issue_pages: '1783--1784'
+#   year: 2018
+#   doi: 'https://doi.org/10.1109/ICDE.2018.00249'
+
+# - title: 'Concept for Evaluation of Techniques for Trajectory Distance Measures'
+#   authors: 'Douglas Alves Peixoto, Han Su, Nguyen Quoc Viet Hung, Bela Stantic, Bolong Zheng, Xiaofang Zhou'
+#   venue: 'MDM'
+#   volume_issue_pages: '276--277'
+#   year: 2018
+#   doi: 'https://doi.org/10.1109/MDM.2018.00048'
+
+# - title: 'A Time-Aware Path-Based Publish/Subscribe Framework'
+#   authors: 'Mengdi Jia, Yan Zhao, Bolong Zheng, Guanfeng Liu, Kai Zheng'
+#   venue: 'DASFAA'
+#   volume_issue_pages: '10827: 511--528'
+#   year: 2018
+#   doi: 'https://doi.org/10.1007/978-3-319-91452-7\\_33'
+
+# - title: 'ProbeSim: Scalable Single-Source and Top-k SimRank Computations on Dynamic Graphs'
+#   authors: 'Yu Liu, Bolong Zheng, Xiaodong He, Zhewei Wei, Xiaokui Xiao, Kai Zheng, Jiaheng Lu'
+#   venue: 'VLDB'
+#   volume_issue_pages: '11(1): 14--26'
+#   year: 2017
+#   doi: 'https://doi.org/10.14778/3151113.3151115'
+
+# - title: 'ProbeSim: Scalable Single-Source and Top-k SimRank Computations on Dynamic Graphs'
+#   authors: 'Yu Liu, Bolong Zheng, Xiaodong He, Zhewei Wei, Xiaokui Xiao, Kai Zheng, Jiaheng Lu'
+#   venue: 'CoRR'
+#   year: 2017
+#   url: 'http://arxiv.org/abs/1709.06955'
+
+# - title: 'Popularity-aware spatial keyword search on activity trajectories'
+#   authors: 'Kai Zheng, Bolong Zheng, Jiajie Xu, Guanfeng Liu, An Liu, Zhixu Li'
+#   venue: 'World Wide Web'
+#   volume_issue_pages: '20(4): 749--773'
+#   year: 2017
+#   doi: 'https://doi.org/10.1007/S11280-016-0414-0'
+
+# - title: 'PaRE: A System for Personalized Route Guidance'
+#   authors: 'Yaguang Li, Han Su, Ugur Demiryurek, Bolong Zheng, Tieke He, Cyrus Shahabi'
+#   venue: 'WWW'
+#   volume_issue_pages: '637--646'
+#   year: 2017
+#   doi: 'https://doi.org/10.1145/3038912.3052717'
+
+# - title: 'GPS-Simulated Trajectory Detection'
+#   authors: 'Han Su, Wei Chen, Rong Liu, Min Nie, Bolong Zheng, Zehao Huang, Defu Lian'
+#   venue: 'DASFAA'
+#   volume_issue_pages: '10178: 581--593'
+#   year: 2017
+#   doi: 'https://doi.org/10.1007/978-3-319-55699-4\\_36'
+
+# - title: 'Efficient spatial keyword query processing on geo-textual data'
+#   authors: 'Bolong Zheng'
+#   venue: ''
+#   year: 2017
+#   doi: 'https://doi.org/10.14264/UQL.2017.450'
+
+# - title: 'Efficient Clue-Based Route Search on Road Networks'
+#   authors: 'Bolong Zheng, Han Su, Wen Hua, Kai Zheng, Xiaofang Zhou, GuoHui Li'
+#   venue: 'IEEE Trans. Knowl. Data Eng.'
+#   volume_issue_pages: '29(9): 1846--1859'
+#   year: 2017
+#   doi: 'https://doi.org/10.1109/TKDE.2017.2703848'
+
+# - title: 'A Context-Aware User-Item Representation Learning for Item Recommendation'
+#   authors: 'Libing Wu, Cong Quan, Chenliang Li, Qian Wang, Bolong Zheng'
+#   venue: 'CoRR'
+#   year: 2017
+#   url: 'http://arxiv.org/abs/1712.02342'
+
+# - title: 'PerNav: A Route Summarization Framework for Personalized Navigation'
+#   authors: 'Yaguang Li, Han Su, Ugur Demiryurek, Bolong Zheng, Kai Zeng, Cyrus Shahabi'
+#   venue: 'SIGMOD'
+#   volume_issue_pages: '2125--2128'
+#   year: 2016
+#   doi: 'https://doi.org/10.1145/2882903.2899384'
+
+# - title: 'Landmark-Based Route Recommendation with Crowd Intelligence'
+#   authors: 'Bolong Zheng, Han Su, Kai Zheng, Xiaofang Zhou'
+#   venue: 'Data Sci. Eng.'
+#   volume_issue_pages: '1(2): 86--100'
+#   year: 2016
+#   doi: 'https://doi.org/10.1007/S41019-016-0013-1'
+
+# - title: 'Keyword-aware continuous kNN query on road networks'
+#   authors: 'Bolong Zheng, Kai Zheng, Xiaokui Xiao, Han Su, Hongzhi Yin, Xiaofang Zhou, GuoHui Li'
+#   venue: 'ICDE'
+#   volume_issue_pages: '871--882'
+#   year: 2016
+#   doi: 'https://doi.org/10.1109/ICDE.2016.7498297'
+
+# - title: 'Interactive Top-k Spatial Keyword queries'
+#   authors: 'Kai Zheng, Han Su, Bolong Zheng, Shuo Shang, Jiajie Xu, Jiajun Liu, Xiaofang Zhou'
+#   venue: 'ICDE'
+#   volume_issue_pages: '423--434'
+#   year: 2015
+#   doi: 'https://doi.org/10.1109/ICDE.2015.7113303'
+
+# - title: 'Approximate keyword search in semantic trajectory database'
+#   authors: 'Bolong Zheng, Nicholas Jing Yuan, Kai Zheng, Xing Xie, Shazia Sadiq, Xiaofang Zhou'
+#   venue: 'ICDE'
+#   volume_issue_pages: '975--986'
+#   year: 2015
+#   doi: 'https://doi.org/10.1109/ICDE.2015.7113349'
+
+# - title: 'SharkDB: An In-Memory Column-Oriented Trajectory Storage'
+#   authors: 'Haozhou Wang, Kai Zheng, Jiajie Xu, Bolong Zheng, Xiaofang Zhou, Shazia Sadiq'
+#   venue: 'CIKM'
+#   volume_issue_pages: '1409--1418'
+#   year: 2014
+#   doi: 'https://doi.org/10.1145/2661829.2661878'
+
+# - title: 'Efficient Retrieval of Top-K Most Similar Users from Travel Smart Card Data'
+#   authors: 'Bolong Zheng, Kai Zheng, Mohamed A. Sharaf, Xiaofang Zhou, Shazia Sadiq'
+#   venue: 'MDM'
+#   volume_issue_pages: '259--268'
+#   year: 2014
+#   doi: 'https://doi.org/10.1109/MDM.2014.38'
+
+# - title: 'Cost-Efficient Spatial Network Partitioning for Distance-Based Query Processing'
+#   authors: 'Jiping Wang, Kai Zheng, Hoyoung Jeung, Haozhou Wang, Bolong Zheng, Xiaofang Zhou'
+#   venue: 'MDM'
+#   volume_issue_pages: '13--22'
+#   year: 2014
+#   doi: 'https://doi.org/10.1109/MDM.2014.8'
