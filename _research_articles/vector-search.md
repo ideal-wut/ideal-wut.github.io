@@ -5,12 +5,10 @@ description: 高维向量存储、索引与检索系统，支持大规模向量�
 permalink: /research/articles/vector-database/
 ---
 
-## 研究方向概述
 
-向量数据库是支撑现代人工智能应用的核心基础设施，特别是在大语言模型和检索增强生成（RAG）系统中发挥着关键作用。本研究方向专注于高维向量数据的高效存储、索引构建和相似性检索技术，致力于解决海量向量数据管理中的性能瓶颈和精度挑战。我们的研究涵盖了从索引构建、存储优化到动态更新和查询加速的完整技术栈，在SIGMOD、VLDB等顶级会议发表多篇论文，并与业界知名企业合作实现技术产业化应用。
 
 ## 向量数据库关键技术
-
+向量数据库能够增强大模型的推理能力，是大模型不可或缺的技术基座。本研究方向围绕向量数据库的索引技术，涵盖索引构建、存储、更新、查询的全流程。
 
 
 
@@ -31,13 +29,13 @@ permalink: /research/articles/vector-database/
 
 本方向的研究成果发表在SIGMOD、VLDB、ICDE、TKDE等重要学术期刊和会议上，获得VLDB 2020最佳论文奖，申请/获得6项国家发明专利与1项美国专利。团队在此方向与Zilliz等知名企业展开合作，并实现相关技术的应用落地。
 
-![PCE-IVFPQ：基于深度学习的分区探测基数估计模型架构图](/assets/images/research/向量数据库3.png)
+![分区探测基数估计模型](/assets/images/research/向量数据库3.png)
 
-![GLIDE：GPU加速的图索引构建技术框架](/assets/images/research/向量数据库1.png)
+![](/assets/images/research/向量数据库1.png)
 
-![MARGO：磁盘友好的图索引布局优化策略](/assets/images/research/向量数据库2.png)
+![](/assets/images/research/向量数据库2.png)
 
-![Wolverine：动态图索引的单调路径修复机制](/assets/images/research/向量数据库4.png)
+![](/assets/images/research/向量数据库4.png)
 
 ## 参考文献
 

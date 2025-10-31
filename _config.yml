@@ -1,15 +1,15 @@
 # Site settings
-title: 实验室名称
-email: lab@example.com
+title: IDEAL智能大数据管理与分析实验室
+email: bolongzheng@whut.edu.cn
 description: >-
   实验室简介，专注于时序分析、时空数据挖掘与向量检索等前沿研究领域。
 baseurl: ""
 url: ""
 
 # Contact information
-address: "北京市海淀区xxx路xxx号"
-postal_code: "100000"
-contact_email: "lab@example.com"
+address: "湖北省武汉市珞狮路122号学海楼512 "
+postal_code: "430070"
+contact_email: "bolongzheng@whut.edu.cn"
 
 # Navigation
 navigation:

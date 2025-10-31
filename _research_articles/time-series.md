@@ -19,15 +19,15 @@ Text-to-SQL 需将用户自然语言形式的查询语句映射为可执行的SQ
 3）随着大模型时代到来，课题组积极研究大模型驱动的 Text2SQL。提出动态置信度SQL生成框架DC-SQL，通过在大模型推理阶段引入 Test-time Scaling，对多条推理生成SQL路径进行置信度评估与排序，选择最优路径；同时融入动态剪枝，实时淘汰低置信度分支，兼顾精度与吞吐，显著提升端到端生成速度与稳定的可执行率。进一步结合模式约束与执行反馈闭环，面向复杂、多步推理与跨域模式的工业级落地场景，强化推理质量控制与时延优化的协同，为企业数据智能提供高效稳定的自然语言查询能力。
 本方向的研究成果发表在VLDB、SIGIR等重要学术期刊和会议上，团队正在积极探索大模型时代的Text-to-SQL新模式，并实现关键技术突破及相关应用落地。
 
-![](/assets/images/research/AI4DB-Text2SQL1.jpg)
-SpeakNav系统架构图
-
-![](/assets/images/research/AI4DB-Text2SQL2.jpg)
-RHB-Net网络结构图
+![SpeakNav系统架构图](/assets/images/research/AI4DB-Text2SQL1.jpg)
 
 
-![](/assets/images/research/AI4DB-Text2SQL3.jpg)
- DC-SQL框架图
+![RHB-Net网络结构图](/assets/images/research/AI4DB-Text2SQL2.jpg)
+
+
+
+![DC-SQL框架图](/assets/images/research/AI4DB-Text2SQL3.jpg)
+
 
 参考文献
 [1]Bolong Zheng, Lei Bi, Juan Cao, Hua Chai, Jun Fang, Lu Chen, Yunjun Gao, Xiaofang Zhou, Christian S. Jensen: SpeakNav: Voice-based Route Description Language Understanding for Template Driven Path Search. Proc. VLDB Endow. 14(12): 3056-3068 (2021)
@@ -46,20 +46,20 @@ RHB-Net网络结构图
 4）查询优化器消除退化：针对学习型查询优化器因欠拟合、泛化差导致的性能退化问题，Eraser[4]以插件形式采用两阶段过滤策略：粗粒度过滤通过 “未预期计划探索器” 筛选模型预测精度低的计划子空间；细粒度评估通过 “分段模型” 对剩余计划聚类并关联可靠性区间，平衡退化风险与性能收益。Eraser实现了高风险计划的有效过滤，适配动态数据场景与多数据库。
 
 本方向的研究成果发表在SIGMOD、VLDB、ICDE等重要学术期刊和会议上，申请/获得4项国家发明专利。团队在此方向与阿里云等知名企业展开合作，并实现相关技术的应用落地。
-![](/assets/images/research/AI4DB1.png)
-最佳资源推荐学习框架
+![最佳资源推荐学习框架](/assets/images/research/AI4DB1.png)
 
 
-![](/assets/images/research/AI4DB2.png)
-资源感知的查询和计划表示学习框架
+
+![资源感知的查询和计划表示学习框架](/assets/images/research/AI4DB2.png)
 
 
-![](/assets/images/research/AI4DB3.png)
-AI和DB中间件
+
+![AI和DB中间件](/assets/images/research/AI4DB3.png)
 
 
-![](/assets/images/research/AI4DB4.png)
-性能衰退消除
+
+![性能衰退消除](/assets/images/research/AI4DB4.png)
+
 
 参考文献
 [1]Li Y, Wang L, Wang S, Sun Y, Peng Z. A resource-aware deep cost model for big data query processing. In2022 IEEE 38th International Conference on Data Engineering (ICDE) 2022 May 9 (pp. 885-897). IEEE.
@@ -83,17 +83,17 @@ AI和DB中间件
 
 本方向的研究成果发表在TCAD、TODAES、DATE、JSA等重要学术期刊和会议上，申请/获得6项国家发明专利。
 
-![](/assets/images/research/存储器方向1.png)
-LDPC 细粒度读取和预测模型
+![LDPC 细粒度读取和预测模型](/assets/images/research/存储器方向1.png)
 
-![](/assets/images/research/存储器方向2.png)
-细粒度LDPC动态解码引擎
 
-![](/assets/images/research/存储器方向3.png)
-冗余更新数据处理框架
+![细粒度LDPC动态解码引擎](/assets/images/research/存储器方向2.png)
 
-![](/assets/images/research/存储器方向4.png)
-数据库-NVM-固态盘软硬件协同优化架构
+
+![冗余更新数据处理框架](/assets/images/research/存储器方向3.png)
+
+
+![数据库-NVM-固态盘软硬件协同优化架构](/assets/images/research/存储器方向4.png)
+
 
 ## 参考文献
 [1] Du, Yajuan，Gao, Yuan， Huang, Siyi，Li, Qiao.LDPC Level Prediction Toward Read Performance of High-Density Flash Memories.TCAD 2023:3264-3274
