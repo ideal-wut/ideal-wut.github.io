@@ -29,10 +29,10 @@ Text-to-SQL 需将用户自然语言形式的查询语句映射为可执行的SQ
 ![DC-SQL框架图](/assets/images/research/AI4DB-Text2SQL3.jpg)
 
 
-参考文献
-[1]Bolong Zheng, Lei Bi, Juan Cao, Hua Chai, Jun Fang, Lu Chen, Yunjun Gao, Xiaofang Zhou, Christian S. Jensen: SpeakNav: Voice-based Route Description Language Understanding for Template Driven Path Search. Proc. VLDB Endow. 14(12): 3056-3068 (2021)
+已发表成果
+[1] Bolong Zheng, Lei Bi, Juan Cao, Hua Chai, Jun Fang, Lu Chen, Yunjun Gao, Xiaofang Zhou, Christian S. Jensen: SpeakNav: Voice-based Route Description Language Understanding for Template Driven Path Search. Proc. VLDB Endow. 14(12): 3056-3068 (2021)
 
-[2]Bolong Zheng, Lei Bi, Ruijie Xi, Lu Chen, Yunjun Gao, Xiaofang Zhou, Christian S. Jensen: RHB-Net: A Relation-aware Historical Bridging Network for Text2SQL Auto-Completion. SIGIR 2023: 1458-1467
+[2] Bolong Zheng, Lei Bi, Ruijie Xi, Lu Chen, Yunjun Gao, Xiaofang Zhou, Christian S. Jensen: RHB-Net: A Relation-aware Historical Bridging Network for Text2SQL Auto-Completion. SIGIR 2023: 1458-1467
 
 ## AI4DB关键技术
  本研究方向围绕AI4DB技术展开，涵盖数据查询资源推荐、AI4DB中间件部署、资源感知成本建模、查询优化器退化消除，形成覆盖查询优化与向量数据管理的关键技术体系。
@@ -61,14 +61,14 @@ Text-to-SQL 需将用户自然语言形式的查询语句映射为可执行的SQ
 ![性能衰退消除](/assets/images/research/AI4DB4.png)
 
 
-参考文献
-[1]Li Y, Wang L, Wang S, Sun Y, Peng Z. A resource-aware deep cost model for big data query processing. In2022 IEEE 38th International Conference on Data Engineering (ICDE) 2022 May 9 (pp. 885-897). IEEE.
+已发表成果
+[1] Li Y, Wang L, Wang S, Sun Y, Peng Z. A resource-aware deep cost model for big data query processing. In2022 IEEE 38th International Conference on Data Engineering (ICDE) 2022 May 9 (pp. 885-897). IEEE.
 
-[2]Zhu R, Weng L, Wei W, Wu D, Peng J, Wang Y, Ding B, Lian D, Zheng B, Zhou J. Pilotscope: Steering databases with machine learning drivers. Proceedings of the VLDB Endowment. 2024 Jan 1;17(5):980-93.
+[2] Zhu R, Weng L, Wei W, Wu D, Peng J, Wang Y, Ding B, Lian D, Zheng B, Zhou J. Pilotscope: Steering databases with machine learning drivers. Proceedings of the VLDB Endowment. 2024 Jan 1;17(5):980-93.
 
-[3]Li Y, Wang L, Zheng B, Peng Z. LORE: Learning-Based Resource Recommendation for Big Data Queries. In2025 IEEE 41st International Conference on Data Engineering (ICDE) 2025 May 19 (pp. 1732-1744). IEEE.
+[3] Li Y, Wang L, Zheng B, Peng Z. LORE: Learning-Based Resource Recommendation for Big Data Queries. In2025 IEEE 41st International Conference on Data Engineering (ICDE) 2025 May 19 (pp. 1732-1744). IEEE.
 
-[4]Weng L, Zhu R, Di Wu BD, Zheng B, Zhou J. Eraser: Eliminating Performance Regression on Learned Query Optimizer. PVLDB 17, 5 (2024), 926–938 [Internet]. 2024
+[4] Weng L, Zhu R, Di Wu BD, Zheng B, Zhou J. Eraser: Eliminating Performance Regression on Learned Query Optimizer. PVLDB 17, 5 (2024), 926–938 [Internet]. 2024
 
 
 ## 新型存储技术
@@ -95,7 +95,7 @@ Text-to-SQL 需将用户自然语言形式的查询语句映射为可执行的SQ
 ![数据库-NVM-固态盘软硬件协同优化架构](/assets/images/research/存储器方向4.png)
 
 
-## 参考文献
+## 已发表成果
 [1] Du, Yajuan，Gao, Yuan， Huang, Siyi，Li, Qiao.LDPC Level Prediction Toward Read Performance of High-Density Flash Memories.TCAD 2023:3264-3274
 
 [2] Yajuan Du，Yuan Gao，Qiao Li.Work-in-Progress: Prediction-based Fine-Grained LDPC Reading to Enhance High-Density Flash Read Performance.CASES 2022.

@@ -37,18 +37,18 @@ permalink: /research/articles/vector-database/
 
 ![](/assets/images/research/向量数据库4.png)
 
-## 参考文献
+## 已发表成果
 
-[1]Fuhao Ruan, Bolong Zheng, Ling Xu, Ziyang Yue, Dawei Liu, Kanru Xu, Xiaofang Zhou, Christian S. Jensen. GLIDE: GPU-Accelerated ANN Graph Index Construction via Data Locality.
+[1] Fuhao Ruan, Bolong Zheng, Ling Xu, Ziyang Yue, Dawei Liu, Kanru Xu, Xiaofang Zhou, Christian S. Jensen. GLIDE: GPU-Accelerated ANN Graph Index Construction via Data Locality.
 
-[2]Ziyang Yue, Bolong Zheng, Ling Xu, Kanru Xu, Shuhao Zhang, Yajuan Du, Yunjun Gao, Xiaofang Zhou, Christian S. Jensen. Select Edges Wisely: Monotonic Path Aware Graph Layout Optimization for Disk-Based ANN Search. PVLDB 2025: 4337-4349.
+[2] Ziyang Yue, Bolong Zheng, Ling Xu, Kanru Xu, Shuhao Zhang, Yajuan Du, Yunjun Gao, Xiaofang Zhou, Christian S. Jensen. Select Edges Wisely: Monotonic Path Aware Graph Layout Optimization for Disk-Based ANN Search. PVLDB 2025: 4337-4349.
 
-[3]Dawei Liu, Bolong Zheng, Ziyang Yue, Fuhao Ruan, Xiaofang Zhou, Christian S. Jensen: Wolverine: Highly Efficient Monotonic Search Path Repair for Graph-based ANN Index Updates. PVLDB 2025: 2268-2280.
+[3] Dawei Liu, Bolong Zheng, Ziyang Yue, Fuhao Ruan, Xiaofang Zhou, Christian S. Jensen: Wolverine: Highly Efficient Monotonic Search Path Repair for Graph-based ANN Index Updates. PVLDB 2025: 2268-2280.
 
-[4]Bolong Zheng, Xi Zhao, Lianggui Weng, Nguyen Quoc Viet Hung, Hang Liu, Christian S. Jensen. PM-LSH: A Fast and Accurate LSH Framework for High-Dimensional Approximate NN Search. PVLDB 2020: 643-655.
+[4] Bolong Zheng, Xi Zhao, Lianggui Weng, Nguyen Quoc Viet Hung, Hang Liu, Christian S. Jensen. PM-LSH: A Fast and Accurate LSH Framework for High-Dimensional Approximate NN Search. PVLDB 2020: 643-655.
 
-[5]Bolong Zheng, Xi Zhao, Lianggui Weng, Quoc Viet Hung Nguyen, Hang Liu, Christian S. Jensen. PM-LSH: A Fast and Accurate In-memory Framework for High-dimensional Approximate NN and Closest Pair Search. VLDBJ. 31(6): 1339-1363 (2022).
+[5] Bolong Zheng, Xi Zhao, Lianggui Weng, Quoc Viet Hung Nguyen, Hang Liu, Christian S. Jensen. PM-LSH: A Fast and Accurate In-memory Framework for High-dimensional Approximate NN and Closest Pair Search. VLDBJ. 31(6): 1339-1363 (2022).
 
-[6]Bolong Zheng, Ziyang Yue, Qi Hu, Xiaomeng Yi, Xiaofan Luan, Charles Xie, Xiaofang Zhou, Christian S. Jensen. Learned Probing Cardinality Estimation for High-Dimensional Approximate NN Search. ICDE 2023: 3209-3221.
+[6] Bolong Zheng, Ziyang Yue, Qi Hu, Xiaomeng Yi, Xiaofan Luan, Charles Xie, Xiaofang Zhou, Christian S. Jensen. Learned Probing Cardinality Estimation for High-Dimensional Approximate NN Search. ICDE 2023: 3209-3221.
 
-[7]Xi Zhao, Bolong Zheng, Xiaomeng Yi, Xiaofan Luan, Charles Xie, Xiaofang Zhou, Christian S. Jensen. FARGO: Fast Maximum Inner Product Search via Global Multi-Probing. PVLDB 2023: 1100-1112.
+[7] Xi Zhao, Bolong Zheng, Xiaomeng Yi, Xiaofan Luan, Charles Xie, Xiaofang Zhou, Christian S. Jensen. FARGO: Fast Maximum Inner Product Search via Global Multi-Probing. PVLDB 2023: 1100-1112.

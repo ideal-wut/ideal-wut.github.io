@@ -28,34 +28,34 @@ permalink: /research/articles/graph-database/
 
 ![图计算关键技术](/assets/images/research/图计算1.png)
 
-## 参考文献
+## 已发表成果
 
-[1]Long Yuan, Lu Qin, Xuemin Lin, Lijun Chang, Wenjie Zhang: Diversified Top-k Clique Search, VLDBJ, 25(2): 171196, 2016
+[1] Long Yuan, Lu Qin, Xuemin Lin, Lijun Chang, Wenjie Zhang: Diversified Top-k Clique Search, VLDBJ, 25(2): 171196, 2016
 
-[2] Long Yuan, Lu Qin, Xuemin Lin, Lijun Chang, Wenjie Zhang, I/O Efficient ECC Graph Decomposition via Graph Reduction, PVLDB, 9(7): 516-527, 2016 
+[2] Long Yuan, Lu Qin, Xuemin Lin, Lijun Chang, Wenjie Zhang, I/O Efficient ECC Graph Decomposition via Graph Reduction, PVLDB, 9(7): 516-527, 2016 
 
-[3]Long Yuan, Lu Qin, Xuemin Lin, Lijun Chang, Wenjie Zhang, Diversified Top-k Clique Search, ICDE, 387-398，2016
+[3] Long Yuan, Lu Qin, Xuemin Lin, Lijun Chang, Wenjie Zhang, Diversified Top-k Clique Search, ICDE, 387-398，2016
 
-[4]Long Yuan, Lu Qin, Xuemin Lin, Lijun Chang, Wenjie Zhang: I/O efficient ECC Graph Decomposition via Graph Reduction, VLDBJ, 26(2): 275-300, 2017 
+[4] Long Yuan, Lu Qin, Xuemin Lin, Lijun Chang, Wenjie Zhang: I/O efficient ECC Graph Decomposition via Graph Reduction, VLDBJ, 26(2): 275-300, 2017 
 
-[5]Kongzhang Hao, Long Yuan, Wenjie Zhang: Distributed HopConstrained st Simple Path Enumeration at Billion Scale. PVLDB, 15(2): 169-182, 2022 
+[5] Kongzhang Hao, Long Yuan, Wenjie Zhang: Distributed HopConstrained st Simple Path Enumeration at Billion Scale. PVLDB, 15(2): 169-182, 2022 
 
-[6]Lingkai Meng, Yu Shao, Long Yuan, Longbin Lai, Peng Cheng, Xue Li, Wenyuan Yu, Wenjie Zhang, Xuemin Lin, Jingren Zhou, A Survey of Distributed Graph Algorithms on Massive Graphs, ACM Computing Surveys 57(2): 27:127:39, 2025
+[6] Lingkai Meng, Yu Shao, Long Yuan, Longbin Lai, Peng Cheng, Xue Li, Wenyuan Yu, Wenjie Zhang, Xuemin Lin, Jingren Zhou, A Survey of Distributed Graph Algorithms on Massive Graphs, ACM Computing Surveys 57(2): 27:127:39, 2025
 
-[7]Long Yuan, Lu Qin, Xuemin Lin, Lijun Chang, Wenjie Zhang: Effective and Efficient Dynamic Graph Coloring, PVLDB, 11(3): 338-351, 2018
+[7] Long Yuan, Lu Qin, Xuemin Lin, Lijun Chang, Wenjie Zhang: Effective and Efficient Dynamic Graph Coloring, PVLDB, 11(3): 338-351, 2018
 
-[8]Dian Ouyang, Long Yuan, Lu Qin, Lijun Chang, Ying Zhang, Xuemin Lin: Efficient Shortest Path Index Maintenance on Dynamic Road Networks with Theoretical Guarantees, PVLDB, 13(5): 602-615, 2020
+[8] Dian Ouyang, Long Yuan, Lu Qin, Lijun Chang, Ying Zhang, Xuemin Lin: Efficient Shortest Path Index Maintenance on Dynamic Road Networks with Theoretical Guarantees, PVLDB, 13(5): 602-615, 2020
 
-[9]Boge Liu, Long Yuan, Xuemin Lin, Lu Qin, Wenjie Zhang, Jingren Zhou: Efficient (α, β)-core computation in bipartite graphs, VLDBJ, 29(5): 1075-1099, 2020 
+[9] Boge Liu, Long Yuan, Xuemin Lin, Lu Qin, Wenjie Zhang, Jingren Zhou: Efficient (α, β)-core computation in bipartite graphs, VLDBJ, 29(5): 1075-1099, 2020 
 
-[10]Boge Liu, Long Yuan, Xuemin Lin, Lu Qin, Wenjie Zhang, Jingren Zhou: Efficient (α, β)-core Computation: an Indexbased Approach. WWW, 1130-1140, 2019
+[10] Boge Liu, Long Yuan, Xuemin Lin, Lu Qin, Wenjie Zhang, Jingren Zhou: Efficient (α, β)-core Computation: an Indexbased Approach. WWW, 1130-1140, 2019
 
-[11]Zi Chen, Long Yuan, Xuemin Lin, Lu Qin, Wenjie Zhang: Balanced Clique Computation in Signed Networks: Concepts and Algorithms. TKDE, 35(11): 11079-11092, 2023 
+[11] Zi Chen, Long Yuan, Xuemin Lin, Lu Qin, Wenjie Zhang: Balanced Clique Computation in Signed Networks: Concepts and Algorithms. TKDE, 35(11): 11079-11092, 2023 
 
-[12]Zi Chen, Long Yuan, Xuemin Lin, Lu Qin, Jianye Yang: Efficient Maximal Balanced Clique Enumeration in Signed Networks. WWW, 339-349, 2020 
+[12] Zi Chen, Long Yuan, Xuemin Lin, Lu Qin, Jianye Yang: Efficient Maximal Balanced Clique Enumeration in Signed Networks. WWW, 339-349, 2020 
 
-[13]Long Yuan, Xiaotong Sun, Zi Chen, Peng Cheng, Longbin Lai, Xuemin Lin, HINSCAN: Efficient Structural Graph Clustering over Heterogeneous Information Networks, ICDE, 2025. 
+[13] Long Yuan, Xiaotong Sun, Zi Chen, Peng Cheng, Longbin Lai, Xuemin Lin, HINSCAN: Efficient Structural Graph Clustering over Heterogeneous Information Networks, ICDE, 2025. 
 
-[14]Junhua Zhang, Long Yuan, Wentao Li, Lu Qin, Ying Zhang: Efficient LabelConstrained Shortest Path Queries on Road Networks: A Tree Decomposition Approach, PVLDB, 15(3): 686-698, 2022 
+[14] Junhua Zhang, Long Yuan, Wentao Li, Lu Qin, Ying Zhang: Efficient LabelConstrained Shortest Path Queries on Road Networks: A Tree Decomposition Approach, PVLDB, 15(3): 686-698, 2022 
 
-[15]Junhua Zhang, Long Yuan, Wentao Li, Lu Qin, Ying Zhang, Wenjie Zhang: Labelconstrained shortest path query processing on road networks. VLDBJ, 33(3):569-593, 2024
+[15] Junhua Zhang, Long Yuan, Wentao Li, Lu Qin, Ying Zhang, Wenjie Zhang: Labelconstrained shortest path query processing on road networks. VLDBJ, 33(3):569-593, 2024

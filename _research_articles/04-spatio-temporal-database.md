@@ -98,7 +98,7 @@ ByGCN: Spatial Temporal Byroad-Aware Graph Convolution Network for Traffic Flow 
 
 随着网络上地理-文本对象的广泛存在，人们越来越多地使用带关键词的 Top-k 空间查询来查找最近且包含关键词的对象。然而，当一组用户发起 Top-k 群体空间关键词查询时，他们有时会发现某些他们认为应该出现在结果中的对象并未返回，Why-not查询应运而生。本文在此背景下提出Why-not 群体空间关键词查询：既能解释为什么预期对象缺失，也能对原始查询做最小修改，以使这些对象能够出现在修改后的查询结果中。为此，团队设计了一个三阶段框架：第一阶段，通过有效检索可能影响排名的竞争对象来缩小搜索空间；第二阶段，采用增量采样算法生成候选偏好权重向量，以探索修改用户偏好（包括位置、关键词权重和用户之间的距离阈值等因素）的可能性；第三阶段，通过定义惩罚模型评估各个候选查询与原始查询的差异，并选取“修改最小”的结果作为推荐的修改版本。实验证明，在真实数据和合成数据集上，该方法在效率和修改幅度（即用户体验）上均优于基线方法，能够在保留用户原始偏好的前提下，最大限度地包含用户预期对象，同时控制查询修改带来的成本。
 
-### 参考文献
+### 已发表成果
 
 [1] Tangpeng Dan, Xiao Pan, Bolong Zheng, Xiaofeng Meng: FAHL: An Efficient Labeling Index for Flow-Aware Shortest Path Querying in Road Networks. ICDE 2025: 836-849
 
@@ -139,11 +139,11 @@ ByGCN: Spatial Temporal Byroad-Aware Graph Convolution Network for Traffic Flow 
 ![时间序列数据库的去中心化日志系统DecLog](/assets/images/research/时序3.jpeg)
 
 
-## 参考文献
+## 已发表成果
 
-[1]Wenjing Wang, Ziyang Yue, Bolong Zheng. Streaming Time Series Subsequence Anomaly Detection: A Glance and Focus Approach. PVLDB 2025: 1892-1904.
+[1] Wenjing Wang, Ziyang Yue, Bolong Zheng. Streaming Time Series Subsequence Anomaly Detection: A Glance and Focus Approach. PVLDB 2025: 1892-1904.
 
-[2]Bolong Zheng, Lingfeng Ming, Kai Zeng, Mengtao Zhou, Xinyong Zhang, Tao Ye, Bin Yang, Xiaofang Zhou, Christian S. Jensen. Adversarial Graph Neural Network for Multivariate Time Series Anomaly Detection. TKDE 36(12): 7612-7626 (2024).
+[2] Bolong Zheng, Lingfeng Ming, Kai Zeng, Mengtao Zhou, Xinyong Zhang, Tao Ye, Bin Yang, Xiaofang Zhou, Christian S. Jensen. Adversarial Graph Neural Network for Multivariate Time Series Anomaly Detection. TKDE 36(12): 7612-7626 (2024).
 
 [3] Tingyang Chen, Bolong Zheng, Shuncheng Liu, Zhujiong Fan, Zhi Xu, Lingsen Yan, Kai Zeng, Tao Ye, Xiaofang Zhou. Compatible Unsupervised Anomaly Detection with Multi-Perspective Spatio-Temporal Learning. ICDE 2025: 4066-4078.
 
