@@ -58,20 +58,22 @@ function highlightActiveNav() {
 
 // Add image captions based on alt text
 function addImageCaptions() {
-    const images = document.querySelectorAll('img[alt]');
+    // 只在研究方向文章页面中为图片添加标题
+    const researchContainer = document.querySelector('.research-article-container');
+    if (!researchContainer) {
+        return; // 如果不是研究方向文章页面，直接返回
+    }
     
-    images.forEach((img, index) => {
+    // 只查找研究文章容器内的图片
+    const images = researchContainer.querySelectorAll('img[alt]');
+    
+    images.forEach(img => {
         if (img.alt && img.alt.trim() !== '') {
-            // Check if caption already exists
-            const nextElement = img.nextElementSibling;
-            if (!nextElement || !nextElement.classList.contains('image-caption')) {
-                const caption = document.createElement('div');
-                caption.className = 'image-caption';
-                caption.textContent = img.alt;
-                
-                // Insert after the image
-                img.parentNode.insertBefore(caption, img.nextSibling);
-            }
+            const caption = document.createElement('div');
+            caption.className = 'image-caption';
+            caption.textContent = img.alt;
+            
+            img.parentNode.insertBefore(caption, img.nextSibling);
         }
     });
 }
