@@ -2109,3 +2109,10 @@ body {
         margin: 1rem auto;
     }
 }
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px; /* 统一最小高度 */
+}
