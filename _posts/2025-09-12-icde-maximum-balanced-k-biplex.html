@@ -1,0 +1,322 @@
+---
+layout: post
+title: "ICDE'25: 基于二部图的最大平衡k-biplex搜索"
+date: 2025-09-12
+categories: [研究成果, 论文发表]
+tags: [二部图, k-biplex, 平衡搜索, 图挖掘, ICDE]
+author: IDEAL团队
+excerpt: "本文提出了最大平衡k-biplex（MBKBP）模型，通过之字形搜索框架和多种剪枝策略，显著提升了二部图中平衡k-biplex搜索的效率，相较基线方法最高可提速三个数量级。"
+image: /assets/images/posts/icde-cover.jpg
+---
+
+<style>
+.post-content {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.post-content h1 {
+    color: #2c3e50;
+    border-bottom: 3px solid #e74c3c;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.post-content h2 {
+    color: #34495e;
+    border-left: 4px solid #e74c3c;
+    padding-left: 15px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.post-content h3 {
+    color: #2c3e50;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.post-content .paper-info {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.post-content .paper-info h3 {
+    color: white;
+    margin-top: 0;
+}
+
+.post-content .definition-box {
+    background: #f8f9fa;
+    border-left: 4px solid #e74c3c;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.post-content .algorithm-section {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.post-content .experiment-box {
+    background: #e8f5e8;
+    border: 1px solid #c3e6c3;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.post-content .contribution-list {
+    background: #f0f8ff;
+    border: 1px solid #87ceeb;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.post-content .contribution-list ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.post-content blockquote {
+    border-left: 4px solid #e74c3c;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background: #f4f4f4;
+    font-style: italic;
+}
+
+.post-content .figure-caption {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.post-content .formula-box {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px 0;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+}
+
+.post-content .math-formula {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+.post-content .math-var {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+}
+
+.post-content .subscript {
+    font-size: 0.8em;
+    vertical-align: sub;
+}
+
+.post-content .superscript {
+    font-size: 0.8em;
+    vertical-align: super;
+}
+</style>
+
+<div class="post-content">
+
+<img src="/assets/images/posts/icde-cover.jpg" alt="ICDE k-biplex Cover" style="width: 100%; margin-bottom: 30px;">
+
+<h1>ICDE'25: 基于二部图的最大平衡k-biplex搜索</h1>
+
+二部图已广泛应用于基因共表达网络、协作网络及客户–商品交互等场景，用以刻画不同类型实体之间的关联。在二部图中，一个核心任务是寻找"最大平衡biclique"（MBBC），即找出两侧顶点数目恰好相等且完全连通的极大子图。然而，由于真实数据往往存在噪声并呈稀疏分布，MBBC所要求的"全对全"连接与"严格等量"条件在实践中难以满足，导致该模型适用范围受限。
+
+为解决此问题，本文提出了"最大平衡k-biplex"（MBKBP）模型，对MBBC的限制做了适度放宽：一方面，允许每个顶点与对侧顶点最多有k个非连接；另一方面，引入由用户指定的参数δ，对两侧顶点数目的差异进行约束。该设计显著增强了模型对噪声的容忍度。计算MBKBP的最朴素做法是枚举所有极大k-biplex，再从中选取最大者。实验表明，这一策略在规模稍大的数据集上效率较低。针对此问题，本文提出了"（zL，zR）搜索空间"概念，并围绕其构建了一套完整算法框架：通过生成一系列规模受限的（zL，zR）子空间，极大缩减了需枚举的k-biplex数量；进一步利用δ-平衡特性对搜索空间进行约束，并设计了三类剪枝规则以压缩计算量。在真实二部图上的实验显示，该算法相较基线方法最高可提速三个数量级，充分验证了其在大规模二部图分析中的高效性与实用性。
+
+该成果"Efficient Maximum Balanced k-biplex Search over Bipartite Graphs"已在2025 IEEE 41st International Conference on Data Engineering (ICDE)发表，ICDE是数据库领域三大会议之一，属于中国计算机学会CCF A类会议。
+
+<img src="/assets/images/posts/icde-1.png" alt="论文信息">
+
+<div class="paper-info">
+<h3>【论文标题】</h3>
+<p>Efficient Maximum Balanced k-biplex Search over Bipartite Graphs</p>
+
+<h3>【论文地址】</h3>
+<p>https://www.computer.org/csdl/proceedings-article/icde/2025/360300d098/26FZBsCezGo</p>
+</div>
+
+<h2>论文背景</h2>
+
+如前所述，尽管MBBC的定义在理论上比较完美，但在实际应用时适用范围受限。相比之下，文章提出的MBKBP存在两方面优势：其一，模型允许每个顶点与对侧顶点最多有k个非连接，从而放宽了MBBC对完全连通的苛刻要求，使算法在存在噪声或数据缺失的情况下仍能发现具有实际意义的子结构；其二，参数δ的引入为两侧顶点数量的差异提供了可控手段，进一步提升了模型的灵活性与适用范围。
+
+文章的目标是高效地搜索最大平衡k-biplex（MBKBP），由于基线算法需枚举二部图中的全部极大k-biplex才能从中挑出最大的平衡实例，效率较低，因此不再使用。文章使用的方法是利用k-biplex的大小上界与结构特征，将搜索空间大幅压缩以提升搜索效率。核心思路是：在已找到的最大平衡k-biplex基础上，将剩余空间一分为二——一侧可能包含更大解，另一侧绝不会包含更大解，直接舍弃，从而把算力集中到"有潜力"的区域。为落实这一思想，文章提出了"（<span class="math-var">z<span class="subscript">L</span></span>，<span class="math-var">z<span class="subscript">R</span></span>）搜索空间"概念，并设计了一套"之字形"搜索框架。框架通过迭代生成一系列规模远小于原图的（<span class="math-var">z<span class="subscript">L</span></span>，<span class="math-var">z<span class="subscript">R</span></span>）子空间，保证全局MBKBP必落在某个子空间的局部MBKBP中；同时，借助问题的δ-平衡特性进一步细化这些子空间。由于子空间既小且数量有限，整体搜索效率显著提升。此外，针对单个子空间内的求解，文章设计了三类剪枝规则，提前删除了一定存在结果的分支。
+
+<div class="contribution-list">
+<h3>文章主要贡献：</h3>
+<ol>
+<li>首次提出并系统研究"最大平衡k-biplex搜索"问题；</li>
+<li>为最大平衡k-biplex搜索问题定制了一套全新的搜索框架；</li>
+<li>设计了一系列剪枝规则，进一步压缩搜索空间、提升效率；</li>
+<li>在真实二部图上展开全面实验，结果表明，本算法相较基线方法最高可提速三个数量级。</li>
+</ol>
+</div>
+
+<h2>定义</h2>
+
+给定无向无权二部图G(L, R, E)，其中L与R为互不相交的两部顶点集，E ⊆ L × R为边集。文中用L(G)和R(G)分别指代L与R，用V(G)表示全部顶点集。此外，以n记顶点总数，m记边总数。
+
+<div class="definition-box">
+<strong>[定义1] k-biplex：</strong>在二部图G(L, R, E)中，给定正整数k，若取子集L′ ⊆ L、R′ ⊆ R，使得：<br>
+(1) L′中每个顶点在R′内至多缺少k条邻边；<br>
+(2) R′中每个顶点在L′内至多缺少k条邻边；<br>
+则称导出子图G(L′, R′)为一个k-biplex。
+</div>
+
+进一步，给定另一正整数δ：
+
+<div class="definition-box">
+<strong>[定义2] δ-平衡k-biplex：</strong>若G(L′, R′)满足上述k-biplex条件，且两侧顶点数之差受控，即||L′| − |R′|| ≤ δ，则称其为δ-平衡k-biplex。
+</div>
+
+<div class="definition-box">
+<strong>[问题定义] 最大δ-平衡k-biplex：</strong>给定二部图G(L, R, E)及四个整数k、δ、<span class="math-var">θ<span class="subscript">L</span></span> ≥ 2k+1、<span class="math-var">θ<span class="subscript">R</span></span> ≥ 2k+1，最大δ-平衡k-biplex（MBKBP）记为P = G(L′, R′)，定义为G中顶点数最多的δ-平衡k-biplex；换言之，不存在任何δ-平衡k-biplex G(L″, R″)满足|L″| + |R″| > |L′| + |R′|。
+</div>
+
+以图1中的二部图G为例，设k = 1，δ = 1且<span class="math-var">θ<span class="subscript">L</span></span> = <span class="math-var">θ<span class="subscript">R</span></span> = 3，则其最大δ-平衡1-biplex为P = G(L′, R′)，其中L′ = {<span class="math-var">v</span><span class="subscript">2</span>, <span class="math-var">v</span><span class="subscript">3</span>, <span class="math-var">v</span><span class="subscript">4</span>, <span class="math-var">v</span><span class="subscript">5</span>, <span class="math-var">v</span><span class="subscript">6</span>}，R′ = {<span class="math-var">u</span><span class="subscript">2</span>, <span class="math-var">u</span><span class="subscript">3</span>, <span class="math-var">u</span><span class="subscript">4</span>, <span class="math-var">u</span><span class="subscript">5</span>}，共9个顶点。经验证，L′与R′中的每个顶点在对侧至多缺少1条邻边，且|L′| − |R′| = 1。此外，G中不存在更大的δ-平衡1-biplex能够包含P。
+
+<img src="/assets/images/posts/icde-2.png" alt="二部图示例">
+<div class="figure-caption">图1：二部图G</div>
+
+关于计算复杂性，文章证明了该问题为NP-hard问题。考虑最简单情形：令k = 0且δ = 0，此时MBKBP退化为最大顶点平衡biclique问题，而后者已被证实为NP-hard。因此，MBKBP搜索问题同样属于NP-hard。
+
+<h2>之字形搜索框架</h2>
+
+<h3>01 基线方法</h3>
+
+基线方法的思路如下：借助现有最优算法以分支定界的方式枚举图中的全部极大k-biplex；随后逐一检查它们是否满足δ-平衡条件。在此过程中，持续记录当前已发现的最大δ-平衡k-biplex。待枚举结束后，所保留的结果即为MBKBP。后续实验证明，基线算法在数据集规模增长的情况下，计算时间骤增，效率较低。
+
+<h3>02 之字形搜索框架</h3>
+
+<div class="definition-box">
+<strong>[定义3] (<span class="math-var">z<span class="subscript">L</span></span>,<span class="math-var">z<span class="subscript">R</span></span>)搜索空间：</strong>给定二部图G(L, R, E)及两个整数<span class="math-var">z<span class="subscript">L</span></span>、<span class="math-var">z<span class="subscript">R</span></span>，其(<span class="math-var">z<span class="subscript">L</span></span>, <span class="math-var">z<span class="subscript">R</span></span>)搜索空间G′(L′, R′)是G的最大子图，满足：对任意u ∈ L′，在G′中的度数<span class="math-var">d<span class="subscript">u</span></span>(G′) > <span class="math-var">z<span class="subscript">L</span></span>；对任意v ∈ R′，在G′中的度数<span class="math-var">d<span class="subscript">v</span></span>(G′) > <span class="math-var">z<span class="subscript">R</span></span>。
+</div>
+
+文章使用P*表示当前找到的最大平衡k-biplex，用P表示二部图中真正的最大平衡k-biplex。
+
+基于上述观察，对于二部图G，一旦在(<span class="math-var">z<span class="subscript">L</span></span>, <span class="math-var">z<span class="subscript">R</span></span>)空间内求得当前最大平衡k-biplex P*，则G中所有规模更大的k-biplex只能落在(<span class="math-var">z<span class="subscript">L</span></span>′, |V(P*)| − <span class="math-var">z<span class="subscript">L</span></span>′)空间，其中<span class="math-var">z<span class="subscript">L</span></span>′ < <span class="math-var">z<span class="subscript">L</span></span>。
+
+进一步，记<span class="math-var">d<span class="subscript">max</span><span class="superscript">R</span></span>(G)为R部顶点的最大度数。显然，全局MBKBP P的L侧的大小满足<span class="math-var">θ<span class="subscript">L</span></span> ≤ |L(P)| ≤ <span class="math-var">d<span class="subscript">max</span><span class="superscript">R</span></span>(G) + k。
+
+<div class="algorithm-section">
+据此，文章按以下步骤生成一系列搜索空间：<br>
+(1) <strong>初始：</strong>在(<span class="math-var">θ<span class="subscript">L</span><span class="superscript">1</span></span>, <span class="math-var">θ<span class="subscript">R</span><span class="superscript">1</span></span>)空间计算<span class="math-var">P</span><span class="subscript">1</span>*，其中<span class="math-var">θ<span class="subscript">L</span><span class="superscript">1</span></span> = ⌊(<span class="math-var">d<span class="subscript">max</span><span class="superscript">R</span></span>(G) + k)/2⌋，<span class="math-var">θ<span class="subscript">R</span><span class="superscript">1</span></span> = <span class="math-var">θ<span class="subscript">R</span></span>；<br>
+(2) <strong>迭代：</strong>第i轮在(⌊<span class="math-var">θ<span class="subscript">L</span><span class="superscript">i-1</span></span>/2⌋, |V(<span class="math-var">P</span><span class="subscript">i-1</span>*)| − <span class="math-var">θ<span class="subscript">L</span><span class="superscript">i-1</span></span>)空间计算<span class="math-var">P<span class="subscript">i</span></span>*，直至⌊<span class="math-var">θ<span class="subscript">L</span><span class="superscript">i-1</span></span>/2⌋ < <span class="math-var">θ<span class="subscript">L</span></span>为止；<br>
+(3) <strong>结束：</strong>取所有<span class="math-var">P<span class="subscript">i</span></span>*中顶点数最多者，即得P。
+</div>
+
+如图2所示，该框架以类二分搜索方式逐步缩小搜索空间，每轮处理的子图远小于原图，从而显著提升整体效率。
+
+<img src="/assets/images/posts/icde-3.png" alt="搜索框架示意图">
+<div class="figure-caption">图2：相应搜索框架的搜索空间</div>
+
+<h3>03 基于δ-平衡的空间压缩</h3>
+
+借助δ-平衡性质，可对已生成的搜索空间再做一次精炼。如图2灰色区域所示，在|L| = |R| + δ与|L| = |R| − δ两条直线之间，才可能出现合法的δ-平衡k-biplex。因此，将该灰色区域与先前得到的(<span class="math-var">z<span class="subscript">L</span></span>, <span class="math-var">z<span class="subscript">R</span></span>)搜索空间求交集，即可得到进一步缩小的搜索空间。基于以上分析，正式得出了第i个搜索空间的定义：
+
+<div class="formula-box">
+<img src="/assets/images/posts/icde-4.png" alt="搜索空间公式">
+</div>
+
+算法2展示了之字形搜索框架的伪代码，其时间复杂度为O(log <span class="math-var">d<span class="subscript">max</span><span class="superscript">R</span></span>(G)·m·<span class="math-var">β<span class="subscript">k</span><span class="superscript">n</span></span>)，其中当k ≥ 1时，<span class="math-var">β<span class="subscript">k</span></span>是方程<span class="math-var">x<span class="superscript">k+2</span></span> − 2<span class="math-var">x<span class="superscript">k+1</span></span> + 1 = 0的最大实根。
+
+回顾图1的示例，设k = δ = 1，<span class="math-var">θ<span class="subscript">L</span></span> = <span class="math-var">θ<span class="subscript">R</span></span> = 3。采用文章提出的之字形搜索框架后，仅需枚举5个极大k-biplex（见图3阴影部分），数量仅为基线方法的一半。
+
+<img src="/assets/images/posts/icde-5.png" alt="最大k-biplex枚举">
+<div class="figure-caption">图3：最大k-biplex枚举</div>
+
+<h3>04 优化策略</h3>
+
+为进一步提升每个搜索空间的效率，文章提出了两类优化策略：枚举剪枝和图缩减剪枝。
+
+<div class="experiment-box">
+<strong>1. 枚举剪枝：</strong>在搜索早期删除那些不可能产生更优解的分支和顶点，使计算资源全部集中在有潜力的路径和顶点上，主要有以下三类：<br>
+(1) 上界剪枝：如果某个分支下产生的所有结果都小于目前的最大值，则此分支会被删除；<br>
+(2) 非平衡剪枝：如果某个分支下产生的所有结果都不满足δ-平衡条件，则此分支会被删除；<br>
+(3) 候选顶点剪枝：如果某个顶点的加入会导致当前结果小于目前的最大值，则此顶点会从候选集中删除。<br><br>
+<strong>2. 图缩减剪枝：</strong>在开始枚举前，提前删除图中不可能出现在最优解的顶点
+</div>
+
+<h2>实验</h2>
+
+<h3>01 实验设置</h3>
+
+<div class="experiment-box">
+本节展示了文章实验结果。所有实验均在一台配备Intel Xeon 2.4GHz CPU、128GB主内存，运行64位Ubuntu 20.04.6 LTS的机器上进行，使用的数据集如下所示：
+</div>
+
+**表1：实验中使用的数据集**
+
+<img src="/assets/images/posts/icde-6.png" alt="实验数据集">
+
+文章评估以下三种算法：
+(1) **MBKBPZigzag⁺**：应用了优化策略的算法1；
+(2) **MBKBPEnumAll**：算法1；
+(3) **iMB**：极大k-biplex枚举方法的基准算法。
+
+每次测试的最长运行时间设置为24小时；如果测试未能在该时间内结束，则将其处理时间记为INF。参数设置方面，默认取k = 1，<span class="math-var">θ<span class="subscript">L</span></span> = <span class="math-var">θ<span class="subscript">R</span></span> = 2<span class="superscript">k+1</span> = 3，且δ = 20。
+
+<h3>02 实验一</h3>
+
+在不同数据集上的性能。在本实验中，我们评估了各算法在不同真实世界图上计算MBKBP的性能。对于每个数据集，我们均使用默认参数，并记录每种算法的运行时间。结果如图4所示。
+
+<img src="/assets/images/posts/icde-7.png" alt="不同数据集的运行时间">
+<div class="figure-caption">图4：不同数据集的运行时间</div>
+
+<h3>03 实验二</h3>
+
+不同δ下的算法表现。在本实验中，对于小型数据集Divorce和Cities，将δ从5变化到50；对于大型数据集，则将δ设定在20至200之间，结果如图5所示。
+
+<img src="/assets/images/posts/icde-8.png" alt="不同δ的运行时间">
+<div class="figure-caption">图5：不同δ的运行时间</div>
+
+<h3>04 实验三</h3>
+
+不同<span class="math-var">θ<span class="subscript">L</span></span>/<span class="math-var">θ<span class="subscript">R</span></span>下的算法表现。令θ = <span class="math-var">θ<span class="subscript">L</span></span> = <span class="math-var">θ<span class="subscript">R</span></span>，将θ从3变化到6，并记录每种算法的运行时间，结果如图6所示。
+
+<img src="/assets/images/posts/icde-9.png" alt="不同θ的运行时间">
+<div class="figure-caption">图6：不同<span class="math-var">θ<span class="subscript">L</span></span>/<span class="math-var">θ<span class="subscript">R</span></span>的运行时间</div>
+
+<h3>05 实验四</h3>
+
+案例研究。本实验使用来自GEO数据库（https://www.ncbi.nlm.nih.gov/geo/）的真实人类子宫内膜异位症与基因相互作用网络数据，将本模型与MBBC模型进行比较。人类子宫内膜异位症与基因相互作用网络中的凝聚结构可视为双簇（bicluster）实例，可识别具有相似表达谱的基因集合，从而为与某些子宫内膜异位症疾病相关的致病基因提供洞察。如图7所示，上侧顶点代表正常样本和异位症样本，其中GSM767、GSM768、GSM769、GSM771为异位症样本，其余为正常样本；下侧顶点代表人类基因。MBBC模型识别出了一个3 × 3的biclique，覆盖了4个异位症样本中的3个。当设置k = 1且δ = 2时，MBKBP模型发现了一个由11个顶点组成的更大凝聚结构，涵盖全部4个异位症样本。此外，与MBBC模型相比，MBKBP模型还发现了另两种与子宫内膜异位症相关的致病基因，即ARID1A和VEGF。因此，MBKBP模型放宽了MBBC对全互连性和精确等大小的严格要求，使其能够以更高的灵活性和准确性识别更多潜在致病基因。
+
+<img src="/assets/images/posts/icde-10.png" alt="案例研究">
+<div class="figure-caption">图7：案例研究</div>
+
+<h2>详细内容请参见</h2>
+
+Long Yuan, Junyue Xu, Zi Chen, Chuan Ma, Jianqiu Xu, Lu Qin, Efficient Maximum Balanced k-biplex Search over Bipartite Graphs, IEEE International Conference on Data Engineering (ICDE) 2025, https://www.computer.org/csdl/proceedings-article/icde/2025/360300d098/26FZBsCezGo
+
+</div>

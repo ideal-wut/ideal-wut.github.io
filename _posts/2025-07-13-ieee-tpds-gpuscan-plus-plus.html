@@ -1,0 +1,231 @@
+---
+layout: post
+title: "IEEE TPDS'25: 基于GPU的高效图结构聚类算法GPUSCAN++"
+date: 2025-07-13
+categories: [研究成果, 论文发表]
+tags: [GPU计算, 图聚类, 并行算法, 结构聚类, GPUSCAN++]
+author: IDEAL团队
+description: "本文提出了一种新型的基于GPU的结构化聚类算法GPUSCAN++，通过渐进式聚类方法和基于分区的外存优化策略，显著提升了图结构聚类的效率和可扩展性。"
+image: /assets/images/posts/gpuscan-cover.jpg
+---
+
+<style>
+.post-content {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.post-content h1 {
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.post-content h2 {
+    color: #34495e;
+    border-left: 4px solid #3498db;
+    padding-left: 15px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.post-content h3 {
+    color: #2c3e50;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.post-content .paper-info {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.post-content .paper-info h3 {
+    color: white;
+    margin-top: 0;
+}
+
+.post-content .highlight-box {
+    background: #f8f9fa;
+    border-left: 4px solid #28a745;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.post-content .experiment-section {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.post-content .algorithm-box {
+    background: #e3f2fd;
+    border: 1px solid #90caf9;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.post-content blockquote {
+    border-left: 4px solid #3498db;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background: #f4f4f4;
+    font-style: italic;
+}
+
+.post-content .figure-caption {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.post-content .math-formula {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 1.1em;
+    color: #2c3e50;
+}
+
+.post-content .math-var {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+}
+
+.post-content .subscript {
+    font-size: 0.8em;
+    vertical-align: sub;
+}
+
+.post-content .superscript {
+    font-size: 0.8em;
+    vertical-align: super;
+}
+
+.post-content .math-symbol {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.2em;
+}
+
+.post-content .math-function {
+    font-family: 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: normal;
+}
+</style>
+
+<div class="post-content">
+
+<img src="/assets/images/posts/gpuscan-cover.jpg" alt="GPUSCAN++ Cover" style="width: 100%; margin-bottom: 30px;">
+
+<h1>IEEE TPDS'25: 基于GPU的高效图结构聚类算法GPUSCAN++</h1>
+
+结构聚类是最受欢迎的图聚类方法之一。GPUSCAN通过GPU来加速聚类过程，然而其在并行化过程中引入了大量额外开销，影响了整体性能表现。此外，GPUSCAN假设图数据完全驻留于GPU内存中，但由于当前GPU内存容量有限，许多实际应用中的大规模图无法完全加载至GPU内存中，从而限制了该算法在处理超大规模图时的适用性。
+
+为此，本文提出了一种新型的基于GPU的结构化聚类算法——GPUSCAN++。为解决效率问题，本文设计了一种面向GPU架构的渐进式聚类方法，该方法不仅有效规避了高昂的并行化开销，还充分挖掘了GPU计算资源的潜力。为应对GPU内存容量的限制，本文进一步提出了一种基于分区的结构化聚类策略，使得算法能够在有限GPU内存条件下处理超大规模图。在多个真实图数据集上的结果表明，当图数据能够完全加载至GPU内存时，GPUSCAN++相比当前最先进的基于GPU的算法可实现最高达168倍的加速。此外，GPUSCAN++具备良好的可扩展性，能够有效处理超大规模图数据。例如，本文算法在使用不足2GB GPU内存的情况下，成功完成了对一个包含18亿条边的图的结构化聚类任务。
+
+该成果"GPUSCAN++: Efficient Structural Graph Clustering on GPUs"已被IEEE Transactions on Parallel and Distributed Systems录用。TPDS是并行分布式计算领域权威期刊之一，属于中国计算机学会CCF A类期刊。
+
+<img src="/assets/images/posts/gpuscan-1.jpg" alt="论文信息">
+
+<div class="paper-info">
+<h3>【论文标题】</h3>
+<p>GPUSCAN++: Efficient Structural Graph Clustering on GPUs</p>
+
+<h3>【论文地址】</h3>
+<p>https://doi.org/10.1109/tpds.2025.3582996</p>
+</div>
+
+<h2>背景与动机</h2>
+
+图聚类是图数据分析中最基本的问题之一，在自然语言处理、推荐系统、社交和生物网络分析以及分布式系统中的负载均衡等领域有着广泛应用。结构聚类是一种广受欢迎的图聚类方法，由SCAN（Structural Clustering Algorithm for Networks）算法首次提出。如图1所示，通过结构相似性阈值ε和核心度μ，SCAN不仅能识别紧密连接的簇结构（灰色区域），还能精确标注连接不同簇的枢纽顶点（hub）和孤立顶点（outlier），这种对网络拓扑的深度解析能力，使其在复杂系统分析中具有不可替代的价值。然而随着图数据规模的爆炸式增长——现代社交网络和生物网络常包含数十亿条边，传统CPU算法已难以满足实际应用的性能需求。
+
+<img src="/assets/images/posts/gpuscan-2.jpg" alt="SCAN聚类结果示例">
+<div class="figure-caption">图1：SCAN在ε=0.6, μ=3下的聚类结果</div>
+
+近年来，GPU的快速发展引起了学术界和工业界的广泛关注，并已成功用于加速各种图算法。GPU的大规模并行硬件资源为加速结构聚类提供了新的机遇。然而，现有的GPU加速方案GPUSCAN仍存在显著不足：（1）并行化开销过高；（2）预设图完全驻留在GPU显存中，制约了GPUSCAN能够处理的图规模。
+
+<div class="highlight-box">
+针对这些问题，我们设计了一种新的基于GPU的高效结构聚类算法，能够处理大规模图数据。我们的解决方案不仅需要克服现有GPU算法在并行效率上的不足，使得需要的工作量降低至<span class="math-formula"><span class="math-var">O</span>(<span class="math-symbol">Σ</span><span class="subscript">(<span class="math-var">u</span>,<span class="math-var">v</span>)<span class="math-symbol">∈</span><span class="math-var">E</span>(<span class="math-var">G</span>)</span> <span class="math-function">deg</span>(<span class="math-var">u</span>)·<span class="math-function">log</span> <span class="math-function">deg</span>(<span class="math-var">v</span>))</span>，还突破GPU内存容量的限制，使算法能够适应实际应用中对大规模图数据处理的需求。
+</div>
+
+<h2>设计与实现</h2>
+
+<h3>01 渐进式聚类算法</h3>
+
+<div class="algorithm-box">
+GPUSCAN++的核心创新在于其渐进式聚类框架，该框架通过多层次优化显著提升了计算效率。如图2所示，算法采用CSR增强的图存储结构，将顶点数组、邻接数组、边ID数组和相似度数组有机整合。这种设计不仅支持高效的度查询，还通过边按度排序（<span class="math-function">deg</span>(<span class="math-var">u</span>)<span class="math-function">deg</span>(<span class="math-var">v</span>)时优先处理）实现了负载均衡，使得高计算密度的边能更高效地分配至GPU线程块。
+</div>
+
+<img src="/assets/images/posts/gpuscan-3.jpg" alt="CSR增强的图存储结构">
+<div class="figure-caption">图2：CSR增强的图存储结构</div>
+
+<h3>02 基于分区的外存优化算法</h3>
+
+针对GPU内存容量限制的问题，我们提出了一种新的基于分区的结构聚类算法。直接使用GPU统一虚拟内存（UVM）的方案由于结构聚类过程中不规则的内存访问模式和相对较慢的I/O总线速率，性能并不理想。我们的分区算法通过以下方式解决内存限制问题：
+
+1. <strong>图分区策略</strong>：将原始图划分为一系列指定的子图，确保在聚类过程中只需将相关子图加载到GPU内存中。
+
+2. <strong>结果一致性保证</strong>：设计的分区方法能够保证聚类结果与将整个图加载到GPU内存中得到的结果完全一致。
+
+3. <strong>内存高效利用</strong>：通过精心设计的数据加载和交换策略，最大化GPU内存的利用率，同时最小化主机与GPU之间的数据传输开销。该算法不仅解决了GPUSCAN中的GPU内存限制问题，还避免了基于UVM方法中涉及的数据移动开销。
+
+<h2>实验结果</h2>
+
+<h3>01 实验设置</h3>
+
+<div class="experiment-section">
+内存计算算法在配备Intel Xeon 2.4GHz处理器、128GB主内存和Nvidia Tesla V100（16GB显存）GPU的工作站上进行测试，操作系统为Ubuntu 16.04LTS。外存计算算法则在配备Nvidia GTX1050（2GB显存）GPU的机器上评估，同样运行Ubuntu 16.04LTS系统。我们选取了十组真实世界图数据进行测试。
+</div>
+
+<strong>表1：实验中使用的数据集</strong>
+
+<img src="/assets/images/posts/gpuscan-4.jpg" alt="实验数据集">
+
+如表1所示，前八个数据集用于评估内存计算算法，最后两个超大规模数据集（TW和FR）由于无法载入Tesla V100的16GB显存，专门用于外存算法评估。所有测试数据集均包含真实世界的社交网络、网页链接和技术对等网络等具有代表性的图结构。
+
+<h3>02 内存方法对比</h3>
+
+如图3和图4所示，我们分别在8个标准数据集和2个超大规模数据集上对算法性能进行了全面评估。实验结果表明，GPUSCAN++在内存计算场景下展现出显著优势：当ε=0.2时，相比GPUSCAN在EU数据集上实现了168倍的加速（3141.11s→18.93s）；当μ=3时，UK数据集的执行时间从411.97s缩短至8.87s。
+
+<img src="/assets/images/posts/gpuscan-5.jpg" alt="ε变化时的性能对比">
+<div class="figure-caption">图3：ε变化时的性能（μ=6）</div>
+
+<img src="/assets/images/posts/gpuscan-6.jpg" alt="μ变化时的性能对比">
+<div class="figure-caption">图4：μ变化时的性能（ε=0.5）</div>
+
+<h3>03 外存方法对比</h3>
+
+针对超大规模图数据处理，图5和图6对比了GPUSCAN++O与UVM方案的性能差异。实验显示，在Twitter-2010数据集（14.7亿边）上，当ε=0.5时GPUSCAN++O仅需2974.95秒，而UVM方案耗时19037.68秒。特别值得注意的是，如图6所示，当处理Friendster数据集（18亿边）时，UVM方案在ε≤0.4时因内存溢出无法完成计算，而GPUSCAN++O仅需2GB显存即可稳定运行，这验证了算法设计的可扩展性。
+
+<img src="/assets/images/posts/gpuscan-7.jpg" alt="外存方法ε变化时的性能">
+<div class="figure-caption">图5：ε变化时的性能（μ=6）</div>
+
+<img src="/assets/images/posts/gpuscan-8.jpg" alt="外存方法μ变化时的性能">
+<div class="figure-caption">图6：μ变化时的性能（ε=0.5）</div>
+
+<h2>详细内容请参见</h2>
+
+Long Yuan, Zeyu Zhou, Zi Chen, Xuemin Lin, Xiang Zhao, Fan Zhang, GPUSCAN++: Efficient Structural Graph Clustering on GPUs, IEEE Transactions on Parallel and Distributed Systems, https://doi.org/10.1109/tpds.2025.3582996
+
+</div>
