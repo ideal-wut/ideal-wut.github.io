@@ -1,35 +1,46 @@
 # 郑渤龙固定第一
 - name: 郑渤龙
+  pinyin: zheng bolong
   title: 教授
   avatar: /assets/images/team/郑渤龙-教授.jpg
 
-# 其他教授
+# 其他教授（同级按姓名拼音排序）
 - name: 袁龙
+  pinyin: yuan long
   title: 教授
   avatar: /assets/images/team/袁龙-教授.jpg
 
-# 副教授（按姓名排序）
+# 副教授（同级按姓名拼音排序）
 - name: 陈紫
+  pinyin: chen zi
   title: 副教授
   avatar: /assets/images/team/陈紫-副教授.jpg
 
 - name: 杜亚娟
+  pinyin: du yajuan
   title: 副教授
   avatar: /assets/images/team/杜亚娟-副教授.jpg
 
 - name: 张寒冰
+  pinyin: zhang hanbing
   title: 副教授
   avatar: /assets/images/team/张寒冰-副教授.jpg
 
-# 讲师（按姓名排序）
+# 讲师
+
+- name: 李岩
+  pinyin: li yan
+  title: 讲师
+  avatar: /assets/images/team/李岩-讲师.jpg
+  
+
 - name: 但唐鹏
+  pinyin: dan tangpeng
   title: 讲师
   avatar: /assets/images/team/但唐鹏-讲师.jpg
 
 - name: 董明
+  pinyin: dong ming
   title: 讲师
   avatar: /assets/images/team/董明-讲师.jpg
 
-- name: 李岩
-  title: 讲师
-  avatar: /assets/images/team/李岩-讲师.jpg

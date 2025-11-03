@@ -62,8 +62,77 @@ permalink: /team/
         <!-- Teachers Tab -->
         <div id="teachers-tab" class="tab-pane">
             {% if site.data.teachers and site.data.teachers.size > 0 %}
+            {% assign head_teacher = site.data.teachers | where: 'name', '郑渤龙' %}
+            {% assign non_head_teachers = site.data.teachers | where_exp: 'item', "item.name != '郑渤龙'" %}
+
+            {% assign professors = non_head_teachers | where: 'title', '教授' | sort: 'pinyin' %}
+            {% assign associate_professors = non_head_teachers | where: 'title', '副教授' | sort: 'pinyin' %}
+            {% assign lecturers = non_head_teachers | where: 'title', '讲师' | sort: 'pinyin' %}
+
             <div class="teachers-grid">
-                {% for teacher in site.data.teachers %}
+                {% if head_teacher.size > 0 %}
+                    {% for teacher in head_teacher %}
+                    <div class="teacher-card">
+                        <div class="teacher-avatar">
+                            <img src="{{ teacher.avatar | default: '/assets/images/default-avatar.jpg' | relative_url }}"
+                                 alt="{{ teacher.name }}">
+                        </div>
+                        <div class="teacher-info">
+                            <h3>{{ teacher.name }}</h3>
+                            <p class="teacher-title">{{ teacher.title }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                {% endif %}
+
+                {% for teacher in professors %}
+                <div class="teacher-card">
+                    <div class="teacher-avatar">
+                        <img src="{{ teacher.avatar | default: '/assets/images/default-avatar.jpg' | relative_url }}"
+                             alt="{{ teacher.name }}">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>{{ teacher.name }}</h3>
+                        <p class="teacher-title">{{ teacher.title }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+
+                {% for teacher in associate_professors %}
+                <div class="teacher-card">
+                    <div class="teacher-avatar">
+                        <img src="{{ teacher.avatar | default: '/assets/images/default-avatar.jpg' | relative_url }}"
+                             alt="{{ teacher.name }}">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>{{ teacher.name }}</h3>
+                        <p class="teacher-title">{{ teacher.title }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+
+                {% assign priority_names_str = '李岩,董明,但唐鹏' %}
+                {% assign priority_names = priority_names_str | split: ',' %}
+
+                {%- for pname in priority_names -%}
+                    {%- for teacher in lecturers -%}
+                        {%- if teacher.name == pname -%}
+                        <div class="teacher-card">
+                            <div class="teacher-avatar">
+                                <img src="{{ teacher.avatar | default: '/assets/images/default-avatar.jpg' | relative_url }}"
+                                     alt="{{ teacher.name }}">
+                            </div>
+                            <div class="teacher-info">
+                                <h3>{{ teacher.name }}</h3>
+                                <p class="teacher-title">{{ teacher.title }}</p>
+                            </div>
+                        </div>
+                        {%- endif -%}
+                    {%- endfor -%}
+                {%- endfor -%}
+
+                {% assign other_lecturers = lecturers | where_exp: 'item', "item.name != '李岩' and item.name != '董明' and item.name != '但唐鹏'" | sort: 'pinyin' %}
+                {% for teacher in other_lecturers %}
                 <div class="teacher-card">
                     <div class="teacher-avatar">
                         <img src="{{ teacher.avatar | default: '/assets/images/default-avatar.jpg' | relative_url }}"
