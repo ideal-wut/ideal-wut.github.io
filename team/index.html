@@ -63,11 +63,10 @@ permalink: /team/
         <div id="teachers-tab" class="tab-pane">
             {% if site.data.teachers and site.data.teachers.size > 0 %}
             {% assign head_teacher = site.data.teachers | where: 'name', '郑渤龙' %}
-            {% assign non_head_teachers = site.data.teachers | where_exp: 'item', "item.name != '郑渤龙'" %}
 
-            {% assign professors = non_head_teachers | where: 'title', '教授' | sort: 'pinyin' %}
-            {% assign associate_professors = non_head_teachers | where: 'title', '副教授' | sort: 'pinyin' %}
-            {% assign lecturers = non_head_teachers | where: 'title', '讲师' | sort: 'pinyin' %}
+            {% assign professors = site.data.teachers | where: 'title', '教授' | sort: 'pinyin' %}
+            {% assign associate_professors = site.data.teachers | where: 'title', '副教授' | sort: 'pinyin' %}
+            {% assign lecturers = site.data.teachers | where: 'title', '讲师' | sort: 'pinyin' %}
 
             <div class="teachers-grid">
                 {% if head_teacher.size > 0 %}
@@ -86,6 +85,7 @@ permalink: /team/
                 {% endif %}
 
                 {% for teacher in professors %}
+                {% if teacher.name != '郑渤龙' %}
                 <div class="teacher-card">
                     <div class="teacher-avatar">
                         <img src="{{ teacher.avatar | default: '/assets/images/default-avatar.jpg' | relative_url }}"
@@ -96,6 +96,7 @@ permalink: /team/
                         <p class="teacher-title">{{ teacher.title }}</p>
                     </div>
                 </div>
+                {% endif %}
                 {% endfor %}
 
                 {% for teacher in associate_professors %}
@@ -131,8 +132,8 @@ permalink: /team/
                     {%- endfor -%}
                 {%- endfor -%}
 
-                {% assign other_lecturers = lecturers | where_exp: 'item', "item.name != '李岩' and item.name != '董明' and item.name != '但唐鹏'" | sort: 'pinyin' %}
-                {% for teacher in other_lecturers %}
+                {% for teacher in lecturers %}
+                {% if teacher.name != '李岩' and teacher.name != '董明' and teacher.name != '但唐鹏' %}
                 <div class="teacher-card">
                     <div class="teacher-avatar">
                         <img src="{{ teacher.avatar | default: '/assets/images/default-avatar.jpg' | relative_url }}"
@@ -143,6 +144,7 @@ permalink: /team/
                         <p class="teacher-title">{{ teacher.title }}</p>
                     </div>
                 </div>
+                {% endif %}
                 {% endfor %}
             </div>
             {% else %}
