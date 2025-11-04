@@ -140,11 +140,11 @@ image: /assets/images/posts/gpuscan-cover.jpg
 
 <!-- <h1>IEEE TPDS'25: 基于GPU的高效图结构聚类算法GPUSCAN++</h1> -->
 
-结构聚类是最受欢迎的图聚类方法之一。GPUSCAN通过GPU来加速聚类过程，然而其在并行化过程中引入了大量额外开销，影响了整体性能表现。此外，GPUSCAN假设图数据完全驻留于GPU内存中，但由于当前GPU内存容量有限，许多实际应用中的大规模图无法完全加载至GPU内存中，从而限制了该算法在处理超大规模图时的适用性。
+<p>结构聚类是最受欢迎的图聚类方法之一。GPUSCAN通过GPU来加速聚类过程，然而其在并行化过程中引入了大量额外开销，影响了整体性能表现。此外，GPUSCAN假设图数据完全驻留于GPU内存中，但由于当前GPU内存容量有限，许多实际应用中的大规模图无法完全加载至GPU内存中，从而限制了该算法在处理超大规模图时的适用性。</p>
 
-为此，本文提出了一种新型的基于GPU的结构化聚类算法——GPUSCAN++。为解决效率问题，本文设计了一种面向GPU架构的渐进式聚类方法，该方法不仅有效规避了高昂的并行化开销，还充分挖掘了GPU计算资源的潜力。为应对GPU内存容量的限制，本文进一步提出了一种基于分区的结构化聚类策略，使得算法能够在有限GPU内存条件下处理超大规模图。在多个真实图数据集上的结果表明，当图数据能够完全加载至GPU内存时，GPUSCAN++相比当前最先进的基于GPU的算法可实现最高达168倍的加速。此外，GPUSCAN++具备良好的可扩展性，能够有效处理超大规模图数据。例如，本文算法在使用不足2GB GPU内存的情况下，成功完成了对一个包含18亿条边的图的结构化聚类任务。
+<p>为此，本文提出了一种新型的基于GPU的结构化聚类算法——GPUSCAN++。为解决效率问题，本文设计了一种面向GPU架构的渐进式聚类方法，该方法不仅有效规避了高昂的并行化开销，还充分挖掘了GPU计算资源的潜力。为应对GPU内存容量的限制，本文进一步提出了一种基于分区的结构化聚类策略，使得算法能够在有限GPU内存条件下处理超大规模图。在多个真实图数据集上的结果表明，当图数据能够完全加载至GPU内存时，GPUSCAN++相比当前最先进的基于GPU的算法可实现最高达168倍的加速。此外，GPUSCAN++具备良好的可扩展性，能够有效处理超大规模图数据。例如，本文算法在使用不足2GB GPU内存的情况下，成功完成了对一个包含18亿条边的图的结构化聚类任务。</p>
 
-该成果"GPUSCAN++: Efficient Structural Graph Clustering on GPUs"已被IEEE Transactions on Parallel and Distributed Systems录用。TPDS是并行分布式计算领域权威期刊之一，属于中国计算机学会CCF A类期刊。
+<p>该成果"GPUSCAN++: Efficient Structural Graph Clustering on GPUs"已被IEEE Transactions on Parallel and Distributed Systems录用。TPDS是并行分布式计算领域权威期刊之一，属于中国计算机学会CCF A类期刊。</p>
 
 <img src="/assets/images/posts/gpuscan-1.jpg" alt="论文信息">
 
