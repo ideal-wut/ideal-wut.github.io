@@ -1574,7 +1574,7 @@ body {
 
 .paper-card {
     display: block;
-    text-decoration: none;
+    text-decoration: none !important;
     color: inherit;
     background: white;
     padding: 2rem;
@@ -1583,6 +1583,10 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
     border-left: 4px solid var(--secondary-color);
     cursor: pointer;
+}
+
+.paper-card * {
+    text-decoration: none !important;
 }
 
 .paper-card:hover {
