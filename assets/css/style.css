@@ -1586,6 +1586,25 @@ body {
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 
+/* 会议论文 - 蓝色左边框 */
+.paper-card.conference-paper {
+    border-left-color: #196ca3;
+}
+
+/* 期刊论文 - 红色左边框 */
+.paper-card.journal-paper {
+    border-left-color: #c32b72;
+}
+
+/* 悬停效果区分（可选）*/
+.paper-card.conference-paper:hover {
+    box-shadow: 0 4px 16px rgba(52, 152, 219, 0.2);
+}
+
+.paper-card.journal-paper:hover {
+    box-shadow: 0 4px 16px rgba(231, 76, 60, 0.2);
+}
+
 .paper-title {
     color: var(--primary-color);
     margin-bottom: 1rem;

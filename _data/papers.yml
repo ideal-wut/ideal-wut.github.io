@@ -1,14 +1,16 @@
 - title: 'Efficient Maximum Balanced k-biplex Search Over Bipartite Graphs'
   authors: 'Long Yuan, Junyue Xu, Zi Chen, Chuan Ma, Jianqiu Xu, Lu Qin'
-  venue: 'ICDE 2026'
-  volume_issue_pages: '3098--3112'
+  type: conference
+  venue: 'ICDE'
+  volume_issue_pages: '3098-3112'
   year: 2025
   doi: 'https://doi.org/10.1109/ICDE65448.2025.00232'
 
 - title: 'GPUSCAN++: Efficient Structural Graph Clustering on GPUs'
   authors: 'Long Yuan, Zeyu Zhou, Zi Chen, Xuemin Lin, Xiang Zhao, Fan Zhang'
+  type: journal
   venue: 'IEEE Transactions on Parallel & Distributed Systems'
-  volume_issue_pages: '36(09): 1890--1903'
+  volume_issue_pages: '36(9): 1890-1903'
   year: 2025
   doi: 'https://doi.org/10.1109/TPDS.2025.3582996'
 

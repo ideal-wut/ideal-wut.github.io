@@ -40,16 +40,23 @@ permalink: /achievements/
         {% if site.data.papers and site.data.papers.size > 0 %}
         {% assign sorted_papers = site.data.papers | sort: 'year' | reverse %}
         {% for paper in sorted_papers %}
-        <div class="paper-card" data-year="{{ paper.year }}">
+        <div class="paper-card {% if paper.type == 'journal' %}journal-paper{% elsif paper.type == 'conference' %}conference-paper{% endif %}" data-year="{{ paper.year }}">
             <p class="paper-authors">{{ paper.authors }}:</p>
             <h3 class="paper-title">{{ paper.title }}.</h3>
             <div class="paper-meta">
-                {% if paper.volume_issue_pages %}
+                {% if paper.type == 'conference' %}
+                    <!-- 会议论文格式：ICDE 2025: 710-723 -->
+                    <span>{{ paper.venue }} {{ paper.year }}: {{ paper.volume_issue_pages }}</span>
+                {% elsif paper.type == 'journal' %}
+                    <!-- 期刊论文格式：IEEE Trans. ... 36(9): 1890-1903 (2025) -->
                     <span>{{ paper.venue }} {{ paper.volume_issue_pages }} ({{ paper.year }})</span>
-                {% elsif paper.venue contains paper.year %}
-                    <span>{{ paper.venue }}</span>
                 {% else %}
-                    <span>{{ paper.venue }} ({{ paper.year }})</span>
+                    <!-- 其他类型保持原样 -->
+                    {% if paper.volume_issue_pages %}
+                        <span>{{ paper.venue }} {{ paper.volume_issue_pages }} ({{ paper.year }})</span>
+                    {% else %}
+                        <span>{{ paper.venue }} ({{ paper.year }})</span>
+                    {% endif %}
                 {% endif %}
             </div>
             <div class="paper-links">
