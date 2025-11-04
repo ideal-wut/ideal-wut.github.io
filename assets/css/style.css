@@ -273,6 +273,8 @@ body {
     margin: 0 auto; /* 居中显示 */
     padding: 0 2rem; /* 添加左右内边距 */
     line-height: 1.8; /* 增加行高提升可读性 */
+    text-align: justify; /* 两端对齐 */
+    text-justify: inter-ideograph; /* 中文字符间距调整 */
 }
 
 /* Research Styles */
