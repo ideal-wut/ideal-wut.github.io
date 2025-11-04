@@ -10,11 +10,11 @@ image: /assets/images/posts/gpuscan-cover.jpg
 ---
 
 <style>
-.post-content {
+/* .post-content {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-}
+} */
 
 .post-content h1 {
     color: #2c3e50;
@@ -48,15 +48,15 @@ image: /assets/images/posts/gpuscan-cover.jpg
 }
 
 .post-content .paper-info {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, white 0%, white 100%);
+    color: black;
     padding: 20px;
     border-radius: 10px;
     margin: 20px 0;
 }
 
 .post-content .paper-info h3 {
-    color: white;
+    color: black;
     margin-top: 0;
 }
 
@@ -69,8 +69,8 @@ image: /assets/images/posts/gpuscan-cover.jpg
 }
 
 .post-content .experiment-section {
-    background: #fff3cd;
-    border: 1px solid #ffeaa7;
+    background: #fcfcfb;
+    border: 1px solid #fdfdfd;
     border-radius: 8px;
     padding: 20px;
     margin: 20px 0;
@@ -136,9 +136,9 @@ image: /assets/images/posts/gpuscan-cover.jpg
 
 <div class="post-content">
 
-<img src="/assets/images/posts/gpuscan-cover.jpg" alt="GPUSCAN++ Cover" style="width: 100%; margin-bottom: 30px;">
+<!-- <img src="/assets/images/posts/gpuscan-cover.jpg" alt="GPUSCAN++ Cover" style="width: 100%; margin-bottom: 30px;"> -->
 
-<h1>IEEE TPDS'25: 基于GPU的高效图结构聚类算法GPUSCAN++</h1>
+<!-- <h1>IEEE TPDS'25: 基于GPU的高效图结构聚类算法GPUSCAN++</h1> -->
 
 结构聚类是最受欢迎的图聚类方法之一。GPUSCAN通过GPU来加速聚类过程，然而其在并行化过程中引入了大量额外开销，影响了整体性能表现。此外，GPUSCAN假设图数据完全驻留于GPU内存中，但由于当前GPU内存容量有限，许多实际应用中的大规模图无法完全加载至GPU内存中，从而限制了该算法在处理超大规模图时的适用性。
 
@@ -148,13 +148,8 @@ image: /assets/images/posts/gpuscan-cover.jpg
 
 <img src="/assets/images/posts/gpuscan-1.jpg" alt="论文信息">
 
-<div class="paper-info">
-<h3>【论文标题】</h3>
-<p>GPUSCAN++: Efficient Structural Graph Clustering on GPUs</p>
-
 <h3>【论文地址】</h3>
 <p>https://doi.org/10.1109/tpds.2025.3582996</p>
-</div>
 
 <h2>背景与动机</h2>
 

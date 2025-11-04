@@ -34,12 +34,12 @@ body {
 .header-container {
     max-width: var(--container-width);
     margin: 0 auto;
-    padding: 1.5rem 2rem;
+    padding: 0.8rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    min-height: 150px;
+    min-height: 100px;
     flex-wrap: nowrap;
     overflow: hidden;
 }
@@ -96,10 +96,10 @@ body {
 .nav-item a {
     text-decoration: none;
     color: var(--text-color);
-    padding: 0.5rem 1rem;
+    padding: 4rem 1rem 0.6rem 1rem;
     display: block;
     transition: color 0.3s;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     white-space: nowrap;
 }
@@ -1136,6 +1136,11 @@ body {
     margin-top: 1.5rem;
 }
 
+.advisor-bio p {
+    text-align: justify;           /* 两端对齐 */
+    text-justify: inter-ideograph; /* 中文字符间距调整 */
+}
+
 .advisor-contact a {
     color: var(--secondary-color);
     text-decoration: none;
@@ -1216,6 +1221,7 @@ body {
     width: 60px;
     height: 2px;
     background: var(--primary-color);
+    display: none !important;
 }
 
 /* Year Group Styles for Master Students */
@@ -1422,16 +1428,24 @@ body {
 
 /* Post Styles */
 .post-container {
-    max-width: 800px;
+    max-width: var(--container-width);
     margin: 0 auto;
 }
 
-.post {
+/* .post {
     background: white;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+} */
+
+.post {
+    background: transparent;     /* 从 white 改为 transparent，去掉白色背景 */
+    padding: 0;                  /* 从 1rem 改为 0，去掉内边距 */
+    border-radius: 0;            /* 从 8px 改为 0，去掉圆角 */
+    box-shadow: none;            /* 从 0 2px 8px... 改为 none，去掉阴影 */
 }
+
 
 .post-header {
     margin-bottom: 2rem;
@@ -2115,4 +2129,44 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 220px; /* 统一最小高度 */
+}
+
+
+/* ========== 团队动态页面图片样式 ========== */
+
+/* 段落 - 首行缩进2字符 */
+.post-content p {
+    text-indent: 2em !important;
+    text-align: justify !important;
+    line-height: 1.8 !important;
+}
+
+.post-content .table-title {
+    text-align: center !important;
+    text-indent: 0 !important;
+}
+
+/* 图片 - 居中，宽度为文字区域一半 */
+.post-content img {
+    display: block !important;
+    margin: 0.5em auto !important;    /* 上下0.5em，左右居中 */
+    width: 50% !important;             /* 宽度为文字区域的50% */
+    height: auto !important;
+}
+
+/* 图片标题 - 居中，宽度与图片一致 */
+.post-content .image-caption {
+    display: block !important;
+    text-align: center !important;
+    text-indent: 0 !important;
+    font-size: 14px !important;
+    color: #666 !important;
+    margin: 0.5em auto !important;
+    width: 50% !important;             /* 宽度与图片保持一致 */
+}
+
+
+/* 隐藏"返回动态列表"链接 */
+.post-footer {
+    display: none !important;
 }

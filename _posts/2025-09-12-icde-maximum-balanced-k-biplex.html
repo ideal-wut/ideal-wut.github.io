@@ -10,11 +10,11 @@ image: /assets/images/posts/icde-cover.jpg
 ---
 
 <style>
-.post-content {
+/* .post-content {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-}
+} */
 
 .post-content h1 {
     color: #2c3e50;
@@ -48,15 +48,15 @@ image: /assets/images/posts/icde-cover.jpg
 }
 
 .post-content .paper-info {
-    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 0;
+    /* background: linear-gradient(135deg, #aaf0f5 0%, #fefefe 100%); */
+    color: rgb(0, 0, 0);
+    /* padding: 20px; */
+    /* border-radius: 10px; */
+    /* margin: 20px 0; */
 }
 
 .post-content .paper-info h3 {
-    color: white;
+    color: rgb(0, 0, 0);
     margin-top: 0;
 }
 
@@ -98,7 +98,7 @@ image: /assets/images/posts/icde-cover.jpg
 }
 
 .post-content blockquote {
-    border-left: 4px solid #e74c3c;
+    border-left: 4px solid #fdfcfb;
     margin: 20px 0;
     padding: 10px 20px;
     background: #f4f4f4;
@@ -147,21 +147,15 @@ image: /assets/images/posts/icde-cover.jpg
 
 <div class="post-content">
 
-<img src="/assets/images/posts/icde-cover.jpg" alt="ICDE k-biplex Cover" style="width: 100%; margin-bottom: 30px;">
+<p>二部图已广泛应用于基因共表达网络、协作网络及客户–商品交互等场景，用以刻画不同类型实体之间的关联。在二部图中，一个核心任务是寻找"最大平衡biclique"（MBBC），即找出两侧顶点数目恰好相等且完全连通的极大子图。然而，由于真实数据往往存在噪声并呈稀疏分布，MBBC所要求的"全对全"连接与"严格等量"条件在实践中难以满足，导致该模型适用范围受限。</p>
 
-<h1>ICDE'25: 基于二部图的最大平衡k-biplex搜索</h1>
+<p>为解决此问题，本文提出了"最大平衡k-biplex"（MBKBP）模型，对MBBC的限制做了适度放宽：一方面，允许每个顶点与对侧顶点最多有k个非连接；另一方面，引入由用户指定的参数δ，对两侧顶点数目的差异进行约束。该设计显著增强了模型对噪声的容忍度。计算MBKBP的最朴素做法是枚举所有极大k-biplex，再从中选取最大者。实验表明，这一策略在规模稍大的数据集上效率较低。针对此问题，本文提出了"（zL，zR）搜索空间"概念，并围绕其构建了一套完整算法框架：通过生成一系列规模受限的（zL，zR）子空间，极大缩减了需枚举的k-biplex数量；进一步利用δ-平衡特性对搜索空间进行约束，并设计了三类剪枝规则以压缩计算量。在真实二部图上的实验显示，该算法相较基线方法最高可提速三个数量级，充分验证了其在大规模二部图分析中的高效性与实用性。</p>
 
-二部图已广泛应用于基因共表达网络、协作网络及客户–商品交互等场景，用以刻画不同类型实体之间的关联。在二部图中，一个核心任务是寻找"最大平衡biclique"（MBBC），即找出两侧顶点数目恰好相等且完全连通的极大子图。然而，由于真实数据往往存在噪声并呈稀疏分布，MBBC所要求的"全对全"连接与"严格等量"条件在实践中难以满足，导致该模型适用范围受限。
-
-为解决此问题，本文提出了"最大平衡k-biplex"（MBKBP）模型，对MBBC的限制做了适度放宽：一方面，允许每个顶点与对侧顶点最多有k个非连接；另一方面，引入由用户指定的参数δ，对两侧顶点数目的差异进行约束。该设计显著增强了模型对噪声的容忍度。计算MBKBP的最朴素做法是枚举所有极大k-biplex，再从中选取最大者。实验表明，这一策略在规模稍大的数据集上效率较低。针对此问题，本文提出了"（zL，zR）搜索空间"概念，并围绕其构建了一套完整算法框架：通过生成一系列规模受限的（zL，zR）子空间，极大缩减了需枚举的k-biplex数量；进一步利用δ-平衡特性对搜索空间进行约束，并设计了三类剪枝规则以压缩计算量。在真实二部图上的实验显示，该算法相较基线方法最高可提速三个数量级，充分验证了其在大规模二部图分析中的高效性与实用性。
-
-该成果"Efficient Maximum Balanced k-biplex Search over Bipartite Graphs"已在2025 IEEE 41st International Conference on Data Engineering (ICDE)发表，ICDE是数据库领域三大会议之一，属于中国计算机学会CCF A类会议。
+<p>该成果"Efficient Maximum Balanced k-biplex Search over Bipartite Graphs"已在2025 IEEE 41st International Conference on Data Engineering (ICDE)发表，ICDE是数据库领域三大会议之一，属于中国计算机学会CCF A类会议。</p>
 
 <img src="/assets/images/posts/icde-1.png" alt="论文信息">
 
 <div class="paper-info">
-<h3>【论文标题】</h3>
-<p>Efficient Maximum Balanced k-biplex Search over Bipartite Graphs</p>
 
 <h3>【论文地址】</h3>
 <p>https://www.computer.org/csdl/proceedings-article/icde/2025/360300d098/26FZBsCezGo</p>
@@ -276,7 +270,7 @@ image: /assets/images/posts/icde-cover.jpg
 本节展示了文章实验结果。所有实验均在一台配备Intel Xeon 2.4GHz CPU、128GB主内存，运行64位Ubuntu 20.04.6 LTS的机器上进行，使用的数据集如下所示：
 </div>
 
-**表1：实验中使用的数据集**
+<p class="table-title"><strong>表1：实验中使用的数据集</strong></p>
 
 <img src="/assets/images/posts/icde-6.png" alt="实验数据集">
 
