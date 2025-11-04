@@ -1573,17 +1573,25 @@ body {
 }
 
 .paper-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
     background: white;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     border-left: 4px solid var(--secondary-color);
+    cursor: pointer;
 }
 
 .paper-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.paper-card:hover .paper-title {
+    color: var(--secondary-color);
 }
 
 /* 会议论文 - 蓝色左边框 */
@@ -1623,29 +1631,8 @@ body {
 .paper-meta {
     color: var(--text-light);
     font-size: 0.95rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     font-style: italic;
-}
-
-.paper-links {
-    margin-top: 1rem;
-}
-
-.btn-paper-link {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: var(--secondary-color);
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: background 0.3s;
-}
-
-.btn-paper-link:hover {
-    background: var(--primary-color);
-    color: white;
 }
 
 .no-papers {
