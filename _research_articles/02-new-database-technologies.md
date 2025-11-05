@@ -4,8 +4,6 @@ title: 数据库新技术
 description: AI4DB、新型存储数据管理等前沿数据库技术研究与创新
 permalink: /research/articles/new-database-technologies/
 ---
-
-
 ## Text-to-SQL关键技术
 
 Text-to-SQL 通过自然语言交互方式降低结构化数据访问门槛，提升数据资产的可用性与普惠性，可直接支撑 BI（Business Intelligence） 报表、数据分析、客服问答、运营监控、教育科研、政务民生等场景，有助于充分释放数据要素的产业价值。
@@ -21,20 +19,18 @@ Text-to-SQL 需将用户自然语言形式的查询语句映射为可执行的SQ
 
 ![SpeakNav系统架构图](/assets/images/research/AI4DB-Text2SQL1.jpg)
 
-
 ![RHB-Net网络结构图](/assets/images/research/AI4DB-Text2SQL2.jpg)
-
-
 
 ![DC-SQL框架图](/assets/images/research/AI4DB-Text2SQL3.jpg)
 
+## 已发表成果
 
-已发表成果
 [1] Bolong Zheng, Lei Bi, Juan Cao, Hua Chai, Jun Fang, Lu Chen, Yunjun Gao, Xiaofang Zhou, Christian S. Jensen: SpeakNav: Voice-based Route Description Language Understanding for Template Driven Path Search. Proc. VLDB Endow. 14(12): 3056-3068 (2021)
 
 [2] Bolong Zheng, Lei Bi, Ruijie Xi, Lu Chen, Yunjun Gao, Xiaofang Zhou, Christian S. Jensen: RHB-Net: A Relation-aware Historical Bridging Network for Text2SQL Auto-Completion. SIGIR 2023: 1458-1467
 
 ## AI4DB关键技术
+
  本研究方向围绕AI4DB技术展开，涵盖数据查询资源推荐、AI4DB中间件部署、资源感知成本建模、查询优化器退化消除，形成覆盖查询优化与向量数据管理的关键技术体系。
 
 1）数据查询资源推荐：针对云平台大数据查询中传统优化忽视资源成本、资源与性能映射复杂的问题，LORE[1]整合SQL查询语句与查询执行计划双信息源，通过图神经网络建模学习资源分配与性能收益关系，实现了查询最优资源的高效精准估计。
@@ -48,20 +44,14 @@ Text-to-SQL 需将用户自然语言形式的查询语句映射为可执行的SQ
 本方向的研究成果发表在SIGMOD、VLDB、ICDE等重要学术期刊和会议上，申请/获得4项国家发明专利。团队在此方向与阿里云等知名企业展开合作，并实现相关技术的应用落地。
 ![最佳资源推荐学习框架](/assets/images/research/AI4DB1.png)
 
-
-
 ![资源感知的查询和计划表示学习框架](/assets/images/research/AI4DB2.png)
-
-
 
 ![AI和DB中间件](/assets/images/research/AI4DB3.png)
 
-
-
 ![性能衰退消除](/assets/images/research/AI4DB4.png)
 
+## 已发表成果
 
-已发表成果
 [1] Li Y, Wang L, Wang S, Sun Y, Peng Z. A resource-aware deep cost model for big data query processing. In2022 IEEE 38th International Conference on Data Engineering (ICDE) 2022 May 9 (pp. 885-897). IEEE.
 
 [2] Zhu R, Weng L, Wei W, Wu D, Peng J, Wang Y, Ding B, Lian D, Zheng B, Zhou J. Pilotscope: Steering databases with machine learning drivers. Proceedings of the VLDB Endowment. 2024 Jan 1;17(5):980-93.
@@ -69,7 +59,6 @@ Text-to-SQL 需将用户自然语言形式的查询语句映射为可执行的SQ
 [3] Li Y, Wang L, Zheng B, Peng Z. LORE: Learning-Based Resource Recommendation for Big Data Queries. In2025 IEEE 41st International Conference on Data Engineering (ICDE) 2025 May 19 (pp. 1732-1744). IEEE.
 
 [4] Weng L, Zhu R, Di Wu BD, Zheng B, Zhou J. Eraser: Eliminating Performance Regression on Learned Query Optimizer. PVLDB 17, 5 (2024), 926–938 [Internet]. 2024
-
 
 ## 新型存储技术
 
@@ -85,17 +74,14 @@ Text-to-SQL 需将用户自然语言形式的查询语句映射为可执行的SQ
 
 ![LDPC 细粒度读取和预测模型](/assets/images/research/存储器方向1.png)
 
-
 ![细粒度LDPC动态解码引擎](/assets/images/research/存储器方向2.png)
-
 
 ![冗余更新数据处理框架](/assets/images/research/存储器方向3.png)
 
-
 ![数据库-NVM-固态盘软硬件协同优化架构](/assets/images/research/存储器方向4.png)
 
-
 ## 已发表成果
+
 [1] Du, Yajuan，Gao, Yuan， Huang, Siyi，Li, Qiao.LDPC Level Prediction Toward Read Performance of High-Density Flash Memories.TCAD 2023:3264-3274
 
 [2] Yajuan Du，Yuan Gao，Qiao Li.Work-in-Progress: Prediction-based Fine-Grained LDPC Reading to Enhance High-Density Flash Read Performance.CASES 2022.
