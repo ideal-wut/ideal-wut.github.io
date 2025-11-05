@@ -256,7 +256,7 @@ body {
 
 .intro-card {
     background: white;
-    padding: 3rem 2rem; /* 增加上下内边距，保持左右内边距适中 */
+    padding: 0.25rem 0.5rem 1.5rem 0.5rem; /* 单独增大底部内边距，底部留白 */
     border-radius: 8px; /* 恢复圆角设计 */
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     margin: 0; /* 确保没有外边距 */
@@ -269,9 +269,10 @@ body {
 }
 
 .intro-content {
-    max-width: 1200px; /* 限制内容最大宽度以保持可读性 */
-    margin: 0 auto; /* 居中显示 */
-    padding: 0 2rem; /* 添加左右内边距 */
+    width: 100%; /* 内容占满卡片的可用宽度 */
+    max-width: none; /* 取消额外宽度限制 */
+    margin: 0; /* 移除居中外边距 */
+    padding: 0; /* 移除额外内边距，保证与卡片同宽 */
     line-height: 1.8; /* 增加行高提升可读性 */
     text-align: justify; /* 两端对齐 */
     text-justify: inter-ideograph; /* 中文字符间距调整 */
