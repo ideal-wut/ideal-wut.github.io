@@ -14,6 +14,14 @@
   year: 2025
   doi: 'https://doi.org/10.1109/TPDS.2025.3582996'
 
+- title: 'DHL: an efficient hierarchical index for shortest distance querying in time-dependent road networks'
+  authors: 'Tangpeng Dan, Xiao Pan, Bolong Zheng, Xiaofeng Meng'
+  type: journal
+  venue: 'VLDBJ.'
+  volume_issue_pages: '34(6): 69'
+  year: 2025
+  doi: 'https://link.springer.com/article/10.1007/s00778-025-00946-4'
+
 # - title: 'LORE: Learning-Based Resource Recommendation for Big Data Queries'
 #   authors: 'Yan Li, Liwei Wang, Bolong Zheng, Zhiyong Peng'
 #   venue: 'ICDE'
