@@ -1,3 +1,11 @@
+- title: 'DMRAD: Dynamic Decomposition and Memory-Aware Reconstruction for Noise-Resilient Multivariate Time Series Anomaly Detection'
+  authors: 'Zhenchang Xia, Jun Ma, Bolong Zheng, Liangliang Wang, Yanan Chang, Jianqun Cui'
+  type: journal
+  venue: 'IEEE Transactions on Knowledge and Data Engineering. '
+  volume_issue_pages: 'Early Access'
+  year: 2026
+  doi: 'https://www.doi.org/10.1109/TKDE.2025.3649930 '
+
 - title: 'Efficient Maximum Balanced k-biplex Search Over Bipartite Graphs'
   authors: 'Long Yuan, Junyue Xu, Zi Chen, Chuan Ma, Jianqiu Xu, Lu Qin'
   type: conference

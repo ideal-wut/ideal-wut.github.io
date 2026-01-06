@@ -1,0 +1,229 @@
+---
+layout: post
+title: "IEEE TKDE'26: 基于动态分解和记忆感知重建的抗噪声异常检测"
+date: 2026-01-06
+categories: [研究成果, 论文发表]
+tags: [时间序列, 异常检测, 深度学习, 动态分解, DMRAD]
+author: IDEAL团队
+excerpt: "本文提出了一种基于动态分解与记忆感知重建的双重机制DMRAD，通过自适应动态分解和轻量级潜在异常噪声识别算法，实现了复杂动态场景下的高精度鲁棒异常检测。"
+---
+
+<style>
+/* .post-content {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+} */
+
+.post-content h1 {
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.post-content h2 {
+    color: #34495e;
+    border-left: 4px solid #3498db;
+    padding-left: 15px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.post-content h3 {
+    color: #2c3e50;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.post-content .paper-info {
+    background: linear-gradient(135deg, white 0%, white 100%);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.post-content .paper-info h3 {
+    color: black;
+    margin-top: 0;
+}
+
+.post-content .highlight-box {
+    background: #f8f9fa;
+    border-left: 4px solid #28a745;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.post-content .experiment-section {
+    background: #fcfcfb;
+    border: 1px solid #fdfdfd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.post-content .algorithm-box {
+    background: #e3f2fd;
+    border: 1px solid #90caf9;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.post-content blockquote {
+    border-left: 4px solid #3498db;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background: #f4f4f4;
+    font-style: italic;
+}
+
+.post-content .figure-caption {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.post-content .math-formula {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 1.1em;
+    color: #2c3e50;
+}
+
+.post-content .math-var {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+}
+
+.post-content .subscript {
+    font-size: 0.8em;
+    vertical-align: sub;
+}
+
+.post-content .superscript {
+    font-size: 0.8em;
+    vertical-align: super;
+}
+
+.post-content .math-symbol {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.2em;
+}
+
+.post-content .math-function {
+    font-family: 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.post-content .table-title {
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+}
+</style>
+
+<div class="post-content">
+
+<!-- <h1>IEEE TKDE'26: 基于动态分解和记忆感知重建的抗噪声异常检测</h1> -->
+
+<p>当前，时间序列异常检测领域面临两大挑战：一是在复杂动态场景下难以准确建模正常时间模式；二是在无监督条件下，训练集中的异常和噪声会导致模型过度泛化。</p>
+
+<p>为此，团队研究人员创新性地提出一种基于动态分解与记忆感知重建的双重机制。通过自适应动态分解显式建模时间序列多种潜在正常时间模式，实现在复杂动态场景下对正常时间模式的准确捕捉，结合通道-时间混合注意力机制学习序列间相关性和序列内长期时间依赖性。最后，团队研究人员提出了一种轻量级潜在异常噪声识别算法，能够在无监督训练中识别并降低潜在异常噪声的权重，从而有效抑制噪声对模型的干扰，提升了复杂场景下的检测精度与鲁棒性。研究成果在五个基准数据集上超越现有先进方法，提出的轻量级潜在异常噪声识别算法能够迁移到其他算法中提高模型性能。</p>
+
+<p>该成果"DMRAD: Dynamic Decomposition and Memory-Aware Reconstruction for Noise-Resilient Multivariate Time Series Anomaly Detection"已被TKDE（IEEE Transactions on Knowledge and Data Engineering）录用。TKDE是中国计算机学会（CCF）推荐的A类国际期刊，专注于数据挖掘、知识工程和数据库系统等领域的学术研究。该论文第一单位为武汉理工大学计算机与人工智能学院，第一作者为夏振厂副教授，第二作者为我院2023级硕士研究生马俊，通讯作者为郑渤龙教授。</p>
+
+<img src="/assets/images/posts/dmrad-paper-info.png" alt="论文信息">
+
+<h3>【论文地址】</h3>
+<p>https://www.doi.org/10.1109/TKDE.2025.3649930</p>
+
+<h2>背景与动机</h2>
+
+<p>多变量时间序列异常检测是监控网络物理系统（如工业设施、数据中心和自动驾驶车辆）的核心技术，对预防系统故障、降低安全风险和经济损失具有至关重要的作用。如图1所示，现实系统中的时间序列通常包含快速演变的趋势和显著的周期性波动，这种复杂的时空特性使得准确检测异常变得极具挑战性。</p>
+
+<img src="/assets/images/posts/dmrad-1.svg" alt="在复杂动态场景下不同模型的重建误差对比">
+<div class="figure-caption">图1：在复杂动态场景下不同模型的重建误差对比</div>
+
+<p>重建型异常检测方法因其能够学习正常序列的动态模式而备受关注。如AnomalyTransformer和TimesNet等先进方法，通过注意力机制或时序变换技术有效捕捉时间依赖性。然而，现有方法存在两个关键局限：（1）大多仅关注单一时间模式，难以同时建模趋势和季节性等多元特征，导致在数据异质性和非平稳性场景下重建误差较高；（2）无监督学习假设训练数据纯净，但实际应用中不可避免会混入噪声和潜在异常，这会使模型学习到错误的模式，严重影响检测性能。</p>
+
+<p>随着工业系统规模不断扩大，多变量时间序列呈现出高维度、非平稳和强噪声等特性，传统方法已难以满足实际需求。尽管GPU等硬件加速技术为处理大规模时序数据提供了可能，但现有算法在特征提取效率和噪声鲁棒性方面仍存在明显不足。</p>
+
+<div class="highlight-box">
+针对这些挑战，团队研究人员提出了一种新型动态分解与内存感知重建框架DMRAD。该解决方案不仅通过可训练卷积和傅里叶变换实现自适应时序分解，还创新性地引入潜在异常-噪声检测算法，显著提升了对大规模复杂时序数据的异常检测能力。
+</div>
+
+<h2>设计与实现</h2>
+
+<h3>01 动态分解与注意力融合框架</h3>
+
+<div class="algorithm-box">
+DMRAD的核心架构是一个集成动态分解与混合注意力的深度重构模型，旨在对复杂的时间模式进行解耦与建模。如图2所示，该模型以前馈网络为编码基础，创新性地嵌入了三个核心模块。其设计核心在于，首先通过动态分解模块将原始非平稳序列<span class="math-var">X</span>(<span class="math-var">t</span>)解耦为趋势分量<span class="math-var">X</span><span class="subscript">trend</span>与季节性分量<span class="math-var">X</span><span class="subscript">sea</span>，显著降低了后续建模的复杂度。随后，趋势与季节性分量分别输入一个改进的通道-时间混合注意力模块，该模块在频域内通过离散余弦变换（DCT）压缩并计算通道注意力权重，在时域内通过自注意力机制捕捉长期依赖，从而融合生成更具判别性的特征表示<span class="math-var">Z</span>。最后，解码器基于特征<span class="math-var">Z</span>重建出"干净"的正常序列<span class="math-var">X'</span>(<span class="math-var">t</span>)。整个前向过程实现了对输入信号"分解-增强-重构"的精细化处理，为准确的重建误差计算奠定了基础。
+</div>
+
+<img src="/assets/images/posts/dmrad-2.png" alt="DMRAD的整体架构">
+<div class="figure-caption">图2：DMRAD的整体架构</div>
+
+<h3>02 潜在异常噪声识别算法</h3>
+
+<p>为应对训练数据中普遍存在的噪声和潜在异常对模型学习的污染，提出了一种内存感知的训练阶段净化算法。该算法不增加额外网络参数，而是通过一个外部内存模块动态评估并抑制异常样本的影响：</p>
+
+<p><strong>损失记忆与异常评分</strong>：在滑动时间窗口内，持续记录每个样本的重构损失（MSE），并计算其历史分布的均值<span class="math-var">μ</span>和标准差<span class="math-var">σ</span>。设定动态阈值<span class="math-var">θ</span> = <span class="math-var">μ</span> + 2<span class="math-var">σ</span>，将损失持续高于此阈值的样本标记为潜在异常。</p>
+
+<p><strong>自适应样本加权</strong>：根据高斯函数为每个训练样本分配一个权重<span class="math-var">w</span>。对于被标记的潜在异常点，其权重会被显著降低，从而使其在反向传播中的梯度贡献减弱。权重计算方式为：<span class="math-formula"><span class="math-var">w</span> = exp(-(<span class="math-var">loss</span> - <span class="math-var">μ</span>)<span class="superscript">2</span> / 2<span class="math-var">σ</span><span class="superscript">2</span>)</span>，其中<span class="math-var">loss</span>为当前样本损失。</p>
+
+<p>该算法使模型在训练过程中能够"遗忘"异常模式，专注于学习真实的正常数据分布，从而显著提升了模型在复杂真实场景下的鲁棒性和最终检测精度。</p>
+
+<h2>实验结果</h2>
+
+<h3>01 实验设置</h3>
+
+<div class="experiment-section">
+实验均使用PyTorch框架实现，并在NVIDIA RTX 4080 GPU上进行训练和测试，并基于5个真实场景的数据集测试模型的异常检测性能。
+</div>
+
+<div class="table-title">表1：实验中使用的数据集</div>
+
+<img src="/assets/images/posts/dmrad-table1.png" alt="实验数据集">
+
+<h3>02 方法对比</h3>
+
+<p>如表2所示，团队分别在5个真实场景下的数据集上对算法性能进行了全面评估。实验结果表明，DMRAD在多个数据集中展现出显著优势：在MSL数据集中实现的性能改进尤其显著，在F1得分方面，它比其他基线分别高出至少4.4%。此外，DMRAD在5个数据集上的平均F1得分比其他基线高出至少1.5%。</p>
+
+<div class="table-title">表2：异常检测性能对比</div>
+
+<img src="/assets/images/posts/dmrad-table2.png" alt="异常检测性能对比">
+
+<h3>03 轻量性与可迁移性验证</h3>
+
+<p>为评估潜在异常噪声识别算法的效率，团队研究人员对比了其加入模型前后的训练时间与内存占用，结果如图3所示。可以观察到，潜在异常噪声识别算法的引入带来了轻微的资源开销：训练时间增加约10%，内存占用增加不足5%。这表明潜在异常噪声识别算法在有效提升模型性能的同时，并未引入高复杂度的计算或大量额外参数，保持了优异的计算效率。</p>
+
+<img src="/assets/images/posts/dmrad-3.svg" alt="潜在异常噪声识别算法训练时间和内存占用对比">
+<div class="figure-caption">图3：潜在异常噪声识别算法训练时间和内存占用对比</div>
+
+<p>此外，团队还探索了潜在异常噪声识别算法的可迁移性。具体来说，将该潜在异常噪声识别算法迁移至两类经典模型（TimesNet和ModernTCN）中进行验证。如图4所示，"Original model"代表了它们在两个数据集上的直接测试结果，"Memory Module"表示添加了潜在异常噪声识别算法之后的实验结果，可以发现，在使用了潜在异常噪声识别算法之后，两个模型在MSL和SWaT数据集上的F1得分分别提高了至少4.3%和0.93%。</p>
+
+<img src="/assets/images/posts/dmrad-4.svg" alt="潜在异常噪声识别算法可迁移性实验">
+<div class="figure-caption">图4：潜在异常噪声识别算法可迁移性实验</div>
+
+<h2>详细内容请参见</h2>
+
+<p>Zhenchang Xia, Jun Ma, Bolong Zheng, Liangliang Wang, Yanan Chang and Jianqun Cui, DMRAD: Dynamic Decomposition and Memory-Aware Reconstruction for Noise-Resilient Multivariate Time Series Anomaly Detection, IEEE Transactions on Knowledge and Data Engineering, https://www.doi.org/10.1109/TKDE.2025.3649930</p>
+
+</div>
