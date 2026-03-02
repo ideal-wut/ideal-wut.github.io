@@ -65,6 +65,7 @@ permalink: /team/
             {% assign head_teacher = site.data.teachers | where: 'name', '郑渤龙' %}
 
             {% assign professors = site.data.teachers | where: 'title', '教授' | sort: 'pinyin' %}
+            {% assign distinguished_professors = site.data.teachers | where: 'title', '特聘教授' | sort: 'pinyin' %}
             {% assign associate_professors = site.data.teachers | where: 'title', '副教授' | sort: 'pinyin' %}
             {% assign lecturers = site.data.teachers | where: 'title', '讲师' | sort: 'pinyin' %}
 
@@ -97,6 +98,19 @@ permalink: /team/
                     </div>
                 </div>
                 {% endif %}
+                {% endfor %}
+
+                {% for teacher in distinguished_professors %}
+                <div class="teacher-card">
+                    <div class="teacher-avatar">
+                        <img src="{{ teacher.avatar | default: '/assets/images/default-avatar.jpg' | relative_url }}"
+                             alt="{{ teacher.name }}">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>{{ teacher.name }}</h3>
+                        <p class="teacher-title">{{ teacher.title }}</p>
+                    </div>
+                </div>
                 {% endfor %}
 
                 {% for teacher in associate_professors %}
