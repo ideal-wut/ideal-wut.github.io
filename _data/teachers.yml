@@ -15,12 +15,12 @@
   title: 特聘教授
   avatar: /assets/images/team/吕菲-教授.jpg
 
-# 副教授（同级按姓名拼音排序）
 - name: 陈紫
   pinyin: chen zi
-  title: 教授
-  avatar: /assets/images/team/陈紫-教授.jpg
+  title: 特聘教授
+  avatar: /assets/images/team/陈紫-特聘教授.jpg
 
+# 副教授（同级按姓名拼音排序）
 - name: 杜亚娟
   pinyin: du yajuan
   title: 副教授
