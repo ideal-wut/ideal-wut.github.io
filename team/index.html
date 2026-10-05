@@ -183,7 +183,9 @@ permalink: /team/
                             <h4 class="year-title">{{ year }}级</h4>
                             {% for program in programs %}
                                 {% if program == '本部' %}
-                                    {% assign program_students = year_students | where_exp: 'student', "student.program == nil or student.program == '本部'" %}
+                                    {% assign default_program_students = year_students | where_exp: 'student', 'student.program == nil' %}
+                                    {% assign main_program_students = year_students | where: 'program', '本部' %}
+                                    {% assign program_students = default_program_students | concat: main_program_students %}
                                 {% else %}
                                     {% assign program_students = year_students | where: 'program', program %}
                                 {% endif %}
