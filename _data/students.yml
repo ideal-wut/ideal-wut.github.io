@@ -7,12 +7,12 @@
 - name: 洪世龙
   year: 2025
   degree: 博士
-  avatar: /assets/images/team/hong-shilong.jpg
+  avatar: /assets/images/team/hong-shilong-white.jpg
 
 - name: 王龙
   year: 2025
   degree: 博士
-  avatar: /assets/images/team/wang-long.jpg
+  avatar: /assets/images/team/wang-long-white.jpg
 
 # 硕士研究生（按拼音顺序排序）2025 级
 - name: 陈飞宏
@@ -23,27 +23,27 @@
 - name: 陈智贤
   year: 2025
   degree: 硕士
-  avatar: /assets/images/team/chen-zhixian.jpg
+  avatar: /assets/images/team/chen-zhixian-white.jpg
 
 - name: 段志鹏
   year: 2025
   degree: 硕士
-  avatar: /assets/images/team/duan-zhipeng.jpg
+  avatar: /assets/images/team/duan-zhipeng-white.jpg
 
 - name: 韩晨昱
   year: 2025
   degree: 硕士
-  avatar: /assets/images/team/han-chenyu.jpg
+  avatar: /assets/images/team/han-chenyu-white.jpg
 
 - name: 胡钰林
   year: 2025
   degree: 硕士
-  avatar: /assets/images/team/hu-yulin.jpg
+  avatar: /assets/images/team/hu-yulin-white.jpg
 
 - name: 黄建文
   year: 2025
   degree: 硕士
-  avatar: /assets/images/team/huang-jianwen.jpg
+  avatar: /assets/images/team/huang-jianwen-white.jpg
 
 - name: 黄艳玲
   year: 2025
@@ -63,17 +63,17 @@
 - name: 毛远旭
   year: 2025
   degree: 硕士
-  avatar: /assets/images/team/mao-yuanxu.jpg
+  avatar: /assets/images/team/mao-yuanxu-white.jpg
 
 - name: 王嘉坤
   year: 2025
   degree: 硕士
-  avatar: /assets/images/team/wang-jiakun.jpg
+  avatar: /assets/images/team/wang-jiakun-white.jpg
 
 - name: 王凯文
   year: 2025
   degree: 硕士
-  avatar: /assets/images/team/wang-kaiwen.jpg
+  avatar: /assets/images/team/wang-kaiwen-white.jpg
 
 - name: 向琴
   year: 2025
@@ -83,7 +83,7 @@
 - name: 许韬
   year: 2025
   degree: 硕士
-  avatar: /assets/images/team/xu-tao.jpg
+  avatar: /assets/images/team/xu-tao-white.jpg
 
 - name: 曾宏达
   year: 2025
@@ -98,9 +98,273 @@
 - name: 赵明朴华
   year: 2025
   degree: 硕士
-  avatar: /assets/images/team/zhao-mingpuhua.jpg
+  avatar: /assets/images/team/zhao-mingpuhua-white.jpg
 
 - name: 邹凡宇
   year: 2025
   degree: 硕士
-  avatar: /assets/images/team/zou-fanyu.jpg
+  avatar: /assets/images/team/zou-fanyu-white.jpg
+
+# 2027 级 本部博士研究生
+- name: 崔谦
+  year: 2027
+  degree: 博士
+  program: 本部
+
+- name: 王智
+  year: 2027
+  degree: 博士
+  program: 本部
+
+- name: 周彦冰
+  year: 2027
+  degree: 博士
+  program: 本部
+
+- name: 李姚舜
+  year: 2027
+  degree: 博士
+  program: 本部
+
+- name: 赵燕武
+  year: 2027
+  degree: 博士
+  program: 本部
+
+- name: 林诗芸
+  year: 2027
+  degree: 博士
+  program: 本部
+
+- name: 刘聪颖
+  year: 2027
+  degree: 博士
+  program: 本部
+
+
+# 2027 级 本部硕士研究生
+- name: 金辉辉
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 张展文
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 武姿
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 肖傲天
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 何浩川
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 康钰昌
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 刘佳卉
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 寇宇航
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 刘煜
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 邓可
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 覃志烽
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 刘一诚
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 张轩太
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 范启泽
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 关日园
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 方耀扬
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 陈婵娟
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 徐佳颖
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 屠礼乐
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 冀晓明
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 冯建成
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 王忠平
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 欧阳才斗
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 朱祉勇
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+- name: 沈一婷
+  year: 2027
+  degree: 硕士
+  program: 本部
+
+
+# 2027 级 卓越工程师学院（军山校区）硕士研究生
+- name: 杨志远
+  year: 2027
+  degree: 硕士
+  program: 卓越工程师学院（军山校区）
+
+- name: 閤玉婷
+  year: 2027
+  degree: 硕士
+  program: 卓越工程师学院（军山校区）
+
+- name: 朱盛恒
+  year: 2027
+  degree: 硕士
+  program: 卓越工程师学院（军山校区）
+
+- name: 华健
+  year: 2027
+  degree: 硕士
+  program: 卓越工程师学院（军山校区）
+
+- name: 文明宇
+  year: 2027
+  degree: 硕士
+  program: 卓越工程师学院（军山校区）
+
+- name: 于滨伟
+  year: 2027
+  degree: 硕士
+  program: 卓越工程师学院（军山校区）
+
+
+# 2027 级 襄阳专项硕士研究生
+- name: 余乐明
+  year: 2027
+  degree: 硕士
+  program: 襄阳专项
+
+- name: 黄清华
+  year: 2027
+  degree: 硕士
+  program: 襄阳专项
+
+- name: 赵秀博
+  year: 2027
+  degree: 硕士
+  program: 襄阳专项
+
+- name: 许铭泽
+  year: 2027
+  degree: 硕士
+  program: 襄阳专项
+
+- name: 周权
+  year: 2027
+  degree: 硕士
+  program: 襄阳专项
+
+- name: 罗文浩
+  year: 2027
+  degree: 硕士
+  program: 襄阳专项
+
+
+# 2027 级 海南专项硕士研究生
+- name: 范晓韵
+  year: 2027
+  degree: 硕士
+  program: 海南专项
+
+- name: 卫超
+  year: 2027
+  degree: 硕士
+  program: 海南专项
+
+- name: 田驰
+  year: 2027
+  degree: 硕士
+  program: 海南专项
+
+- name: 张冠迪
+  year: 2027
+  degree: 硕士
+  program: 海南专项
+
+- name: 詹宝
+  year: 2027
+  degree: 硕士
+  program: 海南专项
+
+- name: 杜睿茵
+  year: 2027
+  degree: 硕士
+  program: 海南专项
+
+- name: 王刚
+  year: 2027
+  degree: 硕士
+  program: 海南专项

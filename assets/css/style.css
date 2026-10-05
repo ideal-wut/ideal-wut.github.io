@@ -1244,6 +1244,37 @@ body {
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
+.student-program {
+    margin-bottom: 1.5rem;
+}
+
+.student-program:last-child {
+    margin-bottom: 0;
+}
+
+.student-program-title {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    overflow-wrap: anywhere;
+}
+
+.student-avatar-placeholder {
+    display: grid;
+    place-items: center;
+    width: 120px;
+    height: 160px;
+    margin: 0 auto 1rem;
+    background: white;
+    border: 1px solid #edf0f2;
+    border-radius: 8px;
+    color: var(--text-light);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
 .student-card, .alumni-card {
     background: white;
     padding: 1.5rem;
@@ -1808,6 +1839,21 @@ body {
     .header-container {
         padding: 0.75rem 1rem;
         gap: 1rem;
+        min-height: 100px;
+    }
+
+    .logo {
+        min-width: 0;
+        flex-shrink: 1;
+    }
+
+    .logo img {
+        height: 80px;
+        max-width: 100%;
+    }
+
+    .main-nav {
+        flex-shrink: 0;
     }
 
     .container {
@@ -1824,6 +1870,8 @@ body {
         flex-direction: column;
         cursor: pointer;
         padding: 0.5rem;
+        background: transparent;
+        border: 0;
     }
 
     .nav-toggle span {
@@ -1835,8 +1883,25 @@ body {
     }
 
     .main-nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
         flex-direction: column;
         gap: 0;
+        padding: 0.5rem 1rem;
+        background: white;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .main-nav ul.active {
+        display: flex;
+    }
+
+    .nav-item a {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
     }
 
     .carousel {
@@ -1901,7 +1966,7 @@ body {
         padding: 1rem;
     }
 
-    .student-avatar img {
+    .student-avatar img, .student-avatar-placeholder {
         width: 100px;
         height: 130px;
     }
