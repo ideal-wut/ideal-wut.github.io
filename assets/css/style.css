@@ -2243,6 +2243,354 @@ body {
     width: 50% !important;             /* 宽度与图片保持一致 */
 }
 
+/* Touch-friendly navigation and carousel controls on narrow screens. */
+@media (max-width: 1024px) {
+    .header-container {
+        min-height: 80px;
+        padding: 0.5rem 1rem;
+        gap: 0.75rem;
+    }
+
+    .logo {
+        min-width: 0;
+        flex-shrink: 1;
+    }
+
+    .logo img {
+        height: 64px;
+        max-width: 100%;
+    }
+
+    .main-nav {
+        flex-shrink: 0;
+    }
+
+    .nav-toggle {
+        display: flex;
+        flex-direction: column;
+        min-width: 44px;
+        min-height: 44px;
+        justify-content: center;
+        padding: 0.5rem;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .nav-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: var(--text-color);
+        margin: 3px 0;
+    }
+
+    .main-nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        padding: 0.5rem 1rem;
+        background: white;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        max-height: calc(100vh - 80px);
+        max-height: calc(100dvh - 80px);
+        overflow-y: auto;
+    }
+
+    .main-nav ul.active {
+        display: flex;
+    }
+
+    .nav-item a {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+
+    .carousel-control {
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* Compact layouts and readable content on phones. */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.25rem 1rem;
+    }
+
+    .page-content, .advisor-info, .contact-container > *, .contact-details {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .home-page {
+        padding: 0 1rem;
+    }
+
+    .carousel-section {
+        margin: 1rem auto 1.5rem;
+    }
+
+    .carousel {
+        height: auto;
+        aspect-ratio: 2 / 1;
+    }
+
+    .lab-intro {
+        margin-bottom: 1.5rem;
+    }
+
+    .intro-card {
+        padding: 1rem;
+    }
+
+    .intro-card h2, .student-section-title {
+        font-size: 1.25rem;
+    }
+
+    .team-page, .research-overview, .achievements-page, .blog-list {
+        margin-top: 0.5rem;
+    }
+
+    .team-tabs {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0;
+        margin-bottom: 1.25rem;
+    }
+
+    .tab-button {
+        min-width: 0;
+        min-height: 44px;
+        padding: 0.75rem 0.25rem;
+        white-space: nowrap;
+    }
+
+    .students-grid, .teachers-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.75rem;
+    }
+
+    .student-card, .teacher-card {
+        min-width: 0;
+        padding: 1.25rem 0.5rem 0.875rem;
+    }
+
+    .student-avatar img, .student-avatar-placeholder, .teacher-avatar img {
+        width: 84px;
+        height: 112px;
+        margin-bottom: 0.5rem;
+    }
+
+    .student-avatar-placeholder {
+        font-size: 1.75rem;
+    }
+
+    .student-info h4, .teacher-info h3 {
+        font-size: 1rem;
+        line-height: 1.4;
+        margin-bottom: 0.25rem;
+    }
+
+    .teacher-title, .student-year {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+
+    .student-degree {
+        font-size: 0.75rem;
+        padding: 0.125rem 0.375rem;
+    }
+
+    .phd-student::before, .master-student::before {
+        right: 0.5rem;
+        padding: 0.125rem 0.375rem;
+        font-size: 0.625rem;
+    }
+
+    .student-section-title {
+        padding: 0.625rem 0.875rem;
+        margin-bottom: 1rem;
+    }
+
+    .year-title, .student-program-title {
+        margin-bottom: 0.75rem;
+    }
+
+    .advisor-card {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .advisor-photo {
+        align-self: center;
+    }
+
+    .advisor-photo img {
+        width: 120px;
+        height: 160px;
+    }
+
+    .advisor-info h2, .advisor-title {
+        text-align: center;
+    }
+
+    .advisor-title {
+        font-size: 1rem;
+    }
+
+    .advisor-bio p {
+        line-height: 1.85;
+        text-align: left;
+    }
+
+    .research-grid, .blog-list, .papers-list {
+        gap: 1rem;
+    }
+
+    .research-card, .blog-card, .paper-card, .filters-section {
+        padding: 1rem;
+    }
+
+    .blog-card-title, .post-title, .article-header h1 {
+        font-size: 1.375rem;
+        line-height: 1.5;
+    }
+
+    .paper-title {
+        font-size: 1.0625rem;
+        line-height: 1.5;
+    }
+
+    .paper-authors, .paper-meta {
+        font-size: 0.9375rem;
+    }
+
+    .filter-group {
+        display: grid;
+        grid-template-columns: 6rem minmax(0, 1fr);
+    }
+
+    .filter-group select {
+        width: 100%;
+        min-width: 0;
+        min-height: 44px;
+        font-size: 1rem;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+    }
+
+    .pagination button {
+        min-width: 44px;
+        min-height: 44px;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .joinus-page {
+        padding: 0;
+    }
+
+    .joinus-hero, .recruitment-card, .contact-section, .additional-card, .cta-section {
+        padding: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-header {
+        margin-bottom: 1.25rem;
+    }
+
+    .section-header h2, .contact-info h2, .cta-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-header {
+        flex-direction: row;
+        text-align: left;
+        gap: 0.75rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .card-header h3 {
+        font-size: 1.25rem;
+    }
+
+    .contact-method {
+        padding: 1rem;
+        gap: 0.75rem;
+    }
+
+    .contact-icon {
+        flex-shrink: 0;
+        font-size: 1.5rem;
+        margin-right: 0;
+    }
+
+    .contact-details .email {
+        font-size: 0.9375rem;
+        margin-bottom: 0;
+    }
+
+    .contact-btn, .cta-button, .read-more {
+        min-height: 44px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .post-content, .article-content {
+        overflow-wrap: anywhere;
+    }
+
+    .post-content img, .post-content .image-caption {
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    .post-content table, .post-content pre, .article-content pre {
+        display: block;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .research-article-container {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .article-header {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .site-footer {
+        margin-top: 2rem;
+        padding-top: 1rem;
+    }
+
+    .footer-content {
+        gap: 1.25rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1.0625rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .footer-section .email {
+        font-size: 0.9375rem;
+        overflow-wrap: anywhere;
+    }
+}
+
 
 /* 隐藏"返回动态列表"链接 */
 .post-footer {
